@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
-import {	Animated,
+import React from 'react';
+import {
+      Animated,
 			Image,
 			ScrollView,
-			AppRegistry,
-	 		StyleSheet,
-	 		Text,
-	 		View,
-	 	} from 'react-native';
+      AppRegistry,
+      StyleSheet,
+      Text,
+      View
+    } from 'react-native';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -14,7 +15,7 @@ const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
 
 export default class Heading extends React.Component {
 
-	constructor(props){
+	constructor(props) {
 		super(props);
 
 		this.state = {
@@ -22,11 +23,11 @@ export default class Heading extends React.Component {
 		};
 	}
 
-	_renderScrollViewContent() {
-		const data = Array.from({length:16});
-		return(
+	renderScrollViewContent() {
+		const data = Array.from({ length: 16 });
+		return (
 			<View style={styles.ScrollViewContent}>
-				{data.map((_, i)=>
+				{data.map((_, i) =>
 					<View key={i} style={styles.row}>
 						<Text>{i}</Text>
 					</View>
@@ -42,10 +43,10 @@ export default class Heading extends React.Component {
 			extrapolate: 'clamp',
 		});
 
-		const imageOpacity = this.state.scrollY.interpolate ({
-			inputRange: [0,HEADER_SCROLL_DISTANCE / 2, HEADER_SCROLL_DISTANCE],
-			outputRange: [1, 1, 0],
-			extrapolate: 'clamp',
+		const imageOpacity = this.state.scrollY.interpolate({
+			inputRange: [0, HEADER_SCROLL_DISTANCE / 2, HEADER_SCROLL_DISTANCE],
+      outputRange: [1, 1, 0],
+      extrapolate: 'clamp'
 		});
 
 		const imageTranslate = this.state.scrollY.interpolate({
@@ -56,23 +57,24 @@ export default class Heading extends React.Component {
 
 		return (
 		<View style={styles.fill}>
-			<ScrollView style={styles.fill} 
-						scrollEventThrottle={16}
-						onScroll={Animated.event(
-								[{nativeEvent: {contentOffset: {y:this.state.scrollY}}}]
+			<ScrollView
+        style={styles.fill}
+				scrollEventThrottle={16}
+				onScroll={Animated.event(
+								[{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }]
 							)}
-						>
-				{this._renderScrollViewContent()}
+			>
+				{this.renderScrollViewContent()}
 			</ScrollView>
-			<Animated.View style={[styles.header, {height: headerHeight}]}>
-				<Image source ={require('./image/icon.png')} />
+			<Animated.View style={[styles.header, { height: headerHeight }]}>
+         <Image source={require('../image/icon.png')} />
 				<Animated.Image
 					style={[
 						styles.backgroundImage,
-						{opacity: imageOpacity, transform: [{translateY: imageTranslate}]},
+						{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] },
 						]}
-					source = {require('./image/TuneSend.png')}
-					/>
+					source={require('../image/TuneSend.png')}
+				/>
 			</Animated.View>
 		</View>
 		);
@@ -123,4 +125,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-AppRegistry.registerComponent('Heading', ()=> Heading);
+AppRegistry.registerComponent('Heading', () => Heading);
