@@ -1,4 +1,5 @@
 {
-  "name": "tunesend",
-  "displayName": "tunesend"
+  "expo": {
+    "sdkVersion": "23.0.0"
+  }
 }
