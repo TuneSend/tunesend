@@ -13,19 +13,18 @@ import AVFoundation
 
 class ViewController: UIViewController {
     private var audioPlayer: AVAudioPlayer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Kick" , ofType: "wav")!)
+
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Piano_C" , ofType: "wav")!)
         print(alertSound)
-        
+
         try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         try! AVAudioSession.sharedInstance().setActive(true)
-        
+
         try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
         audioPlayer!.prepareToPlay()
         audioPlayer!.play()
     }
 }
-

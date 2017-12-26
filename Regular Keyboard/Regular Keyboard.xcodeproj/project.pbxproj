@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DC6C7161FF1D22B0079200D /* Piano_C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6C7151FF1D22B0079200D /* Piano_C.wav */; };
 		CC3DD31E1FE9E16E00E6F250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3DD31D1FE9E16E00E6F250 /* AppDelegate.swift */; };
 		CC3DD3201FE9E16E00E6F250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3DD31F1FE9E16E00E6F250 /* ViewController.swift */; };
 		CC3DD3231FE9E16E00E6F250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3DD3211FE9E16E00E6F250 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		CC3DD3521FE9E4F400E6F250 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3DD3511FE9E4F400E6F250 /* KeyboardViewController.swift */; };
 		CC3DD3561FE9E4F400E6F250 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC3DD34F1FE9E4F400E6F250 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCC90E1A1FEC7BF900717388 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC90E191FEC7BF800717388 /* AVFoundation.framework */; };
-		CCC90E1C1FEC7E6C00717388 /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCC90E1B1FEC7E6C00717388 /* Kick.wav */; };
 		CCD544471FE9E89F00C5C0C4 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD544461FE9E89F00C5C0C4 /* View.xib */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4DC6C7151FF1D22B0079200D /* Piano_C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_C.wav; sourceTree = "<group>"; };
 		CC3DD31A1FE9E16E00E6F250 /* Regular Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Regular Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3DD31D1FE9E16E00E6F250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC3DD31F1FE9E16E00E6F250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		CC77751F1FEC9DEC00BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
 		CC7775201FEC9E3A00BE3A48 /* Regular Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Regular Keyboard.entitlements"; sourceTree = "<group>"; };
 		CCC90E191FEC7BF800717388 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CCC90E1B1FEC7E6C00717388 /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Kick.wav; path = "../../../../../Downloads/Kicks That Work/Kick.wav"; sourceTree = "<group>"; };
 		CCD544461FE9E89F00C5C0C4 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,8 +174,8 @@
 		CC3DD3501FE9E4F400E6F250 /* keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4DC6C7151FF1D22B0079200D /* Piano_C.wav */,
 				CC77751F1FEC9DEC00BE3A48 /* keyboard.entitlements */,
-				CCC90E1B1FEC7E6C00717388 /* Kick.wav */,
 				CCD544461FE9E89F00C5C0C4 /* View.xib */,
 				CC3DD3511FE9E4F400E6F250 /* KeyboardViewController.swift */,
 				CC3DD3531FE9E4F400E6F250 /* Info.plist */,
@@ -356,8 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC6C7161FF1D22B0079200D /* Piano_C.wav in Resources */,
 				CCD544471FE9E89F00C5C0C4 /* View.xib in Resources */,
-				CCC90E1C1FEC7E6C00717388 /* Kick.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Regular Keyboard/Regular Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XM288BRHM4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Regular Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHaviv.Regular-Keyboard";
@@ -568,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Regular Keyboard/Regular Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XM288BRHM4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Regular Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MichaelHaviv.Regular-Keyboard";

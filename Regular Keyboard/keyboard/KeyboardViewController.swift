@@ -13,7 +13,7 @@ class KeyboardViewController: UIInputViewController {
     
     var keyboardView: UIView!
     var player = AVAudioPlayer()
-    let path = Bundle.main.path(forResource: "Kick", ofType: "wav")
+    let path = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
 //    var isPlaying = false
     
     override func updateViewConstraints() {

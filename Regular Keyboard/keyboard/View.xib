@@ -214,17 +214,27 @@
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="omH-Ir-3h0"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm0-cn-opi">
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BpR-u2-eUP">
                     <rect key="frame" x="162" y="62" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99763482810000004" green="0.90421480899999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Y">
-                        <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </state>
-                    <connections>
-                        <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="hbq-gg-aH8"/>
-                    </connections>
-                </button>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HYt-sc-86x">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sm0-cn-opi">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <color key="backgroundColor" red="0.99763482810000004" green="0.90421480899999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="Y">
+                                        <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="hbq-gg-aH8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-tj-OTb">
                     <rect key="frame" x="277" y="62" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
