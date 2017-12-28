@@ -34,22 +34,22 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
-		4D36BFF81FF2F706008483CD /* Piano_C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D36BFC81FF2F706008483CD /* Piano_C.wav */; };
-		4D5D2BFE1FF434E8008EF7DB /* Piano_C#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */; };
-		4D5D2BFF1FF434E8008EF7DB /* Piano_F#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */; };
-		4D5D2C001FF434E8008EF7DB /* Piano_G#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF51FF434E7008EF7DB /* Piano_G#.wav */; };
-		4D5D2C011FF434E8008EF7DB /* Piano_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF61FF434E7008EF7DB /* Piano_B.wav */; };
-		4D5D2C021FF434E8008EF7DB /* Piano_A#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF71FF434E7008EF7DB /* Piano_A#.wav */; };
-		4D5D2C031FF434E8008EF7DB /* Piano_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF81FF434E8008EF7DB /* Piano_A.wav */; };
-		4D5D2C041FF434E8008EF7DB /* Piano_D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF91FF434E8008EF7DB /* Piano_D.wav */; };
-		4D5D2C051FF434E8008EF7DB /* Piano_E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFA1FF434E8008EF7DB /* Piano_E.wav */; };
-		4D5D2C061FF434E8008EF7DB /* Piano_F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFB1FF434E8008EF7DB /* Piano_F.wav */; };
-		4D5D2C071FF434E8008EF7DB /* Piano_D#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFC1FF434E8008EF7DB /* Piano_D#.wav */; };
-		4D5D2C081FF434E8008EF7DB /* Piano_G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFD1FF434E8008EF7DB /* Piano_G.wav */; };
 		4DC6C78D1FF1DB260079200D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6C78C1FF1DB260079200D /* KeyboardViewController.swift */; };
 		4DC6C7911FF1DB260079200D /* Test.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DC6C78A1FF1DB260079200D /* Test.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DC6C7991FF1DB8C0079200D /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6C7981FF1DB8C0079200D /* View.xib */; };
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		4DC961EC1FF5884C00129B0A /* Piano_C#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */; };
+		4DC962101FF5886A00129B0A /* Piano_F#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */; };
+		4DC962121FF5886E00129B0A /* Piano_A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF81FF434E8008EF7DB /* Piano_A.wav */; };
+		4DC962131FF5887100129B0A /* Piano_A#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF71FF434E7008EF7DB /* Piano_A#.wav */; };
+		4DC962141FF5887500129B0A /* Piano_B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF61FF434E7008EF7DB /* Piano_B.wav */; };
+		4DC962151FF5887A00129B0A /* Piano_D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF91FF434E8008EF7DB /* Piano_D.wav */; };
+		4DC962161FF5887E00129B0A /* Piano_D#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFC1FF434E8008EF7DB /* Piano_D#.wav */; };
+		4DC962171FF5888200129B0A /* Piano_E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFA1FF434E8008EF7DB /* Piano_E.wav */; };
+		4DC962181FF5888500129B0A /* Piano_F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFB1FF434E8008EF7DB /* Piano_F.wav */; };
+		4DC962191FF5888800129B0A /* Piano_G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BFD1FF434E8008EF7DB /* Piano_G.wav */; };
+		4DC9621A1FF5888C00129B0A /* Piano_G#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF51FF434E7008EF7DB /* Piano_G#.wav */; };
+		4DC9621B1FF5889300129B0A /* Piano_C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D36BFC81FF2F706008483CD /* Piano_C.wav */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
@@ -1113,19 +1113,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5D2C051FF434E8008EF7DB /* Piano_E.wav in Resources */,
-				4D5D2C071FF434E8008EF7DB /* Piano_D#.wav in Resources */,
-				4D5D2C021FF434E8008EF7DB /* Piano_A#.wav in Resources */,
-				4D5D2C001FF434E8008EF7DB /* Piano_G#.wav in Resources */,
-				4D5D2C041FF434E8008EF7DB /* Piano_D.wav in Resources */,
-				4D5D2C061FF434E8008EF7DB /* Piano_F.wav in Resources */,
-				4D5D2BFF1FF434E8008EF7DB /* Piano_F#.wav in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				4D5D2BFE1FF434E8008EF7DB /* Piano_C#.wav in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				4D5D2C081FF434E8008EF7DB /* Piano_G.wav in Resources */,
-				4D5D2C031FF434E8008EF7DB /* Piano_A.wav in Resources */,
-				4D5D2C011FF434E8008EF7DB /* Piano_B.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1148,8 +1137,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D36BFF81FF2F706008483CD /* Piano_C.wav in Resources */,
+				4DC962171FF5888200129B0A /* Piano_E.wav in Resources */,
+				4DC962141FF5887500129B0A /* Piano_B.wav in Resources */,
+				4DC962151FF5887A00129B0A /* Piano_D.wav in Resources */,
+				4DC962181FF5888500129B0A /* Piano_F.wav in Resources */,
+				4DC961EC1FF5884C00129B0A /* Piano_C#.wav in Resources */,
+				4DC9621B1FF5889300129B0A /* Piano_C.wav in Resources */,
+				4DC962161FF5887E00129B0A /* Piano_D#.wav in Resources */,
+				4DC9621A1FF5888C00129B0A /* Piano_G#.wav in Resources */,
 				4DC6C7991FF1DB8C0079200D /* View.xib in Resources */,
+				4DC962191FF5888800129B0A /* Piano_G.wav in Resources */,
+				4DC962101FF5886A00129B0A /* Piano_F#.wav in Resources */,
+				4DC962131FF5887100129B0A /* Piano_A#.wav in Resources */,
+				4DC962121FF5886E00129B0A /* Piano_A.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
