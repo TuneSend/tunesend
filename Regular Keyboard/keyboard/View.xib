@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -100,9 +100,6 @@
                     <state key="normal" title="7">
                         <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
-                    <connections>
-                        <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="6FV-tn-fCj"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-T3-Gvy">
                     <rect key="frame" x="162" y="13" width="30" height="30"/>
@@ -144,9 +141,6 @@
                     <state key="normal" title="R">
                         <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
-                    <connections>
-                        <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="mZy-rZ-jo7"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-Wn-Djg">
                     <rect key="frame" x="72" y="62" width="30" height="30"/>
@@ -308,9 +302,6 @@
                     <state key="normal" title="M">
                         <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
-                    <connections>
-                        <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="bGH-eA-Msg"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj7-AA-MSO">
                     <rect key="frame" x="86" y="180" width="150" height="30"/>
@@ -441,9 +432,6 @@
                     <state key="normal" title="&lt;">
                         <color key="titleColor" red="0.29450812144742611" green="0.82796594855698902" blue="0.81892603919138052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
-                    <connections>
-                        <action selector="deleteText" destination="-1" eventType="touchUpInside" id="uzf-Qt-Y0Y"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-Xl-F7N">
                     <rect key="frame" x="250" y="180" width="57" height="30"/>
@@ -452,9 +440,6 @@
                     <state key="normal" title="Hide">
                         <color key="titleColor" red="0.29450812139999999" green="0.82796594859999995" blue="0.81892603919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
-                    <connections>
-                        <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="2Ta-Fl-7GB"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwR-Ce-Gip">
                     <rect key="frame" x="12" y="180" width="60" height="30"/>
