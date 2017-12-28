@@ -406,11 +406,11 @@
                     <rect key="frame" x="295" y="181" width="60" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.29989357160000002" green="0.28109748979999999" blue="0.22247123520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Next">
+                    <state key="normal" title="Hide">
                         <color key="titleColor" red="0.29450812139999999" green="0.82796594859999995" blue="0.81892603919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
-                        <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="EIg-6C-F4v"/>
+                        <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="DUe-uW-im7"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySl-gb-vBK">
@@ -428,11 +428,11 @@
                     <rect key="frame" x="15" y="181" width="57" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.29989357160000002" green="0.28109748979999999" blue="0.22247123520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Hide">
+                    <state key="normal" title="Next">
                         <color key="titleColor" red="0.29450812139999999" green="0.82796594859999995" blue="0.81892603919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
-                        <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="4Z8-t5-9AF"/>
+                        <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="Wwt-EG-O4G"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIE-DA-Hk3">
