@@ -14,18 +14,20 @@ class KeyboardViewController: UIInputViewController {
   var keyboardView: UIView!
   var player = AVAudioPlayer()
   
-  let pathA = Bundle.main.path(forResource: "Piano_A", ofType: "wav")
-  let pathAs = Bundle.main.path(forResource: "Piano_A#", ofType: "wav")
-  let pathB = Bundle.main.path(forResource: "Piano_B", ofType: "wav")
-  let pathC = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
-  let pathCs = Bundle.main.path(forResource: "Piano_C#", ofType: "wav")
-  let pathD = Bundle.main.path(forResource: "Piano_D", ofType: "wav")
-  let pathDs = Bundle.main.path(forResource: "Piano_D#", ofType: "wav")
-  let pathE = Bundle.main.path(forResource: "Piano_E", ofType: "wav")
-  let pathF = Bundle.main.path(forResource: "Piano_F", ofType: "wav")
-  let pathFs = Bundle.main.path(forResource: "Piano_F#", ofType: "wav")
-  let pathG = Bundle.main.path(forResource: "Piano_G", ofType: "wav")
-  let pathGs = Bundle.main.path(forResource: "Piano_G#", ofType: "wav")
+  let path = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
+  
+//  let pathA = Bundle.main.path(forResource: "Piano_A", ofType: "wav")
+//  let pathAs = Bundle.main.path(forResource: "Piano_A#", ofType: "wav")
+//  let pathB = Bundle.main.path(forResource: "Piano_B", ofType: "wav")
+//  let pathC = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
+//  let pathCs = Bundle.main.path(forResource: "Piano_C#", ofType: "wav")
+//  let pathD = Bundle.main.path(forResource: "Piano_D", ofType: "wav")
+//  let pathDs = Bundle.main.path(forResource: "Piano_D#", ofType: "wav")
+//  let pathE = Bundle.main.path(forResource: "Piano_E", ofType: "wav")
+//  let pathF = Bundle.main.path(forResource: "Piano_F", ofType: "wav")
+//  let pathFs = Bundle.main.path(forResource: "Piano_F#", ofType: "wav")
+//  let pathG = Bundle.main.path(forResource: "Piano_G", ofType: "wav")
+//  let pathGs = Bundle.main.path(forResource: "Piano_G#", ofType: "wav")
   //    var isPlaying = false
   
   override func updateViewConstraints() {
@@ -39,7 +41,9 @@ class KeyboardViewController: UIInputViewController {
     
     loadKeyboard()
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
+//      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
+      
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
     } catch {
       print("Could not load file")
     }
@@ -99,12 +103,16 @@ class KeyboardViewController: UIInputViewController {
   
   // MARK: - Actions
   
-  @IBAction func playA(sender: Any) {
-
+//  @IBAction func playA(sender: Any) {
+//
+//    player.play()
+//  }
+  
+  @IBAction func play(sender: Any) {
+    
     player.play()
   }
   
-
   
   
   override func didReceiveMemoryWarning() {
