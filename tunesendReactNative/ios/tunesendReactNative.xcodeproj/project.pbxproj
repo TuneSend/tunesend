@@ -555,7 +555,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4DC6C78B1FF1DB260079200D /* Awesome */ = {
+		4DC6C78B1FF1DB260079200D /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */,
@@ -574,7 +574,7 @@
 				4DC6C78E1FF1DB260079200D /* Info.plist */,
 				4DC6C7981FF1DB8C0079200D /* View.xib */,
 			);
-			path = Awesome;
+			path = Test;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -629,7 +629,7 @@
 				13B07FAE1A68108700A75B9A /* tunesendReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tunesendReactNativeTests */,
-				4DC6C78B1FF1DB260079200D /* Awesome */,
+				4DC6C78B1FF1DB260079200D /* Test */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;

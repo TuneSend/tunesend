@@ -101,16 +101,18 @@ class KeyboardViewController: UIInputViewController {
     } catch {
       print("Could not load file")
     }
-    //        if isPlaying == false {
     player.play()
-    //            isPlaying = true
-    //            A.setTitle("Pause", for: .normal)
-    //        } else {
-    //            player.pause()
-    //            isPlaying = false
-    ////            A.setTitle("Play", for: .normal)
-    //        }
   }
+  
+  @IBAction func playB(sender: Any) {
+    do {
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathB!))
+    } catch {
+      print("Could not load file")
+    }
+    player.play()
+  }
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
