@@ -311,7 +311,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="pCK-Tj-NcI"/>
-                        <action selector="playAWithSender:" destination="-1" eventType="touchUpInside" id="dTR-dL-aUp"/>
+                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="aGj-Ab-4Sc"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQI-ia-Ptc">
@@ -356,6 +356,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="veb-7k-Zr2"/>
+                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="f7X-nk-Gem"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-Tx-14V">

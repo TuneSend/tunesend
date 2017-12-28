@@ -39,13 +39,13 @@ class KeyboardViewController: UIInputViewController {
     super.viewDidLoad()
     
     loadKeyboard()
-    do {
-    
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
-//      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
-    } catch {
-      print("Could not load file")
-    }
+//    do {
+//
+//      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
+////      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+//    } catch {
+//      print("Could not load file")
+//    }
     
   }
   
@@ -97,15 +97,15 @@ class KeyboardViewController: UIInputViewController {
   
   
 
-
-  
-//  @IBAction func playA(sender: Any) {
-//
-//    player.play()
-//  }
   
   @IBAction func play(sender: Any) {
-
+    
+    do {
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
+    } catch {
+      print("Could not load file")
+    }
+    
     player.play()
   }
   
