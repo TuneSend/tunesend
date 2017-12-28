@@ -311,7 +311,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="pCK-Tj-NcI"/>
-                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="OUi-AQ-Qe1"/>
+                        <action selector="playAWithSender:" destination="-1" eventType="touchUpInside" id="dTR-dL-aUp"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQI-ia-Ptc">

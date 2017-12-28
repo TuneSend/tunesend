@@ -14,9 +14,9 @@ class KeyboardViewController: UIInputViewController {
   var keyboardView: UIView!
   var player = AVAudioPlayer()
   
-  let path = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
+//  let path = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
   
-//  let pathA = Bundle.main.path(forResource: "Piano_A", ofType: "wav")
+  let pathA = Bundle.main.path(forResource: "Piano_A", ofType: "wav")
 //  let pathAs = Bundle.main.path(forResource: "Piano_A#", ofType: "wav")
 //  let pathB = Bundle.main.path(forResource: "Piano_B", ofType: "wav")
 //  let pathC = Bundle.main.path(forResource: "Piano_C", ofType: "wav")
@@ -95,23 +95,22 @@ class KeyboardViewController: UIInputViewController {
     
   }
   
-  // MARK: - Properties
+
   @IBOutlet weak var A: UIButton!
   
   
+
+
   
+  @IBAction func playA(sender: Any) {
+
+    player.play()
+  }
   
-  // MARK: - Actions
-  
-//  @IBAction func playA(sender: Any) {
+//  @IBAction func play(sender: Any) {
 //
 //    player.play()
 //  }
-  
-  @IBAction func play(sender: Any) {
-    
-    player.play()
-  }
   
   
   
