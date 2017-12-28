@@ -39,7 +39,7 @@ class KeyboardViewController: UIInputViewController {
     
     loadKeyboard()
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathA!))
     } catch {
       print("Could not load file")
     }
