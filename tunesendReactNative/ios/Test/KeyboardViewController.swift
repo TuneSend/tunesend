@@ -109,6 +109,17 @@ class KeyboardViewController: UIInputViewController {
     player.play()
   }
   
+  @IBAction func playAs(sender: Any) {
+    
+    do {
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: pathAs!))
+    } catch {
+      print("Could not load file")
+    }
+    
+    player.play()
+  }
+  
   
   
   override func didReceiveMemoryWarning() {
