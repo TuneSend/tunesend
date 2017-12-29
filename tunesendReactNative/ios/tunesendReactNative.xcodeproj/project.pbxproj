@@ -34,9 +34,6 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
-		4DC6C78D1FF1DB260079200D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6C78C1FF1DB260079200D /* KeyboardViewController.swift */; };
-		4DC6C7911FF1DB260079200D /* Test.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DC6C78A1FF1DB260079200D /* Test.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4DC6C7991FF1DB8C0079200D /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6C7981FF1DB8C0079200D /* View.xib */; };
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		4DC961EC1FF5884C00129B0A /* Piano_C#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */; };
 		4DC962101FF5886A00129B0A /* Piano_F#.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */; };
@@ -52,6 +49,12 @@
 		4DC9621B1FF5889300129B0A /* Piano_C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D36BFC81FF2F706008483CD /* Piano_C.wav */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		CC2A2E811FF5AAFF00C594F4 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC2A2E801FF5AAFF00C594F4 /* piano */; };
+		CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */; };
+		CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC7775F11FF2243B00BE3A48 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776001FF224F800BE3A48 /* AudioToolbox.framework */; };
+		CC7776051FF227C800BE3A48 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7776041FF227C800BE3A48 /* View.xib */; };
+		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,13 +282,6 @@
 			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
 			remoteInfo = "fishhook-tvOS";
 		};
-		4DC6C78F1FF1DB260079200D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DC6C7891FF1DB260079200D;
-			remoteInfo = Test;
-		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -321,6 +317,55 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		CC7775E11FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		CC7775E31FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		CC7775E51FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		CC7775E71FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
+		CC7775E91FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
+			remoteInfo = privatedata;
+		};
+		CC7775EB1FF2240E00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
+			remoteInfo = "privatedata-tvOS";
+		};
+		CC7775F61FF2243C00BE3A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7775F01FF2243B00BE3A48;
+			remoteInfo = keyboard;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -330,7 +375,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				4DC6C7911FF1DB260079200D /* Test.appex in Embed App Extensions */,
+				CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +404,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tunesendReactNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tunesendReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
 		4D36BFC81FF2F706008483CD /* Piano_C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_C.wav; sourceTree = "<group>"; };
 		4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_C#.wav"; sourceTree = "<group>"; };
 		4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_F#.wav"; sourceTree = "<group>"; };
@@ -375,10 +421,20 @@
 		4DC6C78C1FF1DB260079200D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		4DC6C78E1FF1DB260079200D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC6C7981FF1DB8C0079200D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		CC2A2E801FF5AAFF00C594F4 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
+		CC7775F11FF2243B00BE3A48 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		CC7775F51FF2243C00BE3A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
+		CC7776001FF224F800BE3A48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC7776041FF227C800BE3A48 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,10 +487,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC6C7871FF1DB260079200D /* Frameworks */ = {
+		CC7775EE1FF2243B00BE3A48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */,
+				CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,16 +603,26 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+<<<<<<< HEAD
 				4D36BFED1FF2F706008483CD /* libthird-party.a */,
 				4D36BFEF1FF2F706008483CD /* libthird-party.a */,
 				4D36BFF11FF2F706008483CD /* libdouble-conversion.a */,
 				4D36BFF31FF2F706008483CD /* libdouble-conversion.a */,
 				4D36BFF51FF2F706008483CD /* libprivatedata.a */,
 				4D36BFF71FF2F706008483CD /* libprivatedata-tvOS.a */,
+=======
+				CC7775E21FF2240E00BE3A48 /* libthird-party.a */,
+				CC7775E41FF2240E00BE3A48 /* libthird-party.a */,
+				CC7775E61FF2240E00BE3A48 /* libdouble-conversion.a */,
+				CC7775E81FF2240E00BE3A48 /* libdouble-conversion.a */,
+				CC7775EA1FF2240E00BE3A48 /* libprivatedata.a */,
+				CC7775EC1FF2240E00BE3A48 /* libprivatedata-tvOS.a */,
+>>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		4DC6C78B1FF1DB260079200D /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +645,8 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,8 +699,9 @@
 				13B07FAE1A68108700A75B9A /* tunesendReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tunesendReactNativeTests */,
-				4DC6C78B1FF1DB260079200D /* Test */,
+				CC7775F21FF2243C00BE3A48 /* keyboard */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				CC7775FF1FF224F800BE3A48 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -644,7 +715,7 @@
 				00E356EE1AD99517003FC87E /* tunesendReactNativeTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */,
-				4DC6C78A1FF1DB260079200D /* Test.appex */,
+				CC7775F11FF2243B00BE3A48 /* keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -656,6 +727,27 @@
 				4DC6C7711FF1DAFC0079200D /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CC7775F21FF2243C00BE3A48 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC2A2E801FF5AAFF00C594F4 /* piano */,
+				CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */,
+				CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */,
+				CC7775F51FF2243C00BE3A48 /* Info.plist */,
+				CC7776041FF227C800BE3A48 /* View.xib */,
+			);
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		CC7775FF1FF224F800BE3A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */,
+				CC7776001FF224F800BE3A48 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,7 +784,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4DC6C7901FF1DB260079200D /* PBXTargetDependency */,
+				CC7775F71FF2243C00BE3A48 /* PBXTargetDependency */,
 			);
 			name = tunesendReactNative;
 			productName = "Hello World";
@@ -735,21 +827,21 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4DC6C7891FF1DB260079200D /* Test */ = {
+		CC7775F01FF2243B00BE3A48 /* keyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DC6C7921FF1DB260079200D /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = CC7775F91FF2243C00BE3A48 /* Build configuration list for PBXNativeTarget "keyboard" */;
 			buildPhases = (
-				4DC6C7861FF1DB260079200D /* Sources */,
-				4DC6C7871FF1DB260079200D /* Frameworks */,
-				4DC6C7881FF1DB260079200D /* Resources */,
+				CC7775ED1FF2243B00BE3A48 /* Sources */,
+				CC7775EE1FF2243B00BE3A48 /* Frameworks */,
+				CC7775EF1FF2243B00BE3A48 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Test;
-			productName = Test;
-			productReference = 4DC6C78A1FF1DB260079200D /* Test.appex */;
+			name = keyboard;
+			productName = keyboard;
+			productReference = CC7775F11FF2243B00BE3A48 /* keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -766,6 +858,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = XM288BRHM4;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -775,9 +870,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
-					4DC6C7891FF1DB260079200D = {
+					CC7775F01FF2243B00BE3A48 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = XM288BRHM4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -848,7 +949,7 @@
 				00E356ED1AD99517003FC87E /* tunesendReactNativeTests */,
 				2D02E47A1E0B4A5D006451C7 /* tunesendReactNative-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* tunesendReactNative-tvOSTests */,
-				4DC6C7891FF1DB260079200D /* Test */,
+				CC7775F01FF2243B00BE3A48 /* keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -1099,6 +1200,48 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CC7775E21FF2240E00BE3A48 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = CC7775E11FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7775E41FF2240E00BE3A48 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = CC7775E31FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7775E61FF2240E00BE3A48 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = CC7775E51FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7775E81FF2240E00BE3A48 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = CC7775E71FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7775EA1FF2240E00BE3A48 /* libprivatedata.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprivatedata.a;
+			remoteRef = CC7775E91FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC7775EC1FF2240E00BE3A48 /* libprivatedata-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprivatedata-tvOS.a";
+			remoteRef = CC7775EB1FF2240E00BE3A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1133,10 +1276,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC6C7881FF1DB260079200D /* Resources */ = {
+		CC7775EF1FF2243B00BE3A48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				4DC962171FF5888200129B0A /* Piano_E.wav in Resources */,
 				4DC962141FF5887500129B0A /* Piano_B.wav in Resources */,
 				4DC962151FF5887A00129B0A /* Piano_D.wav in Resources */,
@@ -1150,6 +1294,10 @@
 				4DC962101FF5886A00129B0A /* Piano_F#.wav in Resources */,
 				4DC962131FF5887100129B0A /* Piano_A#.wav in Resources */,
 				4DC962121FF5886E00129B0A /* Piano_A.wav in Resources */,
+=======
+				CC2A2E811FF5AAFF00C594F4 /* piano in Resources */,
+				CC7776051FF227C800BE3A48 /* View.xib in Resources */,
+>>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,11 +1369,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DC6C7861FF1DB260079200D /* Sources */ = {
+		CC7775ED1FF2243B00BE3A48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC6C78D1FF1DB260079200D /* KeyboardViewController.swift in Sources */,
+				CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1242,10 +1390,10 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* tunesendReactNative-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
-		4DC6C7901FF1DB260079200D /* PBXTargetDependency */ = {
+		CC7775F71FF2243C00BE3A48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4DC6C7891FF1DB260079200D /* Test */;
-			targetProxy = 4DC6C78F1FF1DB260079200D /* PBXContainerItemProxy */;
+			target = CC7775F01FF2243B00BE3A48 /* keyboard */;
+			targetProxy = CC7775F61FF2243C00BE3A48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1309,6 +1457,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = XM288BRHM4;
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1329,6 +1478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM288BRHM4;
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1436,75 +1586,6 @@
 			};
 			name = Release;
 		};
-		4DC6C7931FF1DB260079200D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4DC6C7941FF1DB260079200D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1601,6 +1682,59 @@
 			};
 			name = Release;
 		};
+		CC7775FA1FF2243C00BE3A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = keyboard/keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XM288BRHM4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC7775FB1FF2243C00BE3A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = keyboard/keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XM288BRHM4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1640,20 +1774,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC6C7921FF1DB260079200D /* Build configuration list for PBXNativeTarget "Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DC6C7931FF1DB260079200D /* Debug */,
-				4DC6C7941FF1DB260079200D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "tunesendReactNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7775F91FF2243C00BE3A48 /* Build configuration list for PBXNativeTarget "keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7775FA1FF2243C00BE3A48 /* Debug */,
+				CC7775FB1FF2243C00BE3A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
