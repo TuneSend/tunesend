@@ -404,25 +404,6 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tunesendReactNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tunesendReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
-		4D36BFC81FF2F706008483CD /* Piano_C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_C.wav; sourceTree = "<group>"; };
-		4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_C#.wav"; sourceTree = "<group>"; };
-		4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_F#.wav"; sourceTree = "<group>"; };
-		4D5D2BF51FF434E7008EF7DB /* Piano_G#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_G#.wav"; sourceTree = "<group>"; };
-		4D5D2BF61FF434E7008EF7DB /* Piano_B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_B.wav; sourceTree = "<group>"; };
-		4D5D2BF71FF434E7008EF7DB /* Piano_A#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_A#.wav"; sourceTree = "<group>"; };
-		4D5D2BF81FF434E8008EF7DB /* Piano_A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_A.wav; sourceTree = "<group>"; };
-		4D5D2BF91FF434E8008EF7DB /* Piano_D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_D.wav; sourceTree = "<group>"; };
-		4D5D2BFA1FF434E8008EF7DB /* Piano_E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_E.wav; sourceTree = "<group>"; };
-		4D5D2BFB1FF434E8008EF7DB /* Piano_F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_F.wav; sourceTree = "<group>"; };
-		4D5D2BFC1FF434E8008EF7DB /* Piano_D#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Piano_D#.wav"; sourceTree = "<group>"; };
-		4D5D2BFD1FF434E8008EF7DB /* Piano_G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano_G.wav; sourceTree = "<group>"; };
-		4DC6C78A1FF1DB260079200D /* Test.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Test.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DC6C78C1FF1DB260079200D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		4DC6C78E1FF1DB260079200D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DC6C7981FF1DB8C0079200D /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
-=======
->>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -603,50 +584,16 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
-<<<<<<< HEAD
-				4D36BFED1FF2F706008483CD /* libthird-party.a */,
-				4D36BFEF1FF2F706008483CD /* libthird-party.a */,
-				4D36BFF11FF2F706008483CD /* libdouble-conversion.a */,
-				4D36BFF31FF2F706008483CD /* libdouble-conversion.a */,
-				4D36BFF51FF2F706008483CD /* libprivatedata.a */,
-				4D36BFF71FF2F706008483CD /* libprivatedata-tvOS.a */,
-=======
 				CC7775E21FF2240E00BE3A48 /* libthird-party.a */,
 				CC7775E41FF2240E00BE3A48 /* libthird-party.a */,
 				CC7775E61FF2240E00BE3A48 /* libdouble-conversion.a */,
 				CC7775E81FF2240E00BE3A48 /* libdouble-conversion.a */,
 				CC7775EA1FF2240E00BE3A48 /* libprivatedata.a */,
 				CC7775EC1FF2240E00BE3A48 /* libprivatedata-tvOS.a */,
->>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		4DC6C78B1FF1DB260079200D /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				4D5D2BF41FF434E7008EF7DB /* Piano_F#.wav */,
-				4D5D2BF81FF434E8008EF7DB /* Piano_A.wav */,
-				4D5D2BF71FF434E7008EF7DB /* Piano_A#.wav */,
-				4D5D2BF61FF434E7008EF7DB /* Piano_B.wav */,
-				4D5D2BD01FF434E7008EF7DB /* Piano_C#.wav */,
-				4D5D2BF91FF434E8008EF7DB /* Piano_D.wav */,
-				4D5D2BFC1FF434E8008EF7DB /* Piano_D#.wav */,
-				4D5D2BFA1FF434E8008EF7DB /* Piano_E.wav */,
-				4D5D2BFB1FF434E8008EF7DB /* Piano_F.wav */,
-				4D5D2BFD1FF434E8008EF7DB /* Piano_G.wav */,
-				4D5D2BF51FF434E7008EF7DB /* Piano_G#.wav */,
-				4DC6C78C1FF1DB260079200D /* KeyboardViewController.swift */,
-				4D36BFC81FF2F706008483CD /* Piano_C.wav */,
-				4DC6C78E1FF1DB260079200D /* Info.plist */,
-				4DC6C7981FF1DB8C0079200D /* View.xib */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1280,24 +1227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				4DC962171FF5888200129B0A /* Piano_E.wav in Resources */,
-				4DC962141FF5887500129B0A /* Piano_B.wav in Resources */,
-				4DC962151FF5887A00129B0A /* Piano_D.wav in Resources */,
-				4DC962181FF5888500129B0A /* Piano_F.wav in Resources */,
-				4DC961EC1FF5884C00129B0A /* Piano_C#.wav in Resources */,
-				4DC9621B1FF5889300129B0A /* Piano_C.wav in Resources */,
-				4DC962161FF5887E00129B0A /* Piano_D#.wav in Resources */,
-				4DC9621A1FF5888C00129B0A /* Piano_G#.wav in Resources */,
-				4DC6C7991FF1DB8C0079200D /* View.xib in Resources */,
-				4DC962191FF5888800129B0A /* Piano_G.wav in Resources */,
-				4DC962101FF5886A00129B0A /* Piano_F#.wav in Resources */,
-				4DC962131FF5887100129B0A /* Piano_A#.wav in Resources */,
-				4DC962121FF5886E00129B0A /* Piano_A.wav in Resources */,
-=======
 				CC2A2E811FF5AAFF00C594F4 /* piano in Resources */,
 				CC7776051FF227C800BE3A48 /* View.xib in Resources */,
->>>>>>> connected keyboard to react native xcode proj successfully, added wav files from piano to array, cleaned up some code
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
