@@ -157,6 +157,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="c4R-9P-KXp"/>
+                        <action selector="playDsWithSender:" destination="-1" eventType="touchUpInside" id="z0F-nR-Tea"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07D-4o-ACh">
@@ -179,6 +180,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="AxN-CC-fYV"/>
+                        <action selector="playCsWithSender:" destination="-1" eventType="touchUpInside" id="55Q-Hu-HX3"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlc-cq-77D">
@@ -190,6 +192,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="2NE-PH-6kK"/>
+                        <action selector="playFsWithSender:" destination="-1" eventType="touchUpInside" id="LYC-0l-eSz"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPI-A9-1kj">
@@ -212,6 +215,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="kbu-6n-tX3"/>
+                        <action selector="playAsSender:" destination="-1" eventType="touchUpInside" id="w0q-x9-4Rq"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-g6-QKL">
@@ -223,6 +227,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="LHX-Bf-rnx"/>
+                        <action selector="playGsWithSender:" destination="-1" eventType="touchUpInside" id="WfI-bX-NkA"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-ar-Psm">
@@ -333,7 +338,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="85C-wm-c9K"/>
-                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="Evg-H2-VCt"/>
+                        <action selector="playCWithSender:" destination="-1" eventType="touchUpInside" id="SYL-Nj-eLq"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-XA-AUb">
@@ -345,6 +350,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="PVm-sb-BdV"/>
+                        <action selector="playFWithSender:" destination="-1" eventType="touchUpInside" id="pSP-Zz-cEd"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vh-13-THv">
@@ -356,7 +362,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="wOi-3K-pjn"/>
-                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="xHU-KS-IZA"/>
+                        <action selector="playEWithSender:" destination="-1" eventType="touchUpInside" id="Zo8-tk-KB7"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlk-ab-8Rq">
@@ -379,7 +385,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="wCr-Ph-H6u"/>
-                        <action selector="playWithSender:" destination="-1" eventType="touchUpInside" id="Z5Z-G9-ISY"/>
+                        <action selector="playDWithSender:" destination="-1" eventType="touchUpInside" id="lq4-kF-cwk"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ii-ia-giW">
@@ -391,6 +397,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="7DD-2N-UrO"/>
+                        <action selector="playGWithSender:" destination="-1" eventType="touchUpInside" id="dWS-Mq-iYw"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2m-Ra-yMq">
@@ -413,6 +420,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="sdb-O8-eol"/>
+                        <action selector="playBWithSender:" destination="-1" eventType="touchUpInside" id="0ul-eZ-AD7"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-lT-0iV">
@@ -424,6 +432,7 @@
                     </state>
                     <connections>
                         <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="TL9-yK-D9T"/>
+                        <action selector="playAWithSender:" destination="-1" eventType="touchUpInside" id="Fef-cP-z5m"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Ws-yX7">

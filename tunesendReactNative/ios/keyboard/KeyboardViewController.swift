@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+//import AudioToolbox
 
 class KeyboardViewController: UIInputViewController {
   
@@ -28,11 +29,17 @@ class KeyboardViewController: UIInputViewController {
         let itemPath = pianoPath + "/" + item
 //        print(itemPath)
         wavFiles.append(itemPath)
-//        print("this is wav files \(wavFiles)")
       }
-      
+//      print("this is wav files \(wavFiles)")
+
     }
 
+  }
+  
+  func assignFiles() {
+    
+    
+    
   }
   
   override func updateViewConstraints() {
@@ -106,9 +113,125 @@ class KeyboardViewController: UIInputViewController {
   
   // MARK: - Actions
   
-  @IBAction func play(sender: Any) {
+  
+@IBAction func playA(sender: Any) {
+    do {
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[1]))
+    } catch {
+        print("Could not load file")
+    }
     player.play()
   }
+
+@IBAction func playAs(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[9]))
+      player.play()
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+  
+@IBAction func playB(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[3]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playC(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[2]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playCs(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[7]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playD(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[8]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playDs(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[0]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playE(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[6]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playF(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[4]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playFs(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[10]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playG(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[5]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+
+
+@IBAction func playGs(sender: Any) {
+  do {
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[11]))
+  } catch {
+    print("Could not load file")
+  }
+  player.play()
+}
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
