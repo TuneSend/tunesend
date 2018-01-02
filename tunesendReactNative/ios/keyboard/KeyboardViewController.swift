@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 //import AudioToolbox
+import QuartzCore
 
 class KeyboardViewController: UIInputViewController {
   
