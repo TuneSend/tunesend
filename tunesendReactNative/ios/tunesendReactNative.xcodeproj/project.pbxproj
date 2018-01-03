@@ -37,9 +37,10 @@
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		CC2A2E811FF5AAFF00C594F4 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC2A2E801FF5AAFF00C594F4 /* piano */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
+		CC67A4981FFC553A00530C11 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
+		CC67A4991FFC553A00530C11 /* trumpet in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4971FFC553A00530C11 /* trumpet */; };
 		CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */; };
 		CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC7775F11FF2243B00BE3A48 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776001FF224F800BE3A48 /* AudioToolbox.framework */; };
@@ -356,8 +357,9 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		CC2A2E801FF5AAFF00C594F4 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
+		CC67A4971FFC553A00530C11 /* trumpet */ = {isa = PBXFileReference; lastKnownFileType = folder; name = trumpet; path = ../../../music_samples/trumpet; sourceTree = "<group>"; };
 		CC7775F11FF2243B00BE3A48 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		CC7775F51FF2243C00BE3A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -629,7 +631,8 @@
 		CC7775F21FF2243C00BE3A48 /* keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				CC2A2E801FF5AAFF00C594F4 /* piano */,
+				CC67A4961FFC553A00530C11 /* piano */,
+				CC67A4971FFC553A00530C11 /* trumpet */,
 				CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */,
 				CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */,
 				CC7775F51FF2243C00BE3A48 /* Info.plist */,
@@ -1136,8 +1139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC67A4991FFC553A00530C11 /* trumpet in Resources */,
+				CC67A4981FFC553A00530C11 /* piano in Resources */,
 				CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */,
-				CC2A2E811FF5AAFF00C594F4 /* piano in Resources */,
 				CC7776051FF227C800BE3A48 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
