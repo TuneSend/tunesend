@@ -63,7 +63,6 @@ class KeyboardViewController: UIInputViewController {
   override func updateViewConstraints() {
     super.updateViewConstraints()
     
-    // Add custom view sizing constraints here
   }
   
   override func viewDidLoad() {
@@ -77,6 +76,24 @@ class KeyboardViewController: UIInputViewController {
     }
     
   }
+  
+  // view doesnt call updateViewConstraints so when you switch back to the keyboard it keeps the view
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    let keyboardHeight: CGFloat = 218
+    let heightConstraint = NSLayoutConstraint(item: view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: keyboardHeight)
+    view.addConstraint(heightConstraint)
+    view.layoutIfNeeded()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    keyboardView.frame = self.view.bounds
+  }
+  
+  
+  
   
   @IBAction func hideKeyboard() {
     
@@ -122,6 +139,7 @@ class KeyboardViewController: UIInputViewController {
     let keyboardNib = UINib(nibName: "View", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
+    
     view.addSubview(keyboardView)
     
   }
