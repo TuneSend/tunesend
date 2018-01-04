@@ -256,6 +256,12 @@
                             <state key="normal" title="R">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="C0b-hf-SVi"/>
                                 <action selector="playG5WithSender:" destination="-1" eventType="touchUpInside" id="Vea-Ns-3N0"/>
@@ -268,6 +274,12 @@
                             <state key="normal" title="E">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="c4R-9P-KXp"/>
                                 <action selector="playFs5WithSender:" destination="-1" eventType="touchUpInside" id="WeA-HN-Ouj"/>
@@ -280,6 +292,12 @@
                             <state key="normal" title="O">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="jgy-fO-pzA"/>
                                 <action selector="playC6WithSender:" destination="-1" eventType="touchUpInside" id="2s8-Bz-cLm"/>
@@ -292,6 +310,12 @@
                             <state key="normal" title="W">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="AxN-CC-fYV"/>
                                 <action selector="playF5WithSender:" destination="-1" eventType="touchUpInside" id="qWZ-IY-Qtw"/>
@@ -304,6 +328,12 @@
                             <state key="normal" title="T">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="2NE-PH-6kK"/>
                                 <action selector="playGs5WithSender:" destination="-1" eventType="touchUpInside" id="4Uy-b8-oUS"/>
@@ -316,6 +346,12 @@
                             <state key="normal" title="I">
                                 <color key="titleColor" red="0.59999999999999998" green="0.89803921568627454" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="RML-8H-VdS"/>
                                 <action selector="playB5WithSender:" destination="-1" eventType="touchUpInside" id="2kB-QT-3yx"/>
@@ -328,6 +364,12 @@
                             <state key="normal" title="U">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="kbu-6n-tX3"/>
                                 <action selector="playAs5WithSender:" destination="-1" eventType="touchUpInside" id="YzL-LG-R4J"/>
@@ -340,6 +382,12 @@
                             <state key="normal" title="Y">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="LHX-Bf-rnx"/>
                                 <action selector="playA5WithSender:" destination="-1" eventType="touchUpInside" id="Gj5-cv-Nbz"/>
@@ -352,6 +400,12 @@
                             <state key="normal" title="P">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="Jy3-dh-nkc"/>
                                 <action selector="playCs6WithSender:" destination="-1" eventType="touchUpInside" id="PjZ-M3-kdy"/>
@@ -367,6 +421,12 @@
                             <state key="normal" title="Q">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="J4m-cN-kuO"/>
                                 <action selector="playE5WithSender:" destination="-1" eventType="touchUpInside" id="rPY-tT-e7r"/>
@@ -628,6 +688,12 @@
                             <state key="normal" title="V">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="MEs-63-Kvv"/>
                                 <action selector="playDs4WithSender:" destination="-1" eventType="touchUpInside" id="Zhx-P8-u58"/>
@@ -640,6 +706,12 @@
                             <state key="normal" title="C">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="2cw-bq-wLn"/>
                                 <action selector="playD4WithSender:" destination="-1" eventType="touchUpInside" id="Djb-re-yKY"/>
@@ -652,6 +724,12 @@
                             <state key="normal" title="X">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="jAD-WB-clG"/>
                                 <action selector="playCs4WithSender:" destination="-1" eventType="touchUpInside" id="y1u-0Y-DRT"/>
@@ -664,6 +742,12 @@
                             <state key="normal" title="B">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="8be-G6-6KZ"/>
                                 <action selector="playE4WithSender:" destination="-1" eventType="touchUpInside" id="Jrj-UT-0fm"/>
@@ -676,6 +760,12 @@
                             <state key="normal" title="M">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="ZYb-G2-Pbo"/>
                                 <action selector="playFs4WithSender:" destination="-1" eventType="touchUpInside" id="Oyw-PE-GGx"/>
@@ -688,12 +778,18 @@
                             <state key="normal" title="N">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="vzA-JP-gYw"/>
                                 <action selector="playF4WithSender:" destination="-1" eventType="touchUpInside" id="cgj-xs-RHl"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Ws-yX7">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Ws-yX7" userLabel="Delete">
                             <rect key="frame" x="274" y="13.5" width="33" height="29.5"/>
                             <color key="backgroundColor" red="0.23677888251370549" green="0.22200582779601016" blue="0.17768666364292407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
@@ -702,6 +798,12 @@
                             <state key="normal" image="backspace">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="deleteText" destination="-1" eventType="touchUpInside" id="jBG-XJ-3er"/>
                             </connections>
@@ -713,6 +815,12 @@
                             <state key="normal" title="Z">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="fiZ-B4-y65"/>
                                 <action selector="playC4WithSender:" destination="-1" eventType="touchUpInside" id="4nc-Yv-1xy"/>
@@ -761,6 +869,12 @@
                             <state key="normal" title="space">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="spacePress" destination="-1" eventType="touchUpInside" id="duK-NQ-iuD"/>
                             </connections>
@@ -772,6 +886,12 @@
                             <state key="normal" title="Next">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="aEI-AK-nMY"/>
                             </connections>
@@ -786,6 +906,12 @@
                             <state key="normal" title="Hide">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="Ltc-rU-Xai"/>
                             </connections>
