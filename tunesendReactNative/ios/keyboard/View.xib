@@ -839,6 +839,7 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="deleteText" destination="-1" eventType="touchUpInside" id="J3w-bd-VC9"/>
+                                <action selector="shiftButton" destination="-1" eventType="touchUpInside" id="izR-C9-ZLE"/>
                             </connections>
                         </button>
                     </subviews>
