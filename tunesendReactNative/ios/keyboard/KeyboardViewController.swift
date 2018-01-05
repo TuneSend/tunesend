@@ -123,7 +123,7 @@ class KeyboardViewController: UIInputViewController {
   
   @IBAction func keypress(sender: UIButton!) {
     
-    let typedCharacter = sender.titleLabel?.text
+    let typedCharacter = sender.titleLabel?.text?.lowercased()
     
     let proxy = textDocumentProxy
     proxy.insertText(typedCharacter!)
