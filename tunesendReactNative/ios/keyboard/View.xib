@@ -939,6 +939,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="GSo-Nc-F13"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cd-jK-blL">
                             <rect key="frame" x="2" y="9.5" width="30" height="35"/>

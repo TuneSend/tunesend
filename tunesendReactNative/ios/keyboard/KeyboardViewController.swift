@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 //import AudioToolbox
 import QuartzCore
+//DY add for playback
+var playBack = [Int]()
 
 extension UIButton {
   
@@ -36,6 +38,8 @@ class KeyboardViewController: UIInputViewController {
   var player = AVAudioPlayer()
   
   let path = Bundle.main.resourcePath
+  //DY logic for playback
+  let queuePlayer = AVQueuePlayer()
   
   func listFiles() {
     let fileManager = FileManager.default
@@ -65,16 +69,19 @@ class KeyboardViewController: UIInputViewController {
     
   }
   
+  //DY for playback
+  func things() {
+    for number in playBack {
+      let fileURL = URL(fileURLWithPath:wavFiles[number])
+      let playerItem = AVPlayerItem(url:fileURL as URL)
+      queuePlayer.insert(playerItem, after:nil)
+    }
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     listFiles()
     loadKeyboard()
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[0]))
-    } catch {
-      print("Could not load file")
-    }
-    
   }
   
   // view doesnt call updateViewConstraints so when you switch back to the keyboard it keeps the view
@@ -159,6 +166,9 @@ class KeyboardViewController: UIInputViewController {
         print("Could not load file")
     }
     player.play()
+  
+  //DY playback logic
+    playBack.append(16)
   }
 
 @IBAction func playAs4(sender: Any) {
@@ -169,6 +179,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(22)
 }
   
 @IBAction func playB4(sender: Any) {
@@ -178,6 +191,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(6)
 }
 
 
@@ -188,6 +204,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(7)
 }
 
 
@@ -198,6 +217,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(26)
 }
 
 
@@ -208,6 +230,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(1)
 }
 
 
@@ -218,6 +243,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(11)
 }
 
 
@@ -228,6 +256,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(3)
 }
 
 
@@ -238,6 +269,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(18)
 }
 
 
@@ -248,6 +282,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(12)
 }
 
 
@@ -258,6 +295,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(27)
 }
 
 
@@ -268,6 +308,9 @@ class KeyboardViewController: UIInputViewController {
     print("Could not load file")
   }
   player.play()
+  
+  //DY playback logic
+  playBack.append(17)
 }
   
   @IBAction func playA5(sender: Any) {
@@ -277,6 +320,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(15)
   }
   
   @IBAction func playAs5(sender: Any) {
@@ -287,6 +333,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(24)
   }
   
   @IBAction func playB5(sender: Any) {
@@ -296,6 +345,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(5)
   }
   
   
@@ -306,6 +358,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(8)
   }
   
   
@@ -316,6 +371,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(21)
   }
   
   
@@ -326,6 +384,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(0)
   }
   
   
@@ -336,6 +397,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(10)
   }
   
   
@@ -346,6 +410,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(4)
   }
   
   
@@ -356,6 +423,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(19)
   }
   
   
@@ -366,6 +436,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(14)
   }
   
   
@@ -376,6 +449,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(25)
   }
   
   
@@ -386,6 +462,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(20)
   }
   
   @IBAction func playC6(sender: Any) {
@@ -395,6 +474,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(9)
   }
   
   
@@ -405,6 +487,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(23)
   }
   
   
@@ -415,6 +500,9 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(2)
   }
   
   
@@ -425,8 +513,18 @@ class KeyboardViewController: UIInputViewController {
       print("Could not load file")
     }
     player.play()
+    
+    //DY playback logic
+    playBack.append(13)
   }
   
+  
+  //DY playback logic IBAction
+  @IBAction func playBackNotes(sender: Any) {
+    things()
+    queuePlayer.play()
+    playBack.removeAll()
+  }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
