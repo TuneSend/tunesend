@@ -39,7 +39,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -56,7 +56,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -73,7 +73,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -90,7 +90,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -107,7 +107,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -124,7 +124,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -141,7 +141,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -158,7 +158,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -175,7 +175,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -192,7 +192,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -256,7 +256,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -274,7 +274,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -292,7 +292,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -310,7 +310,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -328,7 +328,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -346,7 +346,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -364,7 +364,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -382,7 +382,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -400,7 +400,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -421,7 +421,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -485,7 +485,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -503,7 +503,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -521,7 +521,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -539,7 +539,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -557,7 +557,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -575,7 +575,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -593,7 +593,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -611,7 +611,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -629,7 +629,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -688,7 +688,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -706,7 +706,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -724,7 +724,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -742,7 +742,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -760,7 +760,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -778,7 +778,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -789,16 +789,13 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Ws-yX7" userLabel="Delete">
-                            <rect key="frame" x="274" y="13.5" width="33" height="29.5"/>
+                            <rect key="frame" x="278" y="12.5" width="33" height="29.5"/>
                             <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="Tzs-Ws-yX7" secondAttribute="height" multiplier="9:8" id="MP2-Id-tkf"/>
-                            </constraints>
                             <state key="normal" image="backspaceBlack">
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -815,7 +812,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -825,24 +822,48 @@
                                 <action selector="playC4WithSender:" destination="-1" eventType="touchUpInside" id="4nc-Yv-1xy"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mky-qT-OUs" userLabel="Shift">
+                            <rect key="frame" x="9" y="12" width="33" height="29.5"/>
+                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="mky-qT-OUs" secondAttribute="height" multiplier="33:29" id="Kpe-zB-gYd"/>
+                            </constraints>
+                            <state key="normal" image="shiftKey">
+                                <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deleteText" destination="-1" eventType="touchUpInside" id="J3w-bd-VC9"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstItem="3Ba-mW-1a3" firstAttribute="leading" secondItem="huJ-Hz-lLi" secondAttribute="trailing" constant="2" id="2eO-YC-Mbo"/>
-                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="top" secondItem="tbI-B3-gvY" secondAttribute="top" id="5hi-7R-ZzP"/>
                         <constraint firstItem="xr9-lN-j2S" firstAttribute="bottom" secondItem="kDH-d7-eJc" secondAttribute="bottom" id="76z-yu-qLT"/>
+                        <constraint firstItem="mky-qT-OUs" firstAttribute="leading" secondItem="JeH-Ua-YKW" secondAttribute="leading" constant="9" id="9NW-TN-M8h"/>
+                        <constraint firstItem="mky-qT-OUs" firstAttribute="centerY" secondItem="JeH-Ua-YKW" secondAttribute="centerY" id="BIY-G8-HVE"/>
                         <constraint firstItem="Mde-U1-eYG" firstAttribute="bottom" secondItem="kDH-d7-eJc" secondAttribute="bottom" id="E0h-Rd-3lD"/>
+                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="top" secondItem="mky-qT-OUs" secondAttribute="top" id="Fpm-Ha-SQf"/>
                         <constraint firstItem="huJ-Hz-lLi" firstAttribute="top" secondItem="kDH-d7-eJc" secondAttribute="top" id="Hl5-xU-haZ"/>
                         <constraint firstItem="Mde-U1-eYG" firstAttribute="width" secondItem="kDH-d7-eJc" secondAttribute="width" id="KAe-SS-iFh"/>
+                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="leading" secondItem="tbI-B3-gvY" secondAttribute="trailing" constant="9" id="Nxx-JL-Y8F"/>
                         <constraint firstItem="tbI-B3-gvY" firstAttribute="leading" secondItem="8k2-3K-1hh" secondAttribute="trailing" constant="2" id="QhA-il-7ob"/>
+                        <constraint firstAttribute="trailing" secondItem="Tzs-Ws-yX7" secondAttribute="trailing" constant="8" id="RRc-1g-0xT"/>
+                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="bottom" secondItem="mky-qT-OUs" secondAttribute="bottom" id="SF3-IH-Woz"/>
+                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="centerY" secondItem="JeH-Ua-YKW" secondAttribute="centerY" id="Tti-aY-VDJ"/>
                         <constraint firstItem="8k2-3K-1hh" firstAttribute="leading" secondItem="xr9-lN-j2S" secondAttribute="trailing" constant="2" id="VFy-o1-ihx"/>
                         <constraint firstItem="3Ba-mW-1a3" firstAttribute="centerY" secondItem="JeH-Ua-YKW" secondAttribute="centerY" id="VkL-tV-PwB"/>
                         <constraint firstItem="8k2-3K-1hh" firstAttribute="top" secondItem="kDH-d7-eJc" secondAttribute="top" id="XrX-9O-fOG"/>
                         <constraint firstItem="huJ-Hz-lLi" firstAttribute="bottom" secondItem="kDH-d7-eJc" secondAttribute="bottom" id="bBc-1Z-yGz"/>
                         <constraint firstItem="huJ-Hz-lLi" firstAttribute="leading" secondItem="Mde-U1-eYG" secondAttribute="trailing" constant="2" id="c9Z-RC-FIs"/>
-                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="bottom" secondItem="tbI-B3-gvY" secondAttribute="bottom" id="fha-gS-oG8"/>
+                        <constraint firstItem="kDH-d7-eJc" firstAttribute="leading" secondItem="mky-qT-OUs" secondAttribute="trailing" constant="8.5" id="csz-8B-aAf"/>
                         <constraint firstItem="8k2-3K-1hh" firstAttribute="width" secondItem="kDH-d7-eJc" secondAttribute="width" id="go4-Y3-fee"/>
                         <constraint firstItem="3Ba-mW-1a3" firstAttribute="width" secondItem="kDH-d7-eJc" secondAttribute="width" id="gsT-T2-S2o"/>
-                        <constraint firstItem="Tzs-Ws-yX7" firstAttribute="leading" secondItem="tbI-B3-gvY" secondAttribute="trailing" constant="5" id="jlW-0v-n3W"/>
                         <constraint firstItem="Mde-U1-eYG" firstAttribute="leading" secondItem="kDH-d7-eJc" secondAttribute="trailing" constant="2" id="ktg-7S-O2g"/>
                         <constraint firstItem="xr9-lN-j2S" firstAttribute="width" secondItem="kDH-d7-eJc" secondAttribute="width" id="mrz-bZ-elW"/>
                         <constraint firstItem="huJ-Hz-lLi" firstAttribute="width" secondItem="kDH-d7-eJc" secondAttribute="width" id="oFt-Zs-fyk"/>
@@ -862,7 +883,7 @@
                     <rect key="frame" x="0.0" y="217" width="319" height="54"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-ab-aO8">
-                            <rect key="frame" x="67.5" y="12" width="143" height="30"/>
+                            <rect key="frame" x="72" y="9.5" width="165.5" height="35"/>
                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Fdf-ab-aO8" secondAttribute="height" multiplier="71:15" id="pUX-SE-GZi"/>
@@ -872,7 +893,7 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -882,14 +903,17 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N1-ch-bru" userLabel="globeKey">
-                            <rect key="frame" x="35" y="12" width="29.5" height="30"/>
+                            <rect key="frame" x="35" y="10" width="34" height="35"/>
                             <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9N1-ch-bru" secondAttribute="height" multiplier="17:18" id="bjw-kr-tLD"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                             <state key="normal" image="globeKey2">
                                 <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -899,7 +923,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yX-BO-ejY">
-                            <rect key="frame" x="213.5" y="12" width="64.5" height="30"/>
+                            <rect key="frame" x="240.5" y="9.5" width="75.5" height="35"/>
                             <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="2yX-BO-ejY" secondAttribute="height" multiplier="32:15" id="HSO-SX-aUe"/>
@@ -909,40 +933,21 @@
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxE-uc-RRt" userLabel="hideKeyboard">
-                            <rect key="frame" x="281.5" y="12" width="39.5" height="30"/>
-                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="UxE-uc-RRt" secondAttribute="height" multiplier="13:10" id="6iA-GQ-XAb"/>
-                            </constraints>
-                            <state key="normal" image="hideKeyboard3">
-                                <color key="titleColor" red="0.60061252741048454" green="0.8971655485644443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
-                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                    <integer key="value" value="10"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="Ltc-rU-Xai"/>
-                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cd-jK-blL">
-                            <rect key="frame" x="2" y="12" width="30" height="30"/>
+                            <rect key="frame" x="2" y="9.5" width="30" height="35"/>
                             <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                             <state key="normal" title="123">
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.makesToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
@@ -953,18 +958,16 @@
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="0jI-y4-qSq"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="bottom" secondItem="Fdf-ab-aO8" secondAttribute="bottom" id="9Nh-xB-MB7"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="top" secondItem="0Cd-jK-blL" secondAttribute="top" id="AYm-yg-nmg"/>
+                        <constraint firstItem="2yX-BO-ejY" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="N1f-m8-KhY"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="bottom" secondItem="9N1-ch-bru" secondAttribute="bottom" id="QMC-1l-AmQ"/>
                         <constraint firstItem="0Cd-jK-blL" firstAttribute="leading" secondItem="HuV-f5-pCC" secondAttribute="leading" constant="2" id="Qjw-8K-wSo"/>
-                        <constraint firstItem="UxE-uc-RRt" firstAttribute="top" secondItem="Fdf-ab-aO8" secondAttribute="top" id="T0O-UX-52k"/>
+                        <constraint firstAttribute="trailing" secondItem="2yX-BO-ejY" secondAttribute="trailing" constant="3" id="TQM-bt-KLw"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="bottom" secondItem="0Cd-jK-blL" secondAttribute="bottom" id="VZB-sd-SWT"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="centerY" secondItem="pcG-Xd-9a1" secondAttribute="centerY" id="Vdp-nj-Omk"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="centerY" secondItem="pcG-Xd-9a1" secondAttribute="centerY" id="WJk-g4-n74"/>
-                        <constraint firstItem="UxE-uc-RRt" firstAttribute="trailing" secondItem="HuV-f5-pCC" secondAttribute="trailing" constant="2" id="XlD-nn-5mi"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="top" secondItem="Fdf-ab-aO8" secondAttribute="top" id="aEA-BN-DIh"/>
                         <constraint firstItem="9N1-ch-bru" firstAttribute="leading" secondItem="0Cd-jK-blL" secondAttribute="trailing" constant="3" id="eWc-Ia-68y"/>
-                        <constraint firstItem="UxE-uc-RRt" firstAttribute="bottom" secondItem="Fdf-ab-aO8" secondAttribute="bottom" id="gCm-l3-XcF"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="top" secondItem="9N1-ch-bru" secondAttribute="top" id="rTd-K4-A5a"/>
-                        <constraint firstItem="UxE-uc-RRt" firstAttribute="leading" secondItem="2yX-BO-ejY" secondAttribute="trailing" constant="3" id="swD-Zw-Rdq"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="leading" secondItem="9N1-ch-bru" secondAttribute="trailing" constant="3" id="syM-uh-9yV"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="tKx-LI-nxZ"/>
                     </constraints>
@@ -978,7 +981,6 @@
                 <constraint firstItem="JeH-Ua-YKW" firstAttribute="top" secondItem="mGq-m9-EWf" secondAttribute="bottom" id="5Ld-lO-Q3q"/>
                 <constraint firstItem="FY4-Vp-Y4e" firstAttribute="leading" secondItem="c1h-qZ-Ili" secondAttribute="leading" id="5YE-kB-aKk"/>
                 <constraint firstItem="aDd-sr-O0d" firstAttribute="top" secondItem="c1h-qZ-Ili" secondAttribute="top" id="B9o-ax-xS8"/>
-                <constraint firstItem="9N1-ch-bru" firstAttribute="width" secondItem="2Bz-DQ-mIF" secondAttribute="width" id="BC0-hY-QiJ"/>
                 <constraint firstItem="mGq-m9-EWf" firstAttribute="height" secondItem="6Nj-2O-jOf" secondAttribute="height" id="DMo-1b-JCY"/>
                 <constraint firstItem="mGq-m9-EWf" firstAttribute="top" secondItem="FY4-Vp-Y4e" secondAttribute="bottom" id="EKv-06-LQy"/>
                 <constraint firstItem="pcG-Xd-9a1" firstAttribute="height" secondItem="6Nj-2O-jOf" secondAttribute="height" id="EOH-vd-rLM"/>
@@ -1014,7 +1016,7 @@
     <resources>
         <image name="backspaceBlack" width="500" height="500"/>
         <image name="globeKey2" width="500" height="500"/>
-        <image name="hideKeyboard3" width="500" height="500"/>
         <image name="pianoPic" width="5468" height="3165"/>
+        <image name="shiftKey" width="500" height="500"/>
     </resources>
 </document>
