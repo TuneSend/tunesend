@@ -100,6 +100,22 @@ class KeyboardViewController: UIInputViewController {
   }
   
   
+//  func changeCaps(containerView: UIView) {
+//    for view in containerView.subviews {
+//      if let button = view as? UIButton {
+//        let buttonTitle = button.titleLabel!.text
+//        if capsLockOn {
+//          let text = buttonTitle!.uppercased()
+//          button.setTitle("\(text)", forState: .Normal)
+//        } else {
+//          let text = buttonTitle!.lowercaseString
+//          button.setTitle("\(text)", forState: .Normal)
+//        }
+//      }
+//    }
+//  }
+  
+  
   
   @IBAction func deleteText() {
     
@@ -123,7 +139,7 @@ class KeyboardViewController: UIInputViewController {
   
   @IBAction func keypress(sender: UIButton!) {
     
-    let typedCharacter = sender.titleLabel?.text?.lowercased()
+    let typedCharacter = sender.titleLabel?.text
     
     let proxy = textDocumentProxy
     proxy.insertText(typedCharacter!)
@@ -133,16 +149,21 @@ class KeyboardViewController: UIInputViewController {
     
   }
   
-  @IBAction func shiftButton() {
-    
-    
-    
-  }
+//  @IBAction func shiftButton(button: UIButton) {
+//
+//    capsLockOn = !capsLockOn
+//
+//    changeCaps(Row1)
+//    changeCaps(Row2)
+//    changeCaps(Row3)
+//    changeCaps(Row4)
+//
+//  }
   
   
   func loadKeyboard() {
     
-    let keyboardNib = UINib(nibName: "View", bundle: nil)
+    let keyboardNib = UINib(nibName: "View@123", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
     
