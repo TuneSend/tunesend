@@ -706,6 +706,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="8WK-kW-WTE"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-Uf-dh2">
                             <rect key="frame" x="2" y="16.5" width="30" height="35"/>
