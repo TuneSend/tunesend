@@ -16,7 +16,6 @@ var playBack = [Int]()
 extension UIButton {
   
   func pulsate() {
-    
     let pulse = CASpringAnimation(keyPath: "transform.scale")
     pulse.duration = 0.6
     pulse.fromValue = 0.90
@@ -25,25 +24,20 @@ extension UIButton {
     pulse.repeatCount = 1
     pulse.initialVelocity = 0.5
     pulse.damping = 1.0
-    
     layer.add(pulse, forKey: "pulse")
   }
 }
 
 class KeyboardViewController: UIInputViewController {
-  
   var wavFiles : [String] = []
-  
   var keyboardView: UIView!
   var player = AVAudioPlayer()
-  
   let path = Bundle.main.resourcePath
   //DY logic for playback
   let queuePlayer = AVQueuePlayer()
   
   func listFiles() {
     let fileManager = FileManager.default
-    
     if let path = path {
       let pianoPath = path + "/piano"
       let contents  = try! fileManager.contentsOfDirectory(atPath: pianoPath)
@@ -53,20 +47,14 @@ class KeyboardViewController: UIInputViewController {
         wavFiles.append(itemPath)
       }
 //      print("this is wav files \(wavFiles)")
-
     }
-
   }
   
   func assignFiles() {
-    
-    
-    
   }
   
   override func updateViewConstraints() {
     super.updateViewConstraints()
-    
   }
   
   //DY for playback
@@ -99,7 +87,6 @@ class KeyboardViewController: UIInputViewController {
     keyboardView.frame = self.view.bounds
   }
   
-  
 //  func changeCaps(containerView: UIView) {
 //    for view in containerView.subviews {
 //      if let button = view as? UIButton {
@@ -115,38 +102,27 @@ class KeyboardViewController: UIInputViewController {
 //    }
 //  }
   
-  
-  
   @IBAction func deleteText() {
-    
     let proxy = textDocumentProxy
     proxy.deleteBackward()
-    
   }
   
   @IBAction func nextKeyboard() {
-    
     advanceToNextInputMode()
-    
   }
   
   @IBAction func spacePress() {
-    
     let proxy = textDocumentProxy
     proxy.insertText(" ")
-    
   }
   
   @IBAction func keypress(sender: UIButton!) {
-    
     let typedCharacter = sender.titleLabel?.text
-    
     let proxy = textDocumentProxy
     proxy.insertText(typedCharacter!)
     
     //start of keypress action
     sender.pulsate()
-    
   }
   
 //  @IBAction func shiftButton(button: UIButton) {
@@ -192,8 +168,10 @@ class KeyboardViewController: UIInputViewController {
     view.addSubview(keyboardView)
   }
   
+  
   // MARK: - Properties
   @IBOutlet weak var A: UIButton!
+  
   
   // MARK: - Actions
 @IBAction func playA4(sender: Any) {
@@ -233,7 +211,6 @@ class KeyboardViewController: UIInputViewController {
   playBack.append(6)
 }
 
-
 @IBAction func playC4(sender: Any) {
   do {
     try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[7]))
@@ -246,7 +223,6 @@ class KeyboardViewController: UIInputViewController {
   playBack.append(7)
 }
 
-
 @IBAction func playCs4(sender: Any) {
   do {
     try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[26]))
@@ -258,7 +234,6 @@ class KeyboardViewController: UIInputViewController {
   //DY playback logic
   playBack.append(26)
 }
-
 
 @IBAction func playD4(sender: Any) {
   do {
@@ -387,7 +362,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(5)
   }
   
-  
   @IBAction func playC5(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[8]))
@@ -399,7 +373,6 @@ class KeyboardViewController: UIInputViewController {
     //DY playback logic
     playBack.append(8)
   }
-  
   
   @IBAction func playCs5(sender: Any) {
     do {
@@ -413,7 +386,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(21)
   }
   
-  
   @IBAction func playD5(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[0]))
@@ -425,7 +397,6 @@ class KeyboardViewController: UIInputViewController {
     //DY playback logic
     playBack.append(0)
   }
-  
   
   @IBAction func playDs5(sender: Any) {
     do {
@@ -439,7 +410,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(10)
   }
   
-  
   @IBAction func playE5(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[4]))
@@ -451,7 +421,6 @@ class KeyboardViewController: UIInputViewController {
     //DY playback logic
     playBack.append(4)
   }
-  
   
   @IBAction func playF5(sender: Any) {
     do {
@@ -465,7 +434,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(19)
   }
   
-  
   @IBAction func playFs5(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[14]))
@@ -478,7 +446,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(14)
   }
   
-  
   @IBAction func playG5(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[25]))
@@ -490,7 +457,6 @@ class KeyboardViewController: UIInputViewController {
     //DY playback logic
     playBack.append(25)
   }
-  
   
   @IBAction func playGs5(sender: Any) {
     do {
@@ -516,7 +482,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(9)
   }
   
-  
   @IBAction func playCs6(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[23]))
@@ -529,7 +494,6 @@ class KeyboardViewController: UIInputViewController {
     playBack.append(23)
   }
   
-  
   @IBAction func playD6(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[2]))
@@ -541,7 +505,6 @@ class KeyboardViewController: UIInputViewController {
     //DY playback logic
     playBack.append(2)
   }
-  
   
   @IBAction func playDs6(sender: Any) {
     do {
@@ -563,13 +526,12 @@ class KeyboardViewController: UIInputViewController {
     playBack.removeAll()
   }
   
-  
   //DY keyboard toggle - symbol
   @IBAction func toggleSymbol(sender: Any) {
     listFiles()
     loadSymbolKeyboard()
   }
-  
+
   //DY keyboard toggle - number
   @IBAction func toggleNumber(sender: Any) {
     listFiles()
@@ -589,7 +551,6 @@ class KeyboardViewController: UIInputViewController {
   }
   
   
-  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated
@@ -602,6 +563,5 @@ class KeyboardViewController: UIInputViewController {
   override func textDidChange(_ textInput: UITextInput?) {
     
   }
-  
 }
 
