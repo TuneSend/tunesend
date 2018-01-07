@@ -619,8 +619,7 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="deleteText" destination="-1" eventType="touchUpInside" id="J3w-bd-VC9"/>
-                                <action selector="shiftButton" destination="-1" eventType="touchUpInside" id="izR-C9-ZLE"/>
-                                <action selector="toggleUpperWithSender:" destination="-1" eventType="touchUpInside" id="mP0-S8-hUr"/>
+                                <action selector="toggleUpperWithSender:" destination="-1" eventType="touchUpInside" id="bYV-nP-rTb"/>
                             </connections>
                         </button>
                     </subviews>

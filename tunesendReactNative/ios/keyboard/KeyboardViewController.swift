@@ -84,21 +84,6 @@ class KeyboardViewController: UIInputViewController {
     keyboardView.frame = self.view.bounds
   }
   
-//  func changeCaps(containerView: UIView) {
-//    for view in containerView.subviews {
-//      if let button = view as? UIButton {
-//        let buttonTitle = button.titleLabel!.text
-//        if capsLockOn {
-//          let text = buttonTitle!.uppercased()
-//          button.setTitle("\(text)", forState: .Normal)
-//        } else {
-//          let text = buttonTitle!.lowercaseString
-//          button.setTitle("\(text)", forState: .Normal)
-//        }
-//      }
-//    }
-//  }
-  
   @IBAction func deleteText() {
     let proxy = textDocumentProxy
     proxy.deleteBackward()
@@ -121,17 +106,6 @@ class KeyboardViewController: UIInputViewController {
     //start of keypress action
     sender.pulsate()
   }
-  
-//  @IBAction func shiftButton(button: UIButton) {
-//
-//    capsLockOn = !capsLockOn
-//
-//    changeCaps(Row1)
-//    changeCaps(Row2)
-//    changeCaps(Row3)
-//    changeCaps(Row4)
-//
-//  }
   
   
   func loadKeyboard() {
@@ -542,7 +516,7 @@ class KeyboardViewController: UIInputViewController {
   //DY keyboard toggle - number
   @IBAction func toggleNumber(sender: Any) {
     listFiles()
-    loadKeyboard()
+    loadNumberKeyboard()
   }
   
   //DY keyboard toggle - LowerCase

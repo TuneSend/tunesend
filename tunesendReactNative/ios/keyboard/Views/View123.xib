@@ -727,11 +727,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-<<<<<<< HEAD:tunesendReactNative/ios/keyboard/Views/View@123.xib
                                 <action selector="toggleLowerWithSender:" destination="-1" eventType="touchUpInside" id="eB5-ly-8uk"/>
-=======
-                                <action selector="NextABCWithSender:" destination="-1" eventType="touchUpInside" id="Ug3-ra-s3f"/>
->>>>>>> changed names for keyboards, attempted to do switch between keyboard:tunesendReactNative/ios/keyboard/Views/View123.xib
                             </connections>
                         </button>
                     </subviews>
