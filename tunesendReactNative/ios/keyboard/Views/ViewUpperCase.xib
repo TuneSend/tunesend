@@ -620,6 +620,7 @@
                             <connections>
                                 <action selector="deleteText" destination="-1" eventType="touchUpInside" id="Hsz-A7-2MJ"/>
                                 <action selector="shiftButton" destination="-1" eventType="touchUpInside" id="Q0G-0n-rED"/>
+                                <action selector="toggleLowerWithSender:" destination="-1" eventType="touchUpInside" id="mNX-cY-jdC"/>
                             </connections>
                         </button>
                     </subviews>
@@ -719,6 +720,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="gVk-S7-3Mp"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gng-PE-Yfh">
                             <rect key="frame" x="2" y="16" width="30" height="35"/>
@@ -733,6 +737,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleNumberWithSender:" destination="-1" eventType="touchUpInside" id="mOw-vf-TJc"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

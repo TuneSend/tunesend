@@ -612,6 +612,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleSymbolWithSender:" destination="-1" eventType="touchUpInside" id="q5h-rc-pll"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -723,6 +726,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleLowerWithSender:" destination="-1" eventType="touchUpInside" id="eB5-ly-8uk"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

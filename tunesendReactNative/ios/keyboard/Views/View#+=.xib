@@ -612,6 +612,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleNumberWithSender:" destination="-1" eventType="touchUpInside" id="qhn-Lx-0PU"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -706,6 +709,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="dbo-EF-sj1"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COP-rE-Mc2">
                             <rect key="frame" x="2" y="16.5" width="30" height="35"/>
@@ -720,6 +726,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleLowerWithSender:" destination="-1" eventType="touchUpInside" id="PTa-GT-gtG"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

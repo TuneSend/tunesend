@@ -162,24 +162,40 @@ class KeyboardViewController: UIInputViewController {
   
   
   func loadKeyboard() {
-    
     let keyboardNib = UINib(nibName: "View@123", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
-    
     view.addSubview(keyboardView)
-    
+  }
+  
+  //symbol keyboard
+  func loadSymbolKeyboard() {
+    let keyboardNib = UINib(nibName: "View#+=", bundle: nil)
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    view.backgroundColor = keyboardView.backgroundColor
+    view.addSubview(keyboardView)
+  }
+  
+  //lowerCase keyboard
+  func loadLowerCaseKeyboard() {
+    let keyboardNib = UINib(nibName: "ViewLowerCase", bundle: nil)
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    view.backgroundColor = keyboardView.backgroundColor
+    view.addSubview(keyboardView)
+  }
+  
+  //upperCase keyboard
+  func loadUpperCaseKeyboard() {
+    let keyboardNib = UINib(nibName: "ViewUpperCase", bundle: nil)
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    view.backgroundColor = keyboardView.backgroundColor
+    view.addSubview(keyboardView)
   }
   
   // MARK: - Properties
   @IBOutlet weak var A: UIButton!
   
-  
-  
-  
   // MARK: - Actions
-  
-  
 @IBAction func playA4(sender: Any) {
     do {
       try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[16]))
@@ -546,6 +562,33 @@ class KeyboardViewController: UIInputViewController {
     queuePlayer.play()
     playBack.removeAll()
   }
+  
+  
+  //DY keyboard toggle - symbol
+  @IBAction func toggleSymbol(sender: Any) {
+    listFiles()
+    loadSymbolKeyboard()
+  }
+  
+  //DY keyboard toggle - number
+  @IBAction func toggleNumber(sender: Any) {
+    listFiles()
+    loadKeyboard()
+  }
+  
+  //DY keyboard toggle - LowerCase
+  @IBAction func toggleLower(sender: Any) {
+    listFiles()
+    loadLowerCaseKeyboard()
+  }
+  
+  //DY keyboard toggle - UpperCase
+  @IBAction func toggleUpper(sender: Any) {
+    listFiles()
+    loadUpperCaseKeyboard()
+  }
+  
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()

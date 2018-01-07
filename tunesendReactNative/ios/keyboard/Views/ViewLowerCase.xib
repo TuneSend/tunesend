@@ -620,6 +620,7 @@
                             <connections>
                                 <action selector="deleteText" destination="-1" eventType="touchUpInside" id="J3w-bd-VC9"/>
                                 <action selector="shiftButton" destination="-1" eventType="touchUpInside" id="izR-C9-ZLE"/>
+                                <action selector="toggleUpperWithSender:" destination="-1" eventType="touchUpInside" id="mP0-S8-hUr"/>
                             </connections>
                         </button>
                     </subviews>
@@ -736,6 +737,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toggleNumberWithSender:" destination="-1" eventType="touchUpInside" id="PYd-4i-KOR"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
