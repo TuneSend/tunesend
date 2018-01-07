@@ -618,7 +618,6 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="deleteText" destination="-1" eventType="touchUpInside" id="Hsz-A7-2MJ"/>
                                 <action selector="toggleLowerWithSender:" destination="-1" eventType="touchUpInside" id="mNX-cY-jdC"/>
                             </connections>
                         </button>

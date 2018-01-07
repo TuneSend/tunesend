@@ -25,14 +25,21 @@ export default class Heading extends React.Component {
 	}
 
 	renderScrollViewContent() {
-		// const data = Array.from({ length: 16 });
+    const data = Array.from({ length: 5 });
 		return (
 			<View style={styles.ScrollViewContent}>
-				<Rules />
-			</View>
+				{data.map((_, i) =>
+					<View key={i} style={styles.row}>
+						<Text>{i}</Text>
+					</View>
 				)}
-	
-	
+        <Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />
+        <Image style={styles.ImageSize} source={require('../image/test/number2.jpg')} />
+        <Image style={styles.ImageSize} source={require('../image/test/number3.jpg')} />
+			</View>
+			);
+  }
+
 
 	render() {
 		const headerHeight = this.state.scrollY.interpolate({
@@ -53,29 +60,28 @@ export default class Heading extends React.Component {
 			extrapolate: 'clamp',
 		});
 
-		return (
-		<View style={styles.fill}>
-			<ScrollView
-       			style={styles.fill}
-				scrollEventThrottle={16}
-				onScroll={Animated.event(
-								[{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }]
-							)}
-			>
-				<Rules />
-			</ScrollView>
-			<Animated.View style={[styles.header, { height: headerHeight }]}>
-         		<Image source={require('../image/icon.png')} />
-					<Animated.Image
-						style={[
-							styles.backgroundImage,
-							{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] },
-							]}
-						source={require('../image/TuneSend.png')}
-					/>
-			</Animated.View>
-		</View>
-		);
+    return (
+    		<View style={styles.fill}>
+          <ScrollView
+            style={styles.fill}
+            scrollEventThrottle={5}
+            onScroll={
+              Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
+          >
+            {this.renderScrollViewContent()}
+          </ScrollView>
+          <Animated.View style={[styles.header, { height: headerHeight }]}>
+            <Image source={require('../image/icon.png')} />
+          <Animated.Image
+            style={[
+              styles.backgroundImage,
+              { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
+            ]}
+            source={require('../image/TuneSend.png')}
+          />
+        </Animated.View>
+      </View>
+    );
 	}
 }
 
@@ -121,6 +127,13 @@ const styles = StyleSheet.create({
 		height: HEADER_MAX_HEIGHT,
 		resizeMode: 'cover',
 	},
+  ImageSize: {
+    flex: 1,
+    width: 100,
+    height: 100,
+    resizeMode: 'cover',
+    alignItems: 'center'
+}
 });
 
 AppRegistry.registerComponent('Heading', () => Heading);
