@@ -37,10 +37,10 @@
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		CC083D9D2000006C00B1F218 /* View@123.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D992000006C00B1F218 /* View@123.xib */; };
+		CC083D9D2000006C00B1F218 /* View123.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D992000006C00B1F218 /* View123.xib */; };
 		CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */; };
 		CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */; };
-		CC083DA02000006C00B1F218 /* View#+=.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9C2000006C00B1F218 /* View#+=.xib */; };
+		CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9C2000006C00B1F218 /* ViewSymbols.xib */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC67A4981FFC553A00530C11 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
@@ -360,10 +360,10 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		CC083D992000006C00B1F218 /* View@123.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "View@123.xib"; sourceTree = "<group>"; };
+		CC083D992000006C00B1F218 /* View123.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View123.xib; sourceTree = "<group>"; };
 		CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewLowerCase.xib; sourceTree = "<group>"; };
 		CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUpperCase.xib; sourceTree = "<group>"; };
-		CC083D9C2000006C00B1F218 /* View#+=.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "View#+=.xib"; sourceTree = "<group>"; };
+		CC083D9C2000006C00B1F218 /* ViewSymbols.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSymbols.xib; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
 		CC67A4971FFC553A00530C11 /* trumpet */ = {isa = PBXFileReference; lastKnownFileType = folder; name = trumpet; path = ../../../music_samples/trumpet; sourceTree = "<group>"; };
@@ -637,8 +637,8 @@
 		CC083D981FFFFF5800B1F218 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CC083D992000006C00B1F218 /* View@123.xib */,
-				CC083D9C2000006C00B1F218 /* View#+=.xib */,
+				CC083D992000006C00B1F218 /* View123.xib */,
+				CC083D9C2000006C00B1F218 /* ViewSymbols.xib */,
 				CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */,
 				CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */,
 			);
@@ -1159,9 +1159,9 @@
 				CC67A4991FFC553A00530C11 /* trumpet in Resources */,
 				CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */,
 				CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */,
-				CC083DA02000006C00B1F218 /* View#+=.xib in Resources */,
+				CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */,
 				CC67A4981FFC553A00530C11 /* piano in Resources */,
-				CC083D9D2000006C00B1F218 /* View@123.xib in Resources */,
+				CC083D9D2000006C00B1F218 /* View123.xib in Resources */,
 				CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

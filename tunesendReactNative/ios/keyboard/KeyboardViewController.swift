@@ -50,9 +50,6 @@ class KeyboardViewController: UIInputViewController {
     }
   }
   
-  func assignFiles() {
-  }
-  
   override func updateViewConstraints() {
     super.updateViewConstraints()
   }
@@ -138,15 +135,17 @@ class KeyboardViewController: UIInputViewController {
   
   
   func loadKeyboard() {
-    let keyboardNib = UINib(nibName: "View@123", bundle: nil)
+    
+    let keyboardNib = UINib(nibName: "ViewUpperCase", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
+    
   }
   
   //symbol keyboard
   func loadSymbolKeyboard() {
-    let keyboardNib = UINib(nibName: "View#+=", bundle: nil)
+    let keyboardNib = UINib(nibName: "ViewSymbols", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
@@ -163,6 +162,14 @@ class KeyboardViewController: UIInputViewController {
   //upperCase keyboard
   func loadUpperCaseKeyboard() {
     let keyboardNib = UINib(nibName: "ViewUpperCase", bundle: nil)
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    view.backgroundColor = keyboardView.backgroundColor
+    view.addSubview(keyboardView)
+  }
+  
+  //Number keyboard
+  func loadNumberKeyboard() {
+    let keyboardNib = UINib(nibName: "View123", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
@@ -549,7 +556,6 @@ class KeyboardViewController: UIInputViewController {
     listFiles()
     loadUpperCaseKeyboard()
   }
-  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
