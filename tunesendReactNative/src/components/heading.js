@@ -8,7 +8,6 @@ import {
       Text,
       View
     } from 'react-native';
-import Rules from './rules.js';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -61,7 +60,7 @@ export default class Heading extends React.Component {
 		});
 
     return (
-    		<View style={styles.fill}>
+      <View style={styles.fill}>
           <ScrollView
             style={styles.fill}
             scrollEventThrottle={5}
