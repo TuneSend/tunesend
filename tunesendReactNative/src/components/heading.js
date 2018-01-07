@@ -1,13 +1,14 @@
 import React from 'react';
 import {
       Animated,
-			Image,
-			ScrollView,
+      Image,
+      ScrollView,
       AppRegistry,
       StyleSheet,
       Text,
       View
     } from 'react-native';
+import Rules from './rules.js';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -24,17 +25,14 @@ export default class Heading extends React.Component {
 	}
 
 	renderScrollViewContent() {
-		const data = Array.from({ length: 16 });
+		// const data = Array.from({ length: 16 });
 		return (
 			<View style={styles.ScrollViewContent}>
-				{data.map((_, i) =>
-					<View key={i} style={styles.row}>
-						<Text>{i}</Text>
-					</View>
-				)}
+				<Rules />
 			</View>
-			);
-	}
+				)}
+	
+	
 
 	render() {
 		const headerHeight = this.state.scrollY.interpolate({
@@ -58,23 +56,23 @@ export default class Heading extends React.Component {
 		return (
 		<View style={styles.fill}>
 			<ScrollView
-        style={styles.fill}
+       			style={styles.fill}
 				scrollEventThrottle={16}
 				onScroll={Animated.event(
 								[{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }]
 							)}
 			>
-				{this.renderScrollViewContent()}
+				<Rules />
 			</ScrollView>
 			<Animated.View style={[styles.header, { height: headerHeight }]}>
-         <Image source={require('../image/icon.png')} />
-				<Animated.Image
-					style={[
-						styles.backgroundImage,
-						{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] },
-						]}
-					source={require('../image/TuneSend.png')}
-				/>
+         		<Image source={require('../image/icon.png')} />
+					<Animated.Image
+						style={[
+							styles.backgroundImage,
+							{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] },
+							]}
+						source={require('../image/TuneSend.png')}
+					/>
 			</Animated.View>
 		</View>
 		);
