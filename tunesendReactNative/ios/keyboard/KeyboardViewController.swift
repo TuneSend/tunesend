@@ -107,10 +107,15 @@ class KeyboardViewController: UIInputViewController {
     sender.pulsate()
   }
   
+  @IBAction func pulsatePlay(sender: UIButton!) {
+    
+    sender.pulsate()
+    
+  }
   
   func loadKeyboard() {
     
-    let keyboardNib = UINib(nibName: "ViewUpperCase", bundle: nil)
+    let keyboardNib = UINib(nibName: "ViewLowerCase", bundle: nil)
     keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)

@@ -702,14 +702,14 @@
                                 <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="aEI-AK-nMY"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yX-BO-ejY">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yX-BO-ejY" userLabel="return">
                             <rect key="frame" x="240.5" y="16" width="75.5" height="35"/>
-                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="2yX-BO-ejY" secondAttribute="height" multiplier="32:15" id="HSO-SX-aUe"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                            <state key="normal" title="return">
+                            <state key="normal">
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -720,6 +720,7 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="GSo-Nc-F13"/>
+                                <action selector="pulsatePlayWithSender:" destination="-1" eventType="touchUpInside" id="ccy-gk-cXd"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cd-jK-blL">
@@ -739,11 +740,20 @@
                                 <action selector="toggleNumberWithSender:" destination="-1" eventType="touchUpInside" id="PYd-4i-KOR"/>
                             </connections>
                         </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playButton" translatesAutoresizingMaskIntoConstraints="NO" id="CYX-UR-R6G">
+                            <rect key="frame" x="240" y="13" width="76" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="CYX-UR-R6G" secondAttribute="height" multiplier="25:13" id="98J-Zw-ihY"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="0jI-y4-qSq"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="bottom" secondItem="Fdf-ab-aO8" secondAttribute="bottom" id="9Nh-xB-MB7"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="top" secondItem="0Cd-jK-blL" secondAttribute="top" id="AYm-yg-nmg"/>
+                        <constraint firstItem="CYX-UR-R6G" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="COh-d1-IX9"/>
+                        <constraint firstItem="HuV-f5-pCC" firstAttribute="trailing" secondItem="CYX-UR-R6G" secondAttribute="trailing" constant="3" id="I9l-mR-nzp"/>
+                        <constraint firstItem="CYX-UR-R6G" firstAttribute="centerY" secondItem="pcG-Xd-9a1" secondAttribute="centerY" id="IF6-u3-2uD"/>
                         <constraint firstItem="2yX-BO-ejY" firstAttribute="leading" secondItem="Fdf-ab-aO8" secondAttribute="trailing" constant="3" id="N1f-m8-KhY"/>
                         <constraint firstItem="Fdf-ab-aO8" firstAttribute="bottom" secondItem="9N1-ch-bru" secondAttribute="bottom" id="QMC-1l-AmQ"/>
                         <constraint firstItem="0Cd-jK-blL" firstAttribute="leading" secondItem="HuV-f5-pCC" secondAttribute="leading" constant="2" id="Qjw-8K-wSo"/>
@@ -799,6 +809,7 @@
         <image name="backspaceBlack" width="500" height="500"/>
         <image name="globeKey2" width="500" height="500"/>
         <image name="pianoPic" width="5468" height="3165"/>
+        <image name="playButton" width="500" height="500"/>
         <image name="shiftKey" width="500" height="500"/>
     </resources>
 </document>

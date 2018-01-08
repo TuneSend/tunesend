@@ -604,11 +604,11 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-rL-OT4" userLabel="Shift">
                             <rect key="frame" x="9" y="19" width="33" height="29.5"/>
-                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="hyj-rL-OT4" secondAttribute="height" multiplier="33:29" id="GFA-Y1-RwZ"/>
                             </constraints>
-                            <state key="normal" image="shiftKey">
+                            <state key="normal" image="shiftKeyWhite">
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -663,7 +663,7 @@
                     <rect key="frame" x="0.0" y="203.5" width="319" height="67.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-YS-0oC">
-                            <rect key="frame" x="72" y="16" width="165.5" height="35"/>
+                            <rect key="frame" x="72" y="16" width="166" height="35"/>
                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="2l4-YS-0oC" secondAttribute="height" multiplier="71:15" id="bI5-Tb-WOF"/>
@@ -702,14 +702,14 @@
                                 <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="9n7-30-wqZ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-QF-HhY">
-                            <rect key="frame" x="240.5" y="16" width="75.5" height="35"/>
-                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-QF-HhY" userLabel="return">
+                            <rect key="frame" x="241" y="16" width="75" height="35"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="IgE-QF-HhY" secondAttribute="height" multiplier="32:15" id="Str-OI-m02"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                            <state key="normal" title="return">
+                            <state key="normal">
                                 <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -720,6 +720,7 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="gVk-S7-3Mp"/>
+                                <action selector="pulsatePlayWithSender:" destination="-1" eventType="touchUpInside" id="Wcc-Qn-2ST"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gng-PE-Yfh">
@@ -739,6 +740,12 @@
                                 <action selector="toggleNumberWithSender:" destination="-1" eventType="touchUpInside" id="mOw-vf-TJc"/>
                             </connections>
                         </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playButton" translatesAutoresizingMaskIntoConstraints="NO" id="7gc-or-fK3">
+                            <rect key="frame" x="241" y="14" width="75" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7gc-or-fK3" secondAttribute="height" multiplier="25:13" id="wxh-jj-P0o"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="IgE-QF-HhY" secondAttribute="trailing" constant="3" id="80B-dc-vx8"/>
@@ -746,12 +753,13 @@
                         <constraint firstItem="2l4-YS-0oC" firstAttribute="bottom" secondItem="YGS-Td-bVg" secondAttribute="bottom" id="9oy-FS-vVc"/>
                         <constraint firstItem="IgE-QF-HhY" firstAttribute="leading" secondItem="2l4-YS-0oC" secondAttribute="trailing" constant="3" id="DGh-4l-l1s"/>
                         <constraint firstItem="IgE-QF-HhY" firstAttribute="bottom" secondItem="2l4-YS-0oC" secondAttribute="bottom" id="Gcl-Z9-vBu"/>
+                        <constraint firstItem="7gc-or-fK3" firstAttribute="centerY" secondItem="qAL-V7-rne" secondAttribute="centerY" id="Hxj-Vp-GK8"/>
                         <constraint firstItem="2l4-YS-0oC" firstAttribute="leading" secondItem="YGS-Td-bVg" secondAttribute="trailing" constant="3" id="L2w-WK-QzL"/>
-                        <constraint firstItem="IgE-QF-HhY" firstAttribute="leading" secondItem="2l4-YS-0oC" secondAttribute="trailing" constant="3" id="WVf-Ix-C7R"/>
+                        <constraint firstItem="nhg-fZ-Puv" firstAttribute="trailing" secondItem="7gc-or-fK3" secondAttribute="trailing" constant="3" id="NZm-9T-PYc"/>
                         <constraint firstItem="IgE-QF-HhY" firstAttribute="centerY" secondItem="qAL-V7-rne" secondAttribute="centerY" id="WXO-7M-Xxq"/>
                         <constraint firstItem="2l4-YS-0oC" firstAttribute="bottom" secondItem="gng-PE-Yfh" secondAttribute="bottom" id="f9U-2j-g3b"/>
                         <constraint firstItem="gng-PE-Yfh" firstAttribute="leading" secondItem="nhg-fZ-Puv" secondAttribute="leading" constant="2" id="hhb-0N-YgJ"/>
-                        <constraint firstItem="IgE-QF-HhY" firstAttribute="leading" secondItem="2l4-YS-0oC" secondAttribute="trailing" constant="3" id="jWt-c6-pWh"/>
+                        <constraint firstItem="7gc-or-fK3" firstAttribute="leading" secondItem="2l4-YS-0oC" secondAttribute="trailing" constant="3" id="pkE-XH-0E5"/>
                         <constraint firstItem="2l4-YS-0oC" firstAttribute="top" secondItem="YGS-Td-bVg" secondAttribute="top" id="q8X-g8-FHW"/>
                         <constraint firstItem="YGS-Td-bVg" firstAttribute="leading" secondItem="gng-PE-Yfh" secondAttribute="trailing" constant="3" id="rGg-wc-upR"/>
                         <constraint firstItem="2l4-YS-0oC" firstAttribute="top" secondItem="gng-PE-Yfh" secondAttribute="top" id="sUT-Ox-wj0"/>
@@ -799,6 +807,7 @@
         <image name="backspaceBlack" width="500" height="500"/>
         <image name="globeKey2" width="500" height="500"/>
         <image name="pianoPic" width="5468" height="3165"/>
-        <image name="shiftKey" width="500" height="500"/>
+        <image name="playButton" width="500" height="500"/>
+        <image name="shiftKeyWhite" width="500" height="500"/>
     </resources>
 </document>
