@@ -76,7 +76,7 @@ export default class Heading extends React.Component {
               styles.backgroundImage,
               { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
             ]}
-            source={require('../image/TuneSendSplash.png')}
+            source={require('../image/TuneSend.png')}
           />
         </Animated.View>
       </View>
