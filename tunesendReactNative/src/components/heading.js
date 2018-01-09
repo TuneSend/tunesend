@@ -70,13 +70,13 @@ export default class Heading extends React.Component {
             {this.renderScrollViewContent()}
           </ScrollView>
           <Animated.View style={[styles.header, { height: headerHeight }]}>
-            <Image source={require('../image/icon.png')} />
+            <Image source={require('../image/TuneSendIcon.png')} />
           <Animated.Image
             style={[
               styles.backgroundImage,
               { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
             ]}
-            source={require('../image/TuneSend.png')}
+            source={require('../image/TuneSendSplash.png')}
           />
         </Animated.View>
       </View>
