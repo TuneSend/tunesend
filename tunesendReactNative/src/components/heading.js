@@ -6,7 +6,8 @@ import {
       AppRegistry,
       StyleSheet,
       Text,
-      View
+      View,
+      Button
     } from 'react-native';
 
 const HEADER_MAX_HEIGHT = 200;
@@ -20,11 +21,23 @@ export default class Heading extends React.Component {
 
 		this.state = {
 			scrollY: new Animated.Value(0),
+			status: true
 		};
 	}
 
+ShowHideTextComponentView = () =>{
+ 
+  if(this.state.status == true)
+  {
+    this.setState({status: false})
+  }
+  else
+  {
+    this.setState({status: true})
+  }
+}
+
 	renderScrollViewContent() {
-    const data = Array.from({ length: 5 });
 		return (
 			<View style={styles.ScrollViewContent}>
         <Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />
@@ -65,8 +78,12 @@ export default class Heading extends React.Component {
             onScroll={
               Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
           >
-            {this.renderScrollViewContent()}
+
+			{this.state.status ? this.renderScrollViewContent(): null}
+
+			<Button title="Placeholder" onPress={this.ShowHideTextComponentView} />
           </ScrollView>
+
           <Animated.View style={[styles.header, { height: headerHeight }]}>
             <Image source={require('../image/icon.png')} />
           <Animated.Image
