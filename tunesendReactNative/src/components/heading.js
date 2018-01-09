@@ -27,14 +27,12 @@ export default class Heading extends React.Component {
     const data = Array.from({ length: 5 });
 		return (
 			<View style={styles.ScrollViewContent}>
-				{data.map((_, i) =>
-					<View key={i} style={styles.row}>
-						<Text>{i}</Text>
-					</View>
-				)}
         <Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />
+        <Text> Placeholder </Text>
         <Image style={styles.ImageSize} source={require('../image/test/number2.jpg')} />
+        <Text> Placeholder </Text>
         <Image style={styles.ImageSize} source={require('../image/test/number3.jpg')} />
+        <Text> Placeholder </Text>
 			</View>
 			);
   }
@@ -70,7 +68,7 @@ export default class Heading extends React.Component {
             {this.renderScrollViewContent()}
           </ScrollView>
           <Animated.View style={[styles.header, { height: headerHeight }]}>
-            <Image source={require('../image/TuneSendIcon.png')} />
+            <Image source={require('../image/icon.png')} />
           <Animated.Image
             style={[
               styles.backgroundImage,
@@ -128,10 +126,11 @@ const styles = StyleSheet.create({
 	},
   ImageSize: {
     flex: 1,
-    width: 100,
-    height: 100,
+    width: 250,
+    height: 250,
     resizeMode: 'cover',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginLeft: 50,
 }
 });
 
