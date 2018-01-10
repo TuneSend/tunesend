@@ -25,27 +25,32 @@ export default class Heading extends React.Component {
 		};
 	}
 
-ShowHideTextComponentView = () =>{
- 
-  if(this.state.status == true)
-  {
-    this.setState({status: false})
-  }
-  else
-  {
-    this.setState({status: true})
-  }
-}
+	ShowHideTextComponentView = () => {
+		if (this.state.status === true) {
+			this.setState({ status: false });
+		} else {
+			this.setState({ status: true });
+		}
+	}
 
 	renderScrollViewContent() {
 		return (
 			<View style={styles.ScrollViewContent}>
-        <Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />
-        <Text> Placeholder </Text>
-        <Image style={styles.ImageSize} source={require('../image/test/number2.jpg')} />
-        <Text> Placeholder </Text>
-        <Image style={styles.ImageSize} source={require('../image/test/number3.jpg')} />
-        <Text> Placeholder </Text>
+				{/*<Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />*/}
+				<Text>
+					Open Settings
+				</Text>
+				{/*<Image style={styles.ImageSize} source={require('../image/test/number2.jpg')} />*/}
+				<Text>
+					Scroll down to TuneSend
+				</Text>
+				{/*<Image style={styles.ImageSize} source={require('../image/test/number3.jpg')} />*/}
+				<Text>
+					Click on keyboards
+				</Text>
+				<Text>
+					Toggle switch on
+				</Text>
 			</View>
 			);
   }
@@ -79,7 +84,7 @@ ShowHideTextComponentView = () =>{
               Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
           >
 
-			{this.state.status ? this.renderScrollViewContent(): null}
+			{this.state.status ? this.renderScrollViewContent() : null}
 
 			<Button title="Placeholder" onPress={this.ShowHideTextComponentView} />
           </ScrollView>
@@ -141,14 +146,18 @@ const styles = StyleSheet.create({
 		height: HEADER_MAX_HEIGHT,
 		resizeMode: 'cover',
 	},
-  ImageSize: {
-    flex: 1,
-    width: 250,
-    height: 250,
-    resizeMode: 'cover',
-    alignItems: 'center',
-    marginLeft: 50,
-}
+	ImageSize: {
+		flex: 1,
+		width: 250,
+		height: 250,
+		resizeMode: 'cover',
+		alignItems: 'center',
+		marginLeft: 50,
+	},
+	TextFormat: {
+		
+	}
+
 });
 
 AppRegistry.registerComponent('Heading', () => Heading);
