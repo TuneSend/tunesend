@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
       Animated,
       Image,
       ScrollView,
-      AppRegistry,
-      StyleSheet,
       Text,
       View,
       Button
@@ -14,7 +12,7 @@ const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
 const HEADER_SCROLL_DISTANCE = HEADER_MAX_HEIGHT - HEADER_MIN_HEIGHT;
 
-export default class Heading extends React.Component {
+class Heading extends Component {
 
 	constructor(props) {
 		super(props);
@@ -34,21 +32,29 @@ export default class Heading extends React.Component {
 	}
 
 	renderScrollViewContent() {
+		const {
+			// ScrollViewContent,
+			TextContainer,
+			TextFormat,
+			IconFormat
+		} = styles;
+
 		return (
-			<View style={styles.ScrollViewContent}>
-				{/*<Image style={styles.ImageSize} source={require('../image/test/number1.jpg')} />*/}
-				<Text>
+			<View style={TextContainer}>
+				{/*<Image style={ImageSize} source={require('../image/test/number1.jpg')} />*/}
+				<Text style={TextFormat}>
 					Open Settings
+				<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
 				</Text>
-				{/*<Image style={styles.ImageSize} source={require('../image/test/number2.jpg')} />*/}
-				<Text>
+				{/*<Image style={ImageSize} source={require('../image/test/number2.jpg')} />*/}
+				<Text style={TextFormat}>
 					Scroll down to TuneSend
 				</Text>
-				{/*<Image style={styles.ImageSize} source={require('../image/test/number3.jpg')} />*/}
-				<Text>
+				{/*<Image style={ImageSize} source={require('../image/test/number3.jpg')} />*/}
+				<Text style={TextFormat}>
 					Click on keyboards
 				</Text>
-				<Text>
+				<Text style={TextFormat}>
 					Toggle switch on
 				</Text>
 			</View>
@@ -75,10 +81,16 @@ export default class Heading extends React.Component {
 			extrapolate: 'clamp',
 		});
 
+		const {
+			fill,
+			header,
+			backgroundImage,
+		} = styles;
+
     return (
-      <View style={styles.fill}>
+      <View style={fill}>
           <ScrollView
-            style={styles.fill}
+            style={fill}
             scrollEventThrottle={5}
             onScroll={
               Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
@@ -89,11 +101,11 @@ export default class Heading extends React.Component {
 			<Button title="Placeholder" onPress={this.ShowHideTextComponentView} />
           </ScrollView>
 
-          <Animated.View style={[styles.header, { height: headerHeight }]}>
+          <Animated.View style={[header, { height: headerHeight }]}>
             <Image source={require('../image/icon.png')} />
           <Animated.Image
             style={[
-              styles.backgroundImage,
+              backgroundImage,
               { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
             ]}
             source={require('../image/TuneSend.png')}
@@ -104,7 +116,7 @@ export default class Heading extends React.Component {
 	}
 }
 
-const styles = StyleSheet.create({
+const styles = {
 	fill: {
 		flex: 1,
 	},
@@ -154,10 +166,20 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		marginLeft: 50,
 	},
+	TextContainer: {
+		flex: 1,
+		alignItems: 'center',
+		marginTop: HEADER_MAX_HEIGHT,
+	},
 	TextFormat: {
-		
+		fontSize: 23,
+	},
+	IconFormat: {
+		marginTop: 3,
+		marginLeft: 2,
+		width: 20,
+		height: 20,
 	}
+};
 
-});
-
-AppRegistry.registerComponent('Heading', () => Heading);
+export default Heading;
