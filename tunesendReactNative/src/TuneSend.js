@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import Heading from './components/heading.js';
+import Heading from './components/Heading.js';
+import Instructions from './components/Instructions';
 
-const App = () => {
+const TuneSend = () => {
   const { container } = styles;
   return (
   <View style={container}>
@@ -19,4 +20,4 @@ const styles = {
   }
 };
 
-export default App;
+export default TuneSend;

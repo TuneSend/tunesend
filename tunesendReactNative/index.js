@@ -1,11 +1,10 @@
 import React from 'react';
 import { AppRegistry, View } from 'react-native';
-import Heading from './src/components/Heading';
+import TuneSend from './src/TuneSend';
 
 const App = () => (
-	// expand component to fill the entire content area of the device
 	<View>
-		<Heading />
+		<TuneSend />
 	</View>
 );
 

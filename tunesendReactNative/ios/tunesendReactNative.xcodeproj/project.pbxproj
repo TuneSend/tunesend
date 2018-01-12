@@ -48,7 +48,6 @@
 		CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC7775F11FF2243B00BE3A48 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776001FF224F800BE3A48 /* AudioToolbox.framework */; };
 		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
-		CCF82F1D2005B5B1007B6C9D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF82F1C2005B5B1007B6C9D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -372,7 +371,7 @@
 		CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
 		CC7776001FF224F800BE3A48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CCF82F1C2005B5B1007B6C9D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../../../.Trash/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CCA31D802008350F0094FF3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,7 +524,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				CCF82F1C2005B5B1007B6C9D /* Launch Screen.storyboard */,
+				CCA31D802008350F0094FF3A /* Launch Screen.storyboard */,
 			);
 			name = tunesendReactNative;
 			sourceTree = "<group>";
@@ -1131,7 +1130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF82F1D2005B5B1007B6C9D /* Launch Screen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
 			);
