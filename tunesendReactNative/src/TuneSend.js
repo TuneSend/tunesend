@@ -8,6 +8,7 @@ const TuneSend = () => {
   return (
   <View style={container}>
     <Heading />
+    <Instructions />
   </View>
   );
 };
