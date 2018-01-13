@@ -25,7 +25,8 @@ class Instructions extends Component {
 				TextContainer,
 				TextFormat,
 				IconFormat,
-				gifFormat
+				gifFormat,
+				gifFormat1
 			} = styles;
 
 
@@ -35,7 +36,7 @@ class Instructions extends Component {
 			return (
 				<View style={TextContainer}>
 					<Video
-						style={gifFormat}
+						style={gifFormat1}
 						source={{ uri: './settings.mp4' }}
 						ref={(ref) => {
 							console.log('this', this.player);
@@ -48,7 +49,6 @@ class Instructions extends Component {
 						playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown. 
 						onLoadStart={this.loadStart}  // Callback when video starts to load
 						onLoad={this.setDuration}     // Callback when video loads
-						onProgress={this.setTime}     // Callback every ~250ms with currentTime
 						onEnd={this.onEnd}            // Callback when playback finishes
 						onError={this.videoError}     // Callback when video cannot be loaded
 					/>
@@ -56,18 +56,69 @@ class Instructions extends Component {
 						Open Settings
 						<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
 					</Text>
+					<Video
+						style={gifFormat}
+						source={{ uri: './TuneSend.mp4' }}
+						ref={(ref) => {
+							console.log('this', this.player);
+							this.player = ref;
+						}}                            // Store reference
+						rate={1.0}                    // 0 is paused, 1 is normal.
+						paused={false}                // Pauses playback entirely.
+						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
+						repeat={true}               // Repeat forever.
+						playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown. 
+						onLoadStart={this.loadStart}  // Callback when video starts to load
+						onLoad={this.setDuration}     // Callback when video loads
+						onEnd={this.onEnd}            // Callback when playback finishes
+						onError={this.videoError}     // Callback when video cannot be loaded
+					/>
 					<Text style={TextFormat}>
 						Scroll down to TuneSend
 						<Image style={IconFormat} source={require('../image/TuneSendIconBlack.png')} />
 					</Text>
+					<Video
+						style={gifFormat}
+						source={{ uri: './keyboards.mp4' }}
+						ref={(ref) => {
+							console.log('this', this.player);
+							this.player = ref;
+						}}                            // Store reference
+						rate={1.0}                    // 0 is paused, 1 is normal.
+						paused={false}                // Pauses playback entirely.
+						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
+						repeat={true}               // Repeat forever.
+						playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown. 
+						onLoadStart={this.loadStart}  // Callback when video starts to load
+						onLoad={this.setDuration}     // Callback when video loads
+						onEnd={this.onEnd}            // Callback when playback finishes
+						onError={this.videoError}     // Callback when video cannot be loaded
+					/>
 					<Text style={TextFormat}>
 						Click on keyboards
 						<Image style={IconFormat} source={require('../image/keyboardsIconIOS.png')} />
 					</Text>
+					<Video
+						style={gifFormat}
+						source={{ uri: './switchOn.mp4' }}
+						ref={(ref) => {
+							console.log('this', this.player);
+							this.player = ref;
+						}}                            // Store reference
+						rate={1.0}                    // 0 is paused, 1 is normal.
+						paused={false}                // Pauses playback entirely.
+						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
+						repeat={true}               // Repeat forever.
+						playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown. 
+						onLoadStart={this.loadStart}  // Callback when video starts to load
+						onLoad={this.setDuration}     // Callback when video loads
+						onEnd={this.onEnd}            // Callback when playback finishes
+						onError={this.videoError}     // Callback when video cannot be loaded
+					/>
 					<Text style={TextFormat}>
 						<Switch
 							value = {this.state.isToggled}
-							onValueChange={ (newValue) => this.setState({ isToggled: newValue})}
+							onValueChange={ (newValue) => this.setState({ isToggled: newValue })}
 						 />
 					</Text>
 				</View>
@@ -93,7 +144,7 @@ const styles = {
 			marginTop: HEADER_MAX_HEIGHT,
 		},
 		TextFormat: {
-			marginTop: 30,
+			marginTop: 10,
 			fontSize: 24,
 		},
 		IconFormat: {
@@ -103,11 +154,22 @@ const styles = {
 			height: 40,
 		},
 		gifFormat: {
-			marginTop: 4,
+			flexWrap: 'wrap',
+			flexDirection: 'column',
+			marginTop: 70,
 			marginBottom: 4,
 			borderWidth: 1,
-			width: 60,
-			height: 120,
+			width: 120,
+			height: 240,
+		},
+		gifFormat1: {
+			flexWrap: 'wrap',
+			flexDirection: 'column',
+			marginTop: 30,
+			marginBottom: 4,
+			borderWidth: 1,
+			width: 120,
+			height: 240,
 		}
 };
 

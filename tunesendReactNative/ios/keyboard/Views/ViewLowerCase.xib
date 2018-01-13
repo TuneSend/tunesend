@@ -380,7 +380,7 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="sdb-O8-eol"/>
-                                <action selector="playCs5WithSender:" destination="-1" eventType="touchUpInside" id="KdG-3Y-wnm"/>
+                                <action selector="playCs5WithSender:" destination="-1" eventType="touchUpInside" id="7sm-Ke-UzP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-lT-0iV">
