@@ -7,6 +7,7 @@ import {
       View,
       Button
     } from 'react-native';
+import Instructions from './Instructions';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -33,30 +34,12 @@ class Heading extends Component {
 
 	renderScrollViewContent() {
 		const {
-			// ScrollViewContent,
 			TextContainer,
-			TextFormat,
-			IconFormat
 		} = styles;
 
 		return (
 			<View style={TextContainer}>
-				{/*<Image style={ImageSize} source={require('../image/test/number1.jpg')} />*/}
-				<Text style={TextFormat}>
-					Open Settings
-				<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
-				</Text>
-				{/*<Image style={ImageSize} source={require('../image/test/number2.jpg')} />*/}
-				<Text style={TextFormat}>
-					Scroll down to TuneSend
-				</Text>
-				{/*<Image style={ImageSize} source={require('../image/test/number3.jpg')} />*/}
-				<Text style={TextFormat}>
-					Click on keyboards
-				</Text>
-				<Text style={TextFormat}>
-					Toggle switch on
-				</Text>
+				<Instructions />
 			</View>
 			);
   }
@@ -84,13 +67,14 @@ class Heading extends Component {
 		const {
 			fill,
 			header,
+			ScrollViewContent,
 			backgroundImage,
 		} = styles;
 
     return (
-      <View style={fill}>
+      <View>
           <ScrollView
-            style={fill}
+            style={ScrollViewContent}
             scrollEventThrottle={5}
             onScroll={
               Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
@@ -98,7 +82,6 @@ class Heading extends Component {
 
 			{this.state.status ? this.renderScrollViewContent() : null}
 
-			<Button title="Placeholder" onPress={this.ShowHideTextComponentView} />
           </ScrollView>
 
           <Animated.View style={[header, { height: headerHeight }]}>
@@ -117,9 +100,9 @@ class Heading extends Component {
 }
 
 const styles = {
-	fill: {
-		flex: 1,
-	},
+	// fill: {
+	// 	flex: 1,
+	// },
 	row: {
 		height: 40,
 		margin: 16,
@@ -147,7 +130,7 @@ const styles = {
 		fontSize: 18,
 	},
 	ScrollViewContent: {
-		marginTop: HEADER_MAX_HEIGHT,
+		// marginTop: HEADER_MAX_HEIGHT,
 	},
 	backgroundImage: {
 		position: 'absolute',

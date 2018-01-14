@@ -35,6 +35,7 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
+		2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49496977FCA84F6C95984AB3 /* Pacifico-Regular.ttf */; };
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -42,6 +43,7 @@
 		CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */; };
 		CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */; };
 		CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9C2000006C00B1F218 /* ViewSymbols.xib */; };
+		CC19E14B200B52EA001FC2C1 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = CC19E124200B52E9001FC2C1 /* assets */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC67A4981FFC553A00530C11 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
@@ -384,6 +386,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tunesendReactNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tunesendReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49496977FCA84F6C95984AB3 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pacifico-Regular.ttf"; path = "../assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		636413C625624EA98B304EA9 /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -395,6 +398,7 @@
 		CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewLowerCase.xib; sourceTree = "<group>"; };
 		CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUpperCase.xib; sourceTree = "<group>"; };
 		CC083D9C2000006C00B1F218 /* ViewSymbols.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSymbols.xib; sourceTree = "<group>"; };
+		CC19E124200B52E9001FC2C1 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
 		CC67A4971FFC553A00530C11 /* trumpet */ = {isa = PBXFileReference; lastKnownFileType = folder; name = trumpet; path = ../../../music_samples/trumpet; sourceTree = "<group>"; };
@@ -557,6 +561,7 @@
 		13B07FAE1A68108700A75B9A /* tunesendReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				CC19E124200B52E9001FC2C1 /* assets */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -652,6 +657,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				CC7775FF1FF224F800BE3A48 /* Frameworks */,
 				CC84D90C200933C0007996C4 /* Recovered References */,
+				94B094E19EFB4A8AA2907602 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -668,6 +674,14 @@
 				CC7775F11FF2243B00BE3A48 /* keyboard.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94B094E19EFB4A8AA2907602 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49496977FCA84F6C95984AB3 /* Pacifico-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -1236,9 +1250,11 @@
 				CCA31DA8200929270094FF3A /* keyboards.mp4 in Resources */,
 				CCA31DA9200929270094FF3A /* settings.mp4 in Resources */,
 				CCA31DAA200929270094FF3A /* switchOn.mp4 in Resources */,
+				CC19E14B200B52EA001FC2C1 /* assets in Resources */,
 				CCA31DAB200929270094FF3A /* TuneSend.mp4 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
+				2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
