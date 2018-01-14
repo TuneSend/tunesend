@@ -100,9 +100,6 @@ class Heading extends Component {
 }
 
 const styles = {
-	// fill: {
-	// 	flex: 1,
-	// },
 	row: {
 		height: 40,
 		margin: 16,

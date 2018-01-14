@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { View, Animated, Keyboard, Text, Image, Switch, Font, TextInput } from 'react-native';
+import ReactNative, { View, Text, Image, Switch, Font, TextInput } from 'react-native';
 import Video from 'react-native-video';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+// import KeyboardSpacer from 'react-native-keyboard-spacer';
 
-let VIDEO_HEIGHT = 320;
-let VIDEO_HEIGHT_SMALL = 240;
+const VIDEO_HEIGHT = 320;
+// const VIDEO_HEIGHT_SMALL = window.width /7;
 
 class Instructions extends Component {
 		constructor(props) {
 			super(props);
-		
-			this.state = {
-				isToggled: false,
-				isReady: false
-			};
-			this.keyboardHeight = new Animated.Value(0);
-			this.imageHeight = new Animated.Value(VIDEO_HEIGHT);
-		}
+
+		this.state = {
+			isToggled: false,
+			isReady: false
+		};
+	}
 
 		componentWillMount() {
 			(async() => {
@@ -25,43 +25,11 @@ class Instructions extends Component {
 
 				this.setState({ isReady: true });
 			})();
-
-			this.keyboardWillShowSub = Keyboard.addListener('keyboardWillShow', this.keyboardWillShow);
-			this.keyboardWillHideSub = Keyboard.addListener('keyboardWillHide', this.keyboardWillHide);
 		}
 
-		componentWillUnmount() {
-			this.keyboardWillShowSub.remove();
-			this.keyboardWillHideSub.remove();
-		}
-
-		keyboardWillShow = (event) => {
-			Animated.parallel([
-				Animated.timing(this.keyboardHeight, {
-					duration: event.duration,
-					toValue: event.endCoordinates.height,
-				}),
-				Animated.timing(this.imageHeight, {
-					duration: event.duration,
-					toValue: VIDEO_HEIGHT_SMALL,
-				}),
-			]).start();
-		};
-
-		keyboardWillHide = (event) => {
-			Animated.parallel([
-				Animated.timing(this.keyboardHeight, {
-					duration: event.duration,
-					toValue: 0,
-				}),
-				Animated.timing(this.imageHeight, {
-					duration: event.duration,
-					toValue: VIDEO_HEIGHT,
-				}),
-			]).start();
-		};
 
 		render() {
+			console.log('Scroll:', this);
 			const {
 				// ScrollViewContent,
 				TextContainer,
@@ -75,11 +43,16 @@ class Instructions extends Component {
 
 			return (
 
-				<Animated.View
-					style={[TextContainer, { paddingBottom: this.keyboardHeight }]}
+				<KeyboardAwareScrollView
+					style={{ backgroundColor: '#ffffff' }}
+					resetScrollToCoords={{ x: 0, y: 1050 }}
+					contentContainerStyle={TextContainer}
+					// scrollEnabled={false} // the view itself doesn't scroll up/down (only if all fields fit into the screen)
+					keyboardShouldPersistTaps='always' // make keyboard not disappear when tapping outside of input
+					enableAutoAutomaticScroll={false} // turn off auto scrolling to the field behaviour, which is unfortunately buggy when autocomplete suggestions disappear from the keyboard as displayed in the gif above
 				>
 						<Video
-							style={{ ...gifFormat, marginTop: 70, height: this.imageHeight }}
+							style={{ ...gifFormat, marginTop: 70 }}
 							source={{ uri: './settings.mp4' }}
 							ref={(ref) => {
 								console.log('this', this.player);
@@ -94,11 +67,11 @@ class Instructions extends Component {
 							onEnd={this.onEnd}            // Callback when playback finishes
 							onError={this.videoError}     // Callback when video cannot be loaded
 						/>
-						<Animated.View style={TextView}>
-							<Animated.Text style={TextFormat}>
+						<View style={TextView}>
+							<Text style={TextFormat}>
 							Open
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#55b2f9',
@@ -106,19 +79,19 @@ class Instructions extends Component {
 								}}
 							>
 								Sett
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#f6be5f',
 								}}
 							>
 								ings
-							</Animated.Text>
-							<Animated.Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
-						</Animated.View>
+							</Text>
+							<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
+						</View>
 						<Video
-							style={{ ...gifFormat, height: this.imageHeight }}
+							style={gifFormat}
 							source={{ uri: './TuneSend.mp4' }}
 							ref={(ref) => {
 								console.log('this', this.player);
@@ -134,11 +107,11 @@ class Instructions extends Component {
 							onEnd={this.onEnd}            // Callback when playback finishes
 							onError={this.videoError}     // Callback when video cannot be loaded
 						/>
-					<Animated.View style={TextView}>
-						<Animated.Text style={TextFormat} behavior="padding">
+					<View style={TextView}>
+						<Text style={TextFormat} behavior="padding">
 							Scroll down to
-						</Animated.Text>
-						<Animated.Text
+						</Text>
+						<Text
 							style={{
 								...TextFormat,
 								color: '#55b2f9',
@@ -146,8 +119,8 @@ class Instructions extends Component {
 							}}
 						>
 							Tune
-						</Animated.Text>
-						<Animated.Text
+						</Text>
+						<Text
 							style={{
 								...TextFormat,
 								color: '#f6be5f',
@@ -155,11 +128,11 @@ class Instructions extends Component {
 							}}
 						>
 							Send
-						</Animated.Text>
-						<Animated.Image style={{ ...IconFormat, marginLeft: 8 }} source={require('../image/TuneSendIconBlack.png')} />
-					</Animated.View>
+						</Text>
+						<Image style={{ ...IconFormat, marginLeft: 8 }} source={require('../image/TuneSendIconBlack.png')} />
+					</View>
 					<Video
-						style={{ ...gifFormat, height: this.imageHeight }}
+						style={gifFormat}
 						source={{ uri: './keyboards.mp4' }}
 						ref={(ref) => {
 							console.log('this', this.player);
@@ -176,11 +149,11 @@ class Instructions extends Component {
 						onEnd={this.onEnd}            // Callback when playback finishes
 						onError={this.videoError}     // Callback when video cannot be loaded
 					/>
-					<Animated.View style={TextView}>
-						<Animated.Text style={TextFormat}>
+					<View style={TextView}>
+						<Text style={TextFormat}>
 							Click on
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#55b2f9',
@@ -188,19 +161,19 @@ class Instructions extends Component {
 								}}
 							>
 								key
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#f6be5f',
 								}}
 							>
 								boards
-							</Animated.Text>
-						<Animated.Image style={{ ...IconFormat, marginLeft: 5 }} source={require('../image/keyboardsIconIOS.png')} />
-					</Animated.View>
+							</Text>
+						<Image style={{ ...IconFormat, marginLeft: 5 }} source={require('../image/keyboardsIconIOS.png')} />
+					</View>
 					<Video
-						style={{ ...gifFormat, height: this.imageHeight }}
+						style={gifFormat}
 						source={{ uri: './switchOn.mp4' }}
 						ref={(ref) => {
 							console.log('this', this.player);
@@ -217,11 +190,11 @@ class Instructions extends Component {
 						onEnd={this.onEnd}            // Callback when playback finishes
 						onError={this.videoError}     // Callback when video cannot be loaded
 					/>
-					<Animated.View style={TextView}>
-							<Animated.Text style={TextFormat}>
+					<View style={TextView}>
+							<Text style={TextFormat}>
 								Enable
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#55b2f9',
@@ -229,8 +202,8 @@ class Instructions extends Component {
 								}}
 							>
 								Tune
-							</Animated.Text>
-							<Animated.Text
+							</Text>
+							<Text
 								style={{
 									...TextFormat,
 									color: '#f6be5f',
@@ -238,21 +211,21 @@ class Instructions extends Component {
 								}}
 							>
 								Send
-							</Animated.Text>
+							</Text>
 						<Switch
 							style={{ ...IconFormat, marginTop: 18, marginLeft: 3 }}
 							value={this.state.isToggled}
 							onValueChange={(newValue) => this.setState({ isToggled: newValue })}
 						/>
-					</Animated.View>
-					<Animated.View style={inputContainerStyle}>
-						<Animated.TextInput
+					</View>
+					<View style={inputContainerStyle}>
+						<TextInput
+							// onFocus={this.scroll.props.scrollToPosition(0, 800)}
 							style={inputStyle}
-
+							placeholder={'Test TuneSend Keyboard Here!'}
 						/>
-					</Animated.View>
-					<Animated.View style={{ height: 200 }} />
-			</Animated.View>
+					</View>
+			</KeyboardAwareScrollView>
 			);
 	}
 }
@@ -260,10 +233,11 @@ class Instructions extends Component {
 
 const styles = {
 	TextContainer: {
+			backgroundColor: '#ffffff',
 			flex: 1,
 			alignItems: 'center',
 			marginTop: 0,
-			paddingBottom: this.keyboardHeight
+			justifyContent: 'center',
 	},
 	TextView: {
 		flexDirection: 'row',
@@ -295,12 +269,14 @@ const styles = {
 		borderColor: 'grey',
 		width: 340,
 		height: 40,
-		marginBottom: 40
+		marginBottom: 140
 	},
 	inputStyle: {
 		height: 40,
 		fontSize: 22,
-		paddingLeft: 10
+		// color: '#55b2f9',
+		paddingLeft: 10,
+		// fontFamily: 'Pacifico',
 	}
 };
 
