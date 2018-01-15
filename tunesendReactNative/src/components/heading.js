@@ -69,30 +69,34 @@ class Heading extends Component {
 			header,
 			ScrollViewContent,
 			backgroundImage,
+			headerIcon
 		} = styles;
 
     return (
       <View>
-          <ScrollView
+		<ScrollView
             style={ScrollViewContent}
             scrollEventThrottle={5}
             onScroll={
               Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
-          >
+        >
 
 			{this.state.status ? this.renderScrollViewContent() : null}
 
-          </ScrollView>
+        </ScrollView>
 
-          <Animated.View style={[header, { height: headerHeight }]}>
-            <Image source={require('../image/icon.png')} />
-          <Animated.Image
-            style={[
-              backgroundImage,
-              { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
-            ]}
-            source={require('../image/TuneSend.png')}
-          />
+		<Animated.View style={[header, { height: headerHeight }]}>
+            <Image
+				style={headerIcon}
+				source={require('../image/TuneSendIcon.png')}
+			/>
+          	<Animated.Image
+	            style={[
+	              backgroundImage,
+	              { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
+	            ]}
+	            source={require('../image/TuneSend.png')}
+        	/>
         </Animated.View>
       </View>
     );
@@ -114,6 +118,11 @@ const styles = {
 		right: 0,
 		backgroundColor: '#03A9F4',
 		overflow: 'hidden',
+	},
+	headerIcon: {
+		width: 50,
+		height: 25,
+		alignItems: 'center'
 	},
 	bar: {
 		marginTop: 28,

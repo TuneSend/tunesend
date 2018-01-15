@@ -29,7 +29,7 @@ extension UIButton {
 }
 
 class KeyboardViewController: UIInputViewController {
-  var wavFiles : [String] = []
+  var mp3Files : [String] = []
   var keyboardView: UIView!
   var player = AVAudioPlayer()
   let path = Bundle.main.resourcePath
@@ -44,9 +44,9 @@ class KeyboardViewController: UIInputViewController {
       for item in contents {
         let itemPath = pianoPath + "/" + item
 //        print(itemPath)
-        wavFiles.append(itemPath)
+        mp3Files.append(itemPath)
       }
-//      print("this is wav files \(wavFiles)")
+      print("this is mp3 files \(mp3Files)")
     }
   }
 
@@ -57,7 +57,7 @@ class KeyboardViewController: UIInputViewController {
   //DY for playback
   func things() {
     for number in playBack {
-      let fileURL = URL(fileURLWithPath:wavFiles[number])
+      let fileURL = URL(fileURLWithPath:mp3Files[number])
       let playerItem = AVPlayerItem(url:fileURL as URL)
       queuePlayer.insert(playerItem, after:nil)
     }
@@ -162,7 +162,7 @@ class KeyboardViewController: UIInputViewController {
   // MARK: - Actions
 @IBAction func playA4(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[16]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[5]))
     } catch {
         print("Could not load file")
     }
@@ -174,7 +174,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playAs4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[21]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[12]))
       player.play()
   } catch {
     print("Could not load file")
@@ -187,7 +187,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playB4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[6]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[23]))
   } catch {
     print("Could not load file")
   }
@@ -199,7 +199,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playC4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[7]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[26]))
   } catch {
     print("Could not load file")
   }
@@ -211,7 +211,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playCs4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[26]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[14]))
   } catch {
     print("Could not load file")
   }
@@ -223,7 +223,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playD4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[1]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[18]))
   } catch {
     print("Could not load file")
   }
@@ -236,7 +236,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playDs4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[11]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[0]))
   } catch {
     print("Could not load file")
   }
@@ -249,7 +249,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playE4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[3]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[22]))
   } catch {
     print("Could not load file")
   }
@@ -262,7 +262,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playF4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[18]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[9]))
   } catch {
     print("Could not load file")
   }
@@ -275,7 +275,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playFs4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[12]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[3]))
   } catch {
     print("Could not load file")
   }
@@ -288,7 +288,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playG4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[27]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[15]))
   } catch {
     print("Could not load file")
   }
@@ -301,7 +301,7 @@ class KeyboardViewController: UIInputViewController {
 
 @IBAction func playGs4(sender: Any) {
   do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[17]))
+    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[10]))
   } catch {
     print("Could not load file")
   }
@@ -313,7 +313,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playA5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[15]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[6]))
     } catch {
       print("Could not load file")
     }
@@ -325,7 +325,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playAs5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[23]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[11]))
       player.play()
     } catch {
       print("Could not load file")
@@ -338,7 +338,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playB5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[5]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[24]))
     } catch {
       print("Could not load file")
     }
@@ -350,7 +350,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playC5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[8]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[25]))
     } catch {
       print("Could not load file")
     }
@@ -362,7 +362,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playCs5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[25]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[17]))
     } catch {
       print("Could not load file")
     }
@@ -374,7 +374,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playD5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[0]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[19]))
     } catch {
       print("Could not load file")
     }
@@ -386,7 +386,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playDs5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[10]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[1]))
     } catch {
       print("Could not load file")
     }
@@ -398,7 +398,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playE5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[4]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[21]))
     } catch {
       print("Could not load file")
     }
@@ -410,7 +410,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playF5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[19]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[8]))
     } catch {
       print("Could not load file")
     }
@@ -422,7 +422,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playFs5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[14]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[2]))
     } catch {
       print("Could not load file")
     }
@@ -434,7 +434,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playG5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[24]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[16]))
     } catch {
       print("Could not load file")
     }
@@ -446,7 +446,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playGs5(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[20]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[7]))
     } catch {
       print("Could not load file")
     }
@@ -458,7 +458,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playC6(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[9]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[27]))
     } catch {
       print("Could not load file")
     }
@@ -470,7 +470,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playCs6(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[22]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[13]))
     } catch {
       print("Could not load file")
     }
@@ -482,7 +482,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playD6(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[2]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[20]))
     } catch {
       print("Could not load file")
     }
@@ -494,7 +494,7 @@ class KeyboardViewController: UIInputViewController {
 
   @IBAction func playDs6(sender: Any) {
     do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavFiles[13]))
+      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[4]))
     } catch {
       print("Could not load file")
     }

@@ -24,7 +24,6 @@
 		18A4C304F8B4453FB265CE40 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636413C625624EA98B304EA9 /* libRNImagePicker.a */; };
 		23865680B1AA46AE9DF8E0DB /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05DE267A8E4A7B90B6FA0A /* libRCTVideo.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
@@ -43,11 +42,16 @@
 		CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */; };
 		CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */; };
 		CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9C2000006C00B1F218 /* ViewSymbols.xib */; };
+		CC10F8B3200C5F12004A50E8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */; };
+		CC10F8B4200C5F12004A50E8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */; };
+		CC10F8B5200C5F2A004A50E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
+		CC10F8B7200C5F2A004A50E8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B6200C5F2A004A50E8 /* AVKit.framework */; };
+		CC10F8B8200C5F3D004A50E8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */; };
+		CC10F8B9200C5F3D004A50E8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */; };
 		CC19E14B200B52EA001FC2C1 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = CC19E124200B52E9001FC2C1 /* assets */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC67A4981FFC553A00530C11 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
-		CC67A4991FFC553A00530C11 /* trumpet in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4971FFC553A00530C11 /* trumpet */; };
 		CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */; };
 		CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC7775F11FF2243B00BE3A48 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776001FF224F800BE3A48 /* AudioToolbox.framework */; };
@@ -398,10 +402,12 @@
 		CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewLowerCase.xib; sourceTree = "<group>"; };
 		CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUpperCase.xib; sourceTree = "<group>"; };
 		CC083D9C2000006C00B1F218 /* ViewSymbols.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewSymbols.xib; sourceTree = "<group>"; };
+		CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CC10F8B6200C5F2A004A50E8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		CC19E124200B52E9001FC2C1 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
-		CC67A4971FFC553A00530C11 /* trumpet */ = {isa = PBXFileReference; lastKnownFileType = folder; name = trumpet; path = ../../../music_samples/trumpet; sourceTree = "<group>"; };
 		CC7775F11FF2243B00BE3A48 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		CC7775F51FF2243C00BE3A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -428,6 +434,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC10F8B7200C5F2A004A50E8 /* AVKit.framework in Frameworks */,
+				CC10F8B5200C5F2A004A50E8 /* AVFoundation.framework in Frameworks */,
+				CC10F8B3200C5F12004A50E8 /* CoreAudioKit.framework in Frameworks */,
+				CC10F8B4200C5F12004A50E8 /* CoreAudio.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -471,6 +481,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC10F8B8200C5F3D004A50E8 /* CoreAudio.framework in Frameworks */,
+				CC10F8B9200C5F3D004A50E8 /* CoreAudioKit.framework in Frameworks */,
 				CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */,
 				CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -709,7 +721,6 @@
 			children = (
 				CC083D981FFFFF5800B1F218 /* Views */,
 				CC67A4961FFC553A00530C11 /* piano */,
-				CC67A4971FFC553A00530C11 /* trumpet */,
 				CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */,
 				CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */,
 				CC7775F51FF2243C00BE3A48 /* Info.plist */,
@@ -720,6 +731,9 @@
 		CC7775FF1FF224F800BE3A48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC10F8B6200C5F2A004A50E8 /* AVKit.framework */,
+				CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */,
+				CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */,
 				CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */,
 				CC7776001FF224F800BE3A48 /* AudioToolbox.framework */,
 			);
@@ -1262,7 +1276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,7 +1290,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC67A4991FFC553A00530C11 /* trumpet in Resources */,
 				CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */,
 				CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */,
 				CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */,
@@ -1458,7 +1470,9 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1485,7 +1499,9 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1740,13 +1756,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1773,11 +1790,12 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.tunesendReactNative.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

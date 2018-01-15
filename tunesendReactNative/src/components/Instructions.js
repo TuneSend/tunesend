@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import ReactNative, { View, Text, Image, Switch, Font, TextInput } from 'react-native';
+import { View, Text, Image, Switch, Font, TextInput } from 'react-native';
 import Video from 'react-native-video';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-// import KeyboardSpacer from 'react-native-keyboard-spacer';
 
 const VIDEO_HEIGHT = 320;
-// const VIDEO_HEIGHT_SMALL = window.width /7;
 
 class Instructions extends Component {
 		constructor(props) {
@@ -31,7 +29,6 @@ class Instructions extends Component {
 		render() {
 			console.log('Scroll:', this);
 			const {
-				// ScrollViewContent,
 				TextContainer,
 				TextView,
 				TextFormat,
@@ -61,7 +58,7 @@ class Instructions extends Component {
 							rate={1.0}                    // 0 is paused, 1 is normal.
 							paused={false}                // Pauses playback entirely.
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							repeat={true}               // Repeat forever.
+							// repeat={true}               // Repeat forever.
 							onLoadStart={this.loadStart}  // Callback when video starts to load
 							onLoad={this.setDuration}     // Callback when video loads
 							onEnd={this.onEnd}            // Callback when playback finishes
@@ -100,7 +97,7 @@ class Instructions extends Component {
 							rate={1.0}                    // 0 is paused, 1 is normal.
 							paused={false}                // Pauses playback entirely.
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							repeat={true}               // Repeat forever.
+							// repeat={true}               // Repeat forever.
 							playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown.
 							onLoadStart={this.loadStart}  // Callback when video starts to load
 							onLoad={this.setDuration}     // Callback when video loads
