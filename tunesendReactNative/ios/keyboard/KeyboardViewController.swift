@@ -81,14 +81,7 @@ class KeyboardViewController: UIInputViewController {
 
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    if(UIScreen.main.bounds.size.width < UIScreen.main.bounds.size.height){
-      //Keyboard is in Portrait
-      keyboardView.frame = self.view.bounds
-    }
-    else{
-      //Keyboard is in Landscape
-      keyboardView.frame = self.view.bounds
-    }
+    keyboardView.frame = self.view.bounds
   }
 
   @IBAction func deleteText() {
