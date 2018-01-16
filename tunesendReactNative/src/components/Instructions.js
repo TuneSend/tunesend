@@ -95,6 +95,7 @@ class Instructions extends Component {
 							paused={false}                // Pauses playback entirely.
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
 							onLoadStart={this.loadStart}  // Callback when video starts to load
+							repeat={true}                           // Repeat forever. 
 							onLoad={this.setDuration}     // Callback when video loads
 							onEnd={this.onEnd}            // Callback when playback finishes
 							onError={this.videoError}     // Callback when video cannot be loaded
@@ -134,6 +135,7 @@ class Instructions extends Component {
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
 							playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown.
 							onLoadStart={this.loadStart}  // Callback when video starts to load
+							repeat={true}                           // Repeat forever. 
 							onLoad={this.setDuration}     // Callback when video loads
 							onEnd={this.onEnd}            // Callback when playback finishes
 							onError={this.videoError}     // Callback when video cannot be loaded
@@ -174,6 +176,7 @@ class Instructions extends Component {
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
+						repeat={true}                           // Repeat forever. 
 						onLoadStart={this.loadStart}  // Callback when video starts to load
 						onLoad={this.setDuration}     // Callback when video loads
 						onEnd={this.onEnd}            // Callback when playback finishes
@@ -214,6 +217,7 @@ class Instructions extends Component {
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
+						repeat={true}                           // Repeat forever. 
 						onLoadStart={this.loadStart}  // Callback when video starts to load
 						onLoad={this.setDuration}     // Callback when video loads
 						onEnd={this.onEnd}            // Callback when playback finishes
