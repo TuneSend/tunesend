@@ -12,14 +12,12 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		18A4C304F8B4453FB265CE40 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636413C625624EA98B304EA9 /* libRNImagePicker.a */; };
 		23865680B1AA46AE9DF8E0DB /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05DE267A8E4A7B90B6FA0A /* libRCTVideo.a */; };
@@ -42,13 +40,12 @@
 		CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */; };
 		CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */; };
 		CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9C2000006C00B1F218 /* ViewSymbols.xib */; };
-		CC10F8B3200C5F12004A50E8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */; };
-		CC10F8B4200C5F12004A50E8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */; };
-		CC10F8B5200C5F2A004A50E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
-		CC10F8B7200C5F2A004A50E8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B6200C5F2A004A50E8 /* AVKit.framework */; };
 		CC10F8B8200C5F3D004A50E8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */; };
 		CC10F8B9200C5F3D004A50E8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */; };
+		CC10F8BB200C8A05004A50E8 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = CC10F8BA200C8A05004A50E8 /* gifs */; };
+		CC10F8BC200C8A11004A50E8 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = CC10F8BA200C8A05004A50E8 /* gifs */; };
 		CC19E14B200B52EA001FC2C1 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = CC19E124200B52E9001FC2C1 /* assets */; };
+		CC58AA4B200DCCA9005C70FB /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC67A4981FFC553A00530C11 /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4961FFC553A00530C11 /* piano */; };
@@ -58,10 +55,7 @@
 		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
 		CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA31D802008350F0094FF3A /* Launch Screen.storyboard */; };
 		CC84D8FF20093240007996C4 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
-		CCA31DA8200929270094FF3A /* keyboards.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA4200929260094FF3A /* keyboards.mp4 */; };
-		CCA31DA9200929270094FF3A /* settings.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA5200929260094FF3A /* settings.mp4 */; };
-		CCA31DAA200929270094FF3A /* switchOn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA6200929260094FF3A /* switchOn.mp4 */; };
-		CCA31DAB200929270094FF3A /* TuneSend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA7200929270094FF3A /* TuneSend.mp4 */; };
+		CC9BC826200DBA4F00BD615E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9BC7FF200DBA4F00BD615E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,13 +93,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
 			remoteInfo = RCTVibration;
-		};
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = tunesendReactNative;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -375,7 +362,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* tunesendReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tunesendReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tunesendReactNativeTests.m; sourceTree = "<group>"; };
 		032FB577EBC4411AB8434B72 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
@@ -405,6 +391,7 @@
 		CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		CC10F8B6200C5F2A004A50E8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		CC10F8BA200C8A05004A50E8 /* gifs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gifs; path = ../src/gifs; sourceTree = "<group>"; };
 		CC19E124200B52E9001FC2C1 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
@@ -414,30 +401,16 @@
 		CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
 		CC7776001FF224F800BE3A48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CC9BC7FF200DBA4F00BD615E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CCA31D802008350F0094FF3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		CCA31DA4200929260094FF3A /* keyboards.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = keyboards.mp4; path = ../src/gifs/keyboards.mp4; sourceTree = "<group>"; };
-		CCA31DA5200929260094FF3A /* settings.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = settings.mp4; path = ../src/gifs/settings.mp4; sourceTree = "<group>"; };
-		CCA31DA6200929260094FF3A /* switchOn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = switchOn.mp4; path = ../src/gifs/switchOn.mp4; sourceTree = "<group>"; };
-		CCA31DA7200929270094FF3A /* TuneSend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = TuneSend.mp4; path = ../src/gifs/TuneSend.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC10F8B7200C5F2A004A50E8 /* AVKit.framework in Frameworks */,
-				CC10F8B5200C5F2A004A50E8 /* AVFoundation.framework in Frameworks */,
-				CC10F8B3200C5F12004A50E8 /* CoreAudioKit.framework in Frameworks */,
-				CC10F8B4200C5F12004A50E8 /* CoreAudio.framework in Frameworks */,
+				CC9BC826200DBA4F00BD615E /* MapKit.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -657,10 +630,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CCA31DA4200929260094FF3A /* keyboards.mp4 */,
-				CCA31DA5200929260094FF3A /* settings.mp4 */,
-				CCA31DA6200929260094FF3A /* switchOn.mp4 */,
-				CCA31DA7200929270094FF3A /* TuneSend.mp4 */,
+				CC10F8BA200C8A05004A50E8 /* gifs */,
 				CC67A4941FFBF3A600530C11 /* Settings.bundle */,
 				13B07FAE1A68108700A75B9A /* tunesendReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -680,7 +650,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* tunesendReactNative.app */,
-				00E356EE1AD99517003FC87E /* tunesendReactNativeTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */,
 				CC7775F11FF2243B00BE3A48 /* keyboard.appex */,
@@ -731,6 +700,7 @@
 		CC7775FF1FF224F800BE3A48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC9BC7FF200DBA4F00BD615E /* MapKit.framework */,
 				CC10F8B6200C5F2A004A50E8 /* AVKit.framework */,
 				CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */,
 				CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */,
@@ -769,24 +739,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* tunesendReactNativeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "tunesendReactNativeTests" */;
-			buildPhases = (
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = tunesendReactNativeTests;
-			productName = tunesendReactNativeTests;
-			productReference = 00E356EE1AD99517003FC87E /* tunesendReactNativeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* tunesendReactNative */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "tunesendReactNative" */;
@@ -870,10 +822,6 @@
 				LastUpgradeCheck = 920;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XM288BRHM4;
 					};
@@ -970,7 +918,6 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* tunesendReactNative */,
-				00E356ED1AD99517003FC87E /* tunesendReactNativeTests */,
 				2D02E47A1E0B4A5D006451C7 /* tunesendReactNative-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* tunesendReactNative-tvOSTests */,
 				CC7775F01FF2243B00BE3A48 /* keyboard */,
@@ -1248,24 +1195,15 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC58AA4B200DCCA9005C70FB /* piano in Resources */,
 				CC84D8FF20093240007996C4 /* main.jsbundle in Resources */,
 				CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */,
-				CCA31DA8200929270094FF3A /* keyboards.mp4 in Resources */,
-				CCA31DA9200929270094FF3A /* settings.mp4 in Resources */,
-				CCA31DAA200929270094FF3A /* switchOn.mp4 in Resources */,
+				CC10F8BB200C8A05004A50E8 /* gifs in Resources */,
 				CC19E14B200B52EA001FC2C1 /* assets in Resources */,
-				CCA31DAB200929270094FF3A /* TuneSend.mp4 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
 				2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */,
@@ -1290,6 +1228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC10F8BC200C8A11004A50E8 /* gifs in Resources */,
 				CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */,
 				CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */,
 				CC083DA02000006C00B1F218 /* ViewSymbols.xib in Resources */,
@@ -1333,14 +1272,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* tunesendReactNativeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1378,11 +1309,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* tunesendReactNative */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* tunesendReactNative-tvOS */;
@@ -1396,65 +1322,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
-					"$(SRCROOT)/../node_modules/react-native-video/ios",
-				);
-				INFOPLIST_FILE = tunesendReactNativeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tunesendReactNative.app/tunesendReactNative";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
-					"$(SRCROOT)/../node_modules/react-native-video/ios",
-				);
-				INFOPLIST_FILE = tunesendReactNativeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tunesendReactNative.app/tunesendReactNative";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1802,15 +1669,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "tunesendReactNativeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "tunesendReactNative" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

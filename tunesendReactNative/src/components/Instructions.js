@@ -50,7 +50,7 @@ class Instructions extends Component {
 				>
 						<Video
 							style={{ ...gifFormat, marginTop: 70 }}
-							source={{ uri: './settings.mp4' }}
+							source={{ uri: './settings.avi' }}
 							ref={(ref) => {
 								console.log('this', this.player);
 								this.player = ref;
@@ -89,7 +89,7 @@ class Instructions extends Component {
 						</View>
 						<Video
 							style={gifFormat}
-							source={{ uri: './TuneSend.mp4' }}
+							source={{ uri: './TuneSend.avi' }}
 							ref={(ref) => {
 								console.log('this', this.player);
 								this.player = ref;
@@ -126,11 +126,14 @@ class Instructions extends Component {
 						>
 							Send
 						</Text>
-						<Image style={{ ...IconFormat, marginLeft: 8 }} source={require('../image/TuneSendIconBlack.png')} />
+						<Image
+							style={{ ...IconFormat, marginLeft: 8 }}
+							source={require('../image/TuneSendIconBlack.png')}
+						/>
 					</View>
 					<Video
 						style={gifFormat}
-						source={{ uri: './keyboards.mp4' }}
+						source={{ uri: './keyboards.avi' }}
 						ref={(ref) => {
 							console.log('this', this.player);
 							this.player = ref;
@@ -138,7 +141,7 @@ class Instructions extends Component {
 						rate={1.0}                    // 0 is paused, 1 is normal.
 						paused={false}                // Pauses playback entirely.
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						repeat={true}               // Repeat forever.
+						// repeat={true}               // Repeat forever.
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
 						onLoadStart={this.loadStart}  // Callback when video starts to load
@@ -167,11 +170,14 @@ class Instructions extends Component {
 							>
 								boards
 							</Text>
-						<Image style={{ ...IconFormat, marginLeft: 5 }} source={require('../image/keyboardsIconIOS.png')} />
+						<Image
+							style={{ ...IconFormat, marginLeft: 5 }}
+							source={require('../image/keyboardsIconIOS.png')}
+						/>
 					</View>
 					<Video
 						style={gifFormat}
-						source={{ uri: './switchOn.mp4' }}
+						source={{ uri: './switchOn.avi' }}
 						ref={(ref) => {
 							console.log('this', this.player);
 							this.player = ref;
@@ -179,7 +185,7 @@ class Instructions extends Component {
 						rate={1.0}                    // 0 is paused, 1 is normal.
 						paused={false}                // Pauses playback entirely.
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						repeat={true}               // Repeat forever.
+						// repeat={true}               // Repeat forever.
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
 						onLoadStart={this.loadStart}  // Callback when video starts to load

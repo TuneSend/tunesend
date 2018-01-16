@@ -169,7 +169,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
   //DY playback logic
-    playBack.append(16)
+    playBack.append(5)
   }
 
 @IBAction func playAs4(sender: Any) {
@@ -182,7 +182,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(21)
+  playBack.append(12)
 }
 
 @IBAction func playB4(sender: Any) {
@@ -194,7 +194,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(6)
+  playBack.append(23)
 }
 
 @IBAction func playC4(sender: Any) {
@@ -206,7 +206,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(7)
+  playBack.append(26)
 }
 
 @IBAction func playCs4(sender: Any) {
@@ -218,7 +218,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(26)
+  playBack.append(14)
 }
 
 @IBAction func playD4(sender: Any) {
@@ -230,7 +230,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(1)
+  playBack.append(18)
 }
 
 
@@ -243,7 +243,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(11)
+  playBack.append(0)
 }
 
 
@@ -256,7 +256,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(3)
+  playBack.append(22)
 }
 
 
@@ -269,7 +269,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(18)
+  playBack.append(9)
 }
 
 
@@ -282,7 +282,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(12)
+  playBack.append(3)
 }
 
 
@@ -295,7 +295,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(27)
+  playBack.append(15)
 }
 
 
@@ -308,7 +308,7 @@ class KeyboardViewController: UIInputViewController {
   player.play()
 
   //DY playback logic
-  playBack.append(17)
+  playBack.append(10)
 }
 
   @IBAction func playA5(sender: Any) {
@@ -320,7 +320,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(15)
+    playBack.append(6)
   }
 
   @IBAction func playAs5(sender: Any) {
@@ -333,7 +333,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(23)
+    playBack.append(11)
   }
 
   @IBAction func playB5(sender: Any) {
@@ -345,7 +345,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(5)
+    playBack.append(24)
   }
 
   @IBAction func playC5(sender: Any) {
@@ -357,7 +357,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(8)
+    playBack.append(25)
   }
 
   @IBAction func playCs5(sender: Any) {
@@ -369,7 +369,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(25)
+    playBack.append(17)
   }
 
   @IBAction func playD5(sender: Any) {
@@ -381,7 +381,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(0)
+    playBack.append(19)
   }
 
   @IBAction func playDs5(sender: Any) {
@@ -393,7 +393,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(10)
+    playBack.append(1)
   }
 
   @IBAction func playE5(sender: Any) {
@@ -405,7 +405,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(4)
+    playBack.append(21)
   }
 
   @IBAction func playF5(sender: Any) {
@@ -417,7 +417,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(19)
+    playBack.append(8)
   }
 
   @IBAction func playFs5(sender: Any) {
@@ -429,7 +429,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(14)
+    playBack.append(2)
   }
 
   @IBAction func playG5(sender: Any) {
@@ -441,7 +441,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(24)
+    playBack.append(16)
   }
 
   @IBAction func playGs5(sender: Any) {
@@ -453,7 +453,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(20)
+    playBack.append(7)
   }
 
   @IBAction func playC6(sender: Any) {
@@ -465,7 +465,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(9)
+    playBack.append(27)
   }
 
   @IBAction func playCs6(sender: Any) {
@@ -477,7 +477,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(22)
+    playBack.append(13)
   }
 
   @IBAction func playD6(sender: Any) {
@@ -489,7 +489,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(2)
+    playBack.append(20)
   }
 
   @IBAction func playDs6(sender: Any) {
@@ -501,7 +501,7 @@ class KeyboardViewController: UIInputViewController {
     player.play()
 
     //DY playback logic
-    playBack.append(13)
+    playBack.append(4)
   }
 
 

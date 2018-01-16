@@ -65,7 +65,6 @@ class Heading extends Component {
 		});
 
 		const {
-			fill,
 			header,
 			ScrollViewContent,
 			backgroundImage,
@@ -78,8 +77,9 @@ class Heading extends Component {
             style={ScrollViewContent}
             scrollEventThrottle={5}
             onScroll={
-              Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
-        >
+			Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
+		>
+
 
 			{this.state.status ? this.renderScrollViewContent() : null}
 
@@ -89,14 +89,14 @@ class Heading extends Component {
             <Image
 				style={headerIcon}
 				source={require('../image/TuneSendIcon.png')}
+            />
+			<Animated.Image
+				style={[
+					backgroundImage,
+					{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
+					]}
+				source={require('../image/TuneSend.png')}
 			/>
-          	<Animated.Image
-	            style={[
-	              backgroundImage,
-	              { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
-	            ]}
-	            source={require('../image/TuneSend.png')}
-        	/>
         </Animated.View>
       </View>
     );
