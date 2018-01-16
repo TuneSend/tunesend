@@ -88,7 +88,7 @@ class Heading extends Component {
 		<Animated.View style={[header, { height: headerHeight }]}>
             <Image
 				style={headerIcon}
-				source={require('../image/TuneSendIcon.png')}
+				source={require('../image/TuneSendIcon2.png')}
 			/>
           	<Animated.Image
 	            style={[
@@ -120,9 +120,8 @@ const styles = {
 		overflow: 'hidden',
 	},
 	headerIcon: {
-		width: 50,
-		height: 25,
-		alignItems: 'center'
+		marginTop: 21,
+		marginLeft: 15,
 	},
 	bar: {
 		marginTop: 28,
