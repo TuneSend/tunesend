@@ -48,6 +48,42 @@ class Instructions extends Component {
 					keyboardShouldPersistTaps='always' // make keyboard not disappear when tapping outside of input
 					enableAutoAutomaticScroll={false} // turn off auto scrolling to the field behaviour, which is unfortunately buggy when autocomplete suggestions disappear from the keyboard as displayed in the gif above
 				>
+						<View 
+							style={{
+								...TextView,
+								borderBottomColor: 'black',
+								borderBottomWidth: 2,
+								marginBottom: 5,
+								marginTop: 40
+							}}
+						>
+								<Text style={{ ...TextFormat, fontSize: 31 }}>
+								Get Started With
+								</Text>
+								<Text
+									style={{
+										...TextFormat,
+										color: '#55b2f9',
+										paddingLeft: 6,
+										fontSize: 31
+									}}
+								>
+									Tune
+								</Text>
+								<Text
+									style={{
+										...TextFormat,
+										color: '#f6be5f',
+										fontSize: 31,
+										paddingRight: 5
+									}}
+								>
+									Send
+								</Text>
+								<Text style={{ ...TextFormat, color: '#55b2f9', fontSize: 31 }}>
+									!
+								</Text>
+						</View>
 						<Video
 							style={{ ...gifFormat, marginTop: 70 }}
 							source={{ uri: './settings.mp4' }}
@@ -58,7 +94,6 @@ class Instructions extends Component {
 							rate={1.0}                    // 0 is paused, 1 is normal.
 							paused={false}                // Pauses playback entirely.
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							// repeat={true}               // Repeat forever.
 							onLoadStart={this.loadStart}  // Callback when video starts to load
 							onLoad={this.setDuration}     // Callback when video loads
 							onEnd={this.onEnd}            // Callback when playback finishes
@@ -97,7 +132,6 @@ class Instructions extends Component {
 							rate={1.0}                    // 0 is paused, 1 is normal.
 							paused={false}                // Pauses playback entirely.
 							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							// repeat={true}               // Repeat forever.
 							playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown.
 							onLoadStart={this.loadStart}  // Callback when video starts to load
 							onLoad={this.setDuration}     // Callback when video loads
@@ -138,7 +172,6 @@ class Instructions extends Component {
 						rate={1.0}                    // 0 is paused, 1 is normal.
 						paused={false}                // Pauses playback entirely.
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						repeat={true}               // Repeat forever.
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
 						onLoadStart={this.loadStart}  // Callback when video starts to load
@@ -179,7 +212,6 @@ class Instructions extends Component {
 						rate={1.0}                    // 0 is paused, 1 is normal.
 						paused={false}                // Pauses playback entirely.
 						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						repeat={true}               // Repeat forever.
 						playWhenInactive={false}    // [iOS] Video continues to play when control or
 						//notification center are shown.
 						onLoadStart={this.loadStart}  // Callback when video starts to load
@@ -214,6 +246,11 @@ class Instructions extends Component {
 							value={this.state.isToggled}
 							onValueChange={(newValue) => this.setState({ isToggled: newValue })}
 						/>
+					</View>
+					<View style={TextView}>
+						<Text style={TextFormat}>
+								Make Sure To Turn On Your Sound!!
+						</Text>
 					</View>
 					<View style={inputContainerStyle}>
 						<TextInput
