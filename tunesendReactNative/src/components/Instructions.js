@@ -57,7 +57,7 @@ class Instructions extends Component {
 								marginTop: 40
 							}}
 						>
-								<Text style={{ ...TextFormat, fontSize: 31 }}>
+								<Text style={{ ...TextFormat, fontSize: 29 }}>
 								Get Started With
 								</Text>
 								<Text
@@ -65,7 +65,7 @@ class Instructions extends Component {
 										...TextFormat,
 										color: '#55b2f9',
 										paddingLeft: 6,
-										fontSize: 31
+										fontSize: 29
 									}}
 								>
 									Tune
@@ -74,7 +74,7 @@ class Instructions extends Component {
 									style={{
 										...TextFormat,
 										color: '#f6be5f',
-										fontSize: 31,
+										fontSize: 29,
 										paddingRight: 5
 									}}
 								>
