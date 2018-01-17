@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
+		03D53ED75105455F13955F26 /* Pods_tunesendReactNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B306C7399F31C960E45D860 /* Pods_tunesendReactNative.framework */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -36,6 +37,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* tunesendReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tunesendReactNativeTests.m */; };
 		2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49496977FCA84F6C95984AB3 /* Pacifico-Regular.ttf */; };
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		6275DECB38E1C50907372C79 /* Pods_keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E69C0C84FCFE36BC6E537FB /* Pods_keyboard.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		CC083D9D2000006C00B1F218 /* View123.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D992000006C00B1F218 /* View123.xib */; };
@@ -390,11 +392,14 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* tunesendReactNative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tunesendReactNative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* tunesendReactNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tunesendReactNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E69C0C84FCFE36BC6E537FB /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49496977FCA84F6C95984AB3 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pacifico-Regular.ttf"; path = "../assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		636413C625624EA98B304EA9 /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8B306C7399F31C960E45D860 /* Pods_tunesendReactNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tunesendReactNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD7172EFF557FB23B4F103D /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-keyboard/Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CA05DE267A8E4A7B90B6FA0A /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		CA7DB827AB774CABB59777C5 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
@@ -419,6 +424,9 @@
 		CCA31DA5200929260094FF3A /* settings.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = settings.mp4; path = ../src/gifs/settings.mp4; sourceTree = "<group>"; };
 		CCA31DA6200929260094FF3A /* switchOn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = switchOn.mp4; path = ../src/gifs/switchOn.mp4; sourceTree = "<group>"; };
 		CCA31DA7200929270094FF3A /* TuneSend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = TuneSend.mp4; path = ../src/gifs/TuneSend.mp4; sourceTree = "<group>"; };
+		D75737108043EB3751D79A7A /* Pods-tunesendReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tunesendReactNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		DC4FCFC978907BBA1F725E2D /* Pods-tunesendReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tunesendReactNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative.debug.xcconfig"; sourceTree = "<group>"; };
+		E51BC30064307E96422C16F4 /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-keyboard/Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -452,6 +460,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				18A4C304F8B4453FB265CE40 /* libRNImagePicker.a in Frameworks */,
 				23865680B1AA46AE9DF8E0DB /* libRCTVideo.a in Frameworks */,
+				03D53ED75105455F13955F26 /* Pods_tunesendReactNative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +494,7 @@
 				CC10F8B9200C5F3D004A50E8 /* CoreAudioKit.framework in Frameworks */,
 				CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */,
 				CC7776011FF224F800BE3A48 /* AudioToolbox.framework in Frameworks */,
+				6275DECB38E1C50907372C79 /* Pods_keyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +616,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		483CDB89CEE669AE49A18071 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E51BC30064307E96422C16F4 /* Pods-keyboard.debug.xcconfig */,
+				AAD7172EFF557FB23B4F103D /* Pods-keyboard.release.xcconfig */,
+				DC4FCFC978907BBA1F725E2D /* Pods-tunesendReactNative.debug.xcconfig */,
+				D75737108043EB3751D79A7A /* Pods-tunesendReactNative.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,6 +691,7 @@
 				CC7775FF1FF224F800BE3A48 /* Frameworks */,
 				CC84D90C200933C0007996C4 /* Recovered References */,
 				94B094E19EFB4A8AA2907602 /* Resources */,
+				483CDB89CEE669AE49A18071 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -736,6 +758,8 @@
 				CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */,
 				CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */,
 				CC7776001FF224F800BE3A48 /* AudioToolbox.framework */,
+				2E69C0C84FCFE36BC6E537FB /* Pods_keyboard.framework */,
+				8B306C7399F31C960E45D860 /* Pods_tunesendReactNative.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -791,11 +815,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "tunesendReactNative" */;
 			buildPhases = (
+				334C11020D505AAC42BB53A0 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				4DC6C7951FF1DB260079200D /* Embed App Extensions */,
+				23B436E263981988D3C4DCF5 /* [CP] Embed Pods Frameworks */,
+				C45F070979353851895A3FE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -847,9 +874,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC7775F91FF2243C00BE3A48 /* Build configuration list for PBXNativeTarget "keyboard" */;
 			buildPhases = (
+				0DD9FDCFB64FF0244C020B23 /* [CP] Check Pods Manifest.lock */,
 				CC7775ED1FF2243B00BE3A48 /* Sources */,
 				CC7775EE1FF2243B00BE3A48 /* Frameworks */,
 				CC7775EF1FF2243B00BE3A48 /* Resources */,
+				164005166144A7F8E2CC19CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1316,6 +1345,54 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		0DD9FDCFB64FF0244C020B23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		164005166144A7F8E2CC19CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-keyboard/Pods-keyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23B436E263981988D3C4DCF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1329,6 +1406,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		334C11020D505AAC42BB53A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tunesendReactNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C45F070979353851895A3FE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1457,6 +1567,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4FCFC978907BBA1F725E2D /* Pods-tunesendReactNative.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1487,6 +1598,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75737108043EB3751D79A7A /* Pods-tunesendReactNative.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1736,6 +1848,7 @@
 		};
 		CC7775FA1FF2243C00BE3A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51BC30064307E96422C16F4 /* Pods-keyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1769,6 +1882,7 @@
 		};
 		CC7775FB1FF2243C00BE3A48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD7172EFF557FB23B4F103D /* Pods-keyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

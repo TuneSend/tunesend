@@ -46,7 +46,7 @@ class KeyboardViewController: UIInputViewController {
 //        print(itemPath)
         mp3Files.append(itemPath)
       }
-      print("this is mp3 files \(mp3Files)")
+//      print("this is mp3 files \(mp3Files)")
     }
   }
 
