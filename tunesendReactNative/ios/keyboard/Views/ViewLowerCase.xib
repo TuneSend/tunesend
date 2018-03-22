@@ -43,7 +43,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="C0b-hf-SVi"/>
-                                <action selector="playG5WithSender:" destination="-1" eventType="touchUpInside" id="Vea-Ns-3N0"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n6-xl-GDe">
@@ -61,7 +60,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="c4R-9P-KXp"/>
-                                <action selector="playFs5WithSender:" destination="-1" eventType="touchUpInside" id="WeA-HN-Ouj"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07D-4o-ACh">
@@ -79,7 +77,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="jgy-fO-pzA"/>
-                                <action selector="playC6WithSender:" destination="-1" eventType="touchUpInside" id="2s8-Bz-cLm"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LU-aH-Tdb">
@@ -97,7 +94,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="AxN-CC-fYV"/>
-                                <action selector="playF5WithSender:" destination="-1" eventType="touchUpInside" id="qWZ-IY-Qtw"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlc-cq-77D">
@@ -115,7 +111,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="2NE-PH-6kK"/>
-                                <action selector="playGs5WithSender:" destination="-1" eventType="touchUpInside" id="4Uy-b8-oUS"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPI-A9-1kj">
@@ -133,7 +128,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="RML-8H-VdS"/>
-                                <action selector="playB5WithSender:" destination="-1" eventType="touchUpInside" id="2kB-QT-3yx"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mZ-1t-GE9">
@@ -151,7 +145,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="kbu-6n-tX3"/>
-                                <action selector="playAs5WithSender:" destination="-1" eventType="touchUpInside" id="YzL-LG-R4J"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB8-g6-QKL">
@@ -169,7 +162,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="LHX-Bf-rnx"/>
-                                <action selector="playA5WithSender:" destination="-1" eventType="touchUpInside" id="Gj5-cv-Nbz"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-ar-Psm">
@@ -187,7 +179,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="Jy3-dh-nkc"/>
-                                <action selector="playCs6WithSender:" destination="-1" eventType="touchUpInside" id="PjZ-M3-kdy"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-DQ-mIF">
@@ -220,7 +211,6 @@
                             </variation>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="J4m-cN-kuO"/>
-                                <action selector="playE5WithSender:" destination="-1" eventType="touchUpInside" id="rPY-tT-e7r"/>
                             </connections>
                         </button>
                     </subviews>
@@ -284,7 +274,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="PVm-sb-BdV"/>
-                                <action selector="playAs4WithSender:" destination="-1" eventType="touchUpInside" id="mMR-Mp-6rH"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vh-13-THv">
@@ -302,7 +291,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="wOi-3K-pjn"/>
-                                <action selector="playA4WithSender:" destination="-1" eventType="touchUpInside" id="3VX-Ob-vrC"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlk-ab-8Rq">
@@ -320,7 +308,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="0T9-qA-RTk"/>
-                                <action selector="playDs5WithSender:" destination="-1" eventType="touchUpInside" id="h3s-Fv-0pd"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc7-4d-bYR">
@@ -338,7 +325,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="wCr-Ph-H6u"/>
-                                <action selector="playGs4WithSender:" destination="-1" eventType="touchUpInside" id="tLT-sp-cxO"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ii-ia-giW">
@@ -356,7 +342,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="7DD-2N-UrO"/>
-                                <action selector="playB4WithSender:" destination="-1" eventType="touchUpInside" id="IBS-Lt-Qku"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2m-Ra-yMq">
@@ -374,7 +359,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="7pp-OS-Ty4"/>
-                                <action selector="playD5WithSender:" destination="-1" eventType="touchUpInside" id="RcP-J0-0oq"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ci-tG-ihb">
@@ -392,7 +376,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="sdb-O8-eol"/>
-                                <action selector="playCs5WithSender:" destination="-1" eventType="touchUpInside" id="7sm-Ke-UzP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-lT-0iV">
@@ -410,7 +393,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="TL9-yK-D9T"/>
-                                <action selector="playC5WithSender:" destination="-1" eventType="touchUpInside" id="QN5-2k-WDp"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULQ-Ko-ABy">
@@ -428,7 +410,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="85C-wm-c9K"/>
-                                <action selector="playG4WithSender:" destination="-1" eventType="touchUpInside" id="1Cp-uI-ez3"/>
                             </connections>
                         </button>
                     </subviews>
@@ -487,7 +468,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="MEs-63-Kvv"/>
-                                <action selector="playDs4WithSender:" destination="-1" eventType="touchUpInside" id="Zhx-P8-u58"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-Hz-lLi">
@@ -505,7 +485,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="2cw-bq-wLn"/>
-                                <action selector="playD4WithSender:" destination="-1" eventType="touchUpInside" id="Djb-re-yKY"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mde-U1-eYG">
@@ -523,7 +502,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="jAD-WB-clG"/>
-                                <action selector="playCs4WithSender:" destination="-1" eventType="touchUpInside" id="y1u-0Y-DRT"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr9-lN-j2S">
@@ -541,7 +519,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="8be-G6-6KZ"/>
-                                <action selector="playE4WithSender:" destination="-1" eventType="touchUpInside" id="Jrj-UT-0fm"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbI-B3-gvY">
@@ -559,7 +536,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="ZYb-G2-Pbo"/>
-                                <action selector="playFs4WithSender:" destination="-1" eventType="touchUpInside" id="Oyw-PE-GGx"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k2-3K-1hh">
@@ -577,7 +553,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="vzA-JP-gYw"/>
-                                <action selector="playF4WithSender:" destination="-1" eventType="touchUpInside" id="cgj-xs-RHl"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Ws-yX7" userLabel="Delete">
@@ -611,7 +586,6 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="keypressWithSender:" destination="-1" eventType="touchUpInside" id="fiZ-B4-y65"/>
-                                <action selector="playC4WithSender:" destination="-1" eventType="touchUpInside" id="4nc-Yv-1xy"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mky-qT-OUs" userLabel="Shift">
@@ -724,7 +698,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="GSo-Nc-F13"/>
+                                <action selector="playBackNotesWithSender:" destination="-1" eventType="touchUpInside" id="4Nr-7K-DuO"/>
                                 <action selector="pulsatePlayWithSender:" destination="-1" eventType="touchUpInside" id="ccy-gk-cXd"/>
                             </connections>
                         </button>

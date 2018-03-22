@@ -30,6 +30,116 @@ extension UIButton {
 
 class KeyboardViewController: UIInputViewController {
   var mp3Files : [String] = []
+  
+  // Assigns each media file to a character
+  var notes: [String: String] = [
+                          // Lower Case
+                                "a" : "Piano G4",
+                                "b" : "Piano E4",
+                                "c" : "Piano D4",
+                                "d" : "Piano A4",
+                                "e" : "Piano F#5",
+                                "f" : "Piano A#4",
+                                "g" : "Piano B4",
+                                "h" : "Piano C5",
+                                "i" : "Piano B5",
+                                "j" : "Piano C#5",
+                                "k" : "Piano D5",
+                                "l" : "Piano D#5",
+                                "m" : "Piano F#4",
+                                "n" : "Piano F4",
+                                "o" : "Piano C6",
+                                "p" : "Piano C#6",
+                                "q" : "Piano E5",
+                                "r" : "Piano G5",
+                                "s" : "Piano G#4",
+                                "t" : "Piano G#5",
+                                "u" : "Piano A#5",
+                                "v" : "Piano D#4",
+                                "w" : "Piano F5",
+                                "x" : "Piano C#4",
+                                "y" : "Piano A5",
+                                "z" : "Piano C4",
+                          // Upper Case
+                                "A" : "Piano G4",
+                                "B" : "Piano E4",
+                                "C" : "Piano D4",
+                                "D" : "Piano A4",
+                                "E" : "Piano F#5",
+                                "F" : "Piano A#4",
+                                "G" : "Piano B4",
+                                "H" : "Piano C5",
+                                "I" : "Piano B5",
+                                "J" : "Piano C#5",
+                                "K" : "Piano D5",
+                                "L" : "Piano D#5",
+                                "M" : "Piano F#4",
+                                "N" : "Piano F4",
+                                "O" : "Piano C6",
+                                "P" : "Piano C#6",
+                                "Q" : "Piano E5",
+                                "R" : "Piano G5",
+                                "S" : "Piano G#4",
+                                "T" : "Piano G#5",
+                                "U" : "Piano A#5",
+                                "V" : "Piano D#4",
+                                "W" : "Piano F5",
+                                "X" : "Piano C#4",
+                                "Y" : "Piano A5",
+                                "Z" : "Piano C4",
+                        // Symbols
+                                "|" : "Piano G4",
+                                "'" : "Piano E4",
+                                "?" : "Piano D4",
+                                "<" : "Piano A4",
+                                "}" : "Piano F#5",
+                                ">" : "Piano A#4",
+                                "€" : "Piano B4",
+                                "£" : "Piano C5",
+                                "+" : "Piano B5",
+                                "¥" : "Piano C#5",
+                                "·" : "Piano D5",
+                                "[" : "Piano D#5",
+                                "\\" : "Piano F#4",
+                                "_" : "Piano F4",
+                                "=" : "Piano C6",
+                                "]" : "Piano E5",
+                                "#" : "Piano G5",
+                                "~" : "Piano G#4",
+                                "%" : "Piano G#5",
+                                "*" : "Piano A#5",
+                                "!" : "Piano D#4",
+                                "{" : "Piano F5",
+                                "," : "Piano C#4",
+                                "^" : "Piano A5",
+                                "." : "Piano C4",
+                        // Numbers
+                                ":" : "Piano G4",
+//                                "'" : "Piano E4",
+//                                "?" : "Piano D4",
+                                "(" : "Piano A4",
+                                "4" : "Piano F#5",
+                                ")" : "Piano A#4",
+                                "$" : "Piano B4",
+                                "&" : "Piano C5",
+                                "9" : "Piano B5",
+                                "@" : "Piano C#5",
+                                "\"" : "Piano D5",
+                                "1" : "Piano D#5",
+                                "/" : "Piano F#4",
+                                "-" : "Piano F4",
+                                "0" : "Piano C6",
+                                "2" : "Piano E5",
+                                "5" : "Piano G5",
+                                ";" : "Piano G#4",
+                                "6" : "Piano G#5",
+                                "8" : "Piano A#5",
+//                                "!" : "Piano D#4",
+                                "3" : "Piano F5",
+//                                "," : "Piano C#4",
+                                "7" : "Piano A5"
+//                                "." : "Piano C4"
+                                 ]
   var keyboardView: UIView!
   var player = AVAudioPlayer()
   let path = Bundle.main.resourcePath
@@ -43,10 +153,8 @@ class KeyboardViewController: UIInputViewController {
       let contents  = try! fileManager.contentsOfDirectory(atPath: pianoPath)
       for item in contents {
         let itemPath = pianoPath + "/" + item
-//        print(itemPath)
         mp3Files.append(itemPath)
       }
-//      print("this is mp3 files \(mp3Files)")
     }
   }
 
@@ -84,6 +192,7 @@ class KeyboardViewController: UIInputViewController {
     keyboardView.frame = self.view.bounds
   }
 
+  // Deletes text and corresponding media file from queue
   @IBAction func deleteText() {
     let proxy = textDocumentProxy
     proxy.deleteBackward()
@@ -99,12 +208,29 @@ class KeyboardViewController: UIInputViewController {
   }
 
   @IBAction func keypress(sender: UIButton!) {
-    let typedCharacter = sender.titleLabel?.text
+    guard let typedCharacter = sender.titleLabel?.text else {
+      return
+    }
     let proxy = textDocumentProxy
-    proxy.insertText(typedCharacter!)
+    proxy.insertText(typedCharacter)
 
-    //start of keypress action
+    // Pulsate effect fo keys
     sender.pulsate()
+    
+    // Audio Playback
+    guard  let fileName = notes[typedCharacter.lowercased()] else {
+      return
+    }
+    // Loads media file according to filename that corresponds from Notes Array
+    guard let audioURL = Bundle.main.url(forResource: fileName, withExtension: "wav", subdirectory: "piano") else {
+      return
+    }
+    do {
+      player = try AVAudioPlayer(contentsOf:  audioURL)
+    } catch {
+      print(error.localizedDescription)
+    }
+    player.play()
   }
 
   @IBAction func pulsatePlay(sender: UIButton!) {
@@ -158,358 +284,27 @@ class KeyboardViewController: UIInputViewController {
   // MARK: - Properties
   @IBOutlet weak var A: UIButton!
 
-
-  // MARK: - Actions
-@IBAction func playA4(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[5]))
-    } catch {
-        print("Could not load file")
-    }
-    player.play()
-
-  //DY playback logic
-    playBack.append(5)
-  }
-
-@IBAction func playAs4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[12]))
-      player.play()
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(12)
-}
-
-@IBAction func playB4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[23]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(23)
-}
-
-@IBAction func playC4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[26]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(26)
-}
-
-@IBAction func playCs4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[14]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(14)
-}
-
-@IBAction func playD4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[18]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(18)
-}
-
-
-@IBAction func playDs4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[0]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(0)
-}
-
-
-@IBAction func playE4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[22]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(22)
-}
-
-
-@IBAction func playF4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[9]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(9)
-}
-
-
-@IBAction func playFs4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[3]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(3)
-}
-
-
-@IBAction func playG4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[15]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(15)
-}
-
-
-@IBAction func playGs4(sender: Any) {
-  do {
-    try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[10]))
-  } catch {
-    print("Could not load file")
-  }
-  player.play()
-
-  //DY playback logic
-  playBack.append(10)
-}
-
-  @IBAction func playA5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[6]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(6)
-  }
-
-  @IBAction func playAs5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[11]))
-      player.play()
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(11)
-  }
-
-  @IBAction func playB5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[24]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(24)
-  }
-
-  @IBAction func playC5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[25]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(25)
-  }
-
-  @IBAction func playCs5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[17]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(17)
-  }
-
-  @IBAction func playD5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[19]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(19)
-  }
-
-  @IBAction func playDs5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[1]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(1)
-  }
-
-  @IBAction func playE5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[21]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(21)
-  }
-
-  @IBAction func playF5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[8]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(8)
-  }
-
-  @IBAction func playFs5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[2]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(2)
-  }
-
-  @IBAction func playG5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[16]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(16)
-  }
-
-  @IBAction func playGs5(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[7]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(7)
-  }
-
-  @IBAction func playC6(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[27]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(27)
-  }
-
-  @IBAction func playCs6(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[13]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(13)
-  }
-
-  @IBAction func playD6(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[20]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(20)
-  }
-
-  @IBAction func playDs6(sender: Any) {
-    do {
-      try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Files[4]))
-    } catch {
-      print("Could not load file")
-    }
-    player.play()
-
-    //DY playback logic
-    playBack.append(4)
-  }
-
-
   //DY playback logic IBAction
   @IBAction func playBackNotes(sender: Any) {
-    things()
+    //things()
+    let proxy = textDocumentProxy
+    proxy.adjustTextPosition(byCharacterOffset: (proxy.documentContextAfterInput ?? "").count)
+    // Sleep Interval so that change is rendered when someone deletes text from middle
+    Thread.sleep(forTimeInterval: 0.01);
+    // According to cursor position contain text that is before and after
+    let chars =    (proxy.documentContextBeforeInput ?? "") +
+        (proxy.documentContextAfterInput ?? "")
+    // Play notes according to what was pressed
+    for char in chars {
+      if let fileName = notes[String(char)] {
+        if  let fileURL = Bundle.main.url(forResource: fileName, withExtension: "wav", subdirectory: "piano") {
+          let playerItem = AVPlayerItem(url:fileURL)
+          queuePlayer.insert(playerItem, after:nil)
+        }
+      }
+  
+    }
     queuePlayer.play()
-    playBack.removeAll()
   }
 
   //DY keyboard toggle - symbol
@@ -546,6 +341,6 @@ class KeyboardViewController: UIInputViewController {
   }
 
   override func textDidChange(_ textInput: UITextInput?) {
-
+//      print("TExt changed")
   }
 }
