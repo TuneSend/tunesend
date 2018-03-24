@@ -1,8 +1,12 @@
 
 ## Only available in iOS
 
+tunesendReactNative/src/image/TuneSend.png
+
 ## About Project
 A fun IOS keyboard extension that inspires musical creativity
+
+<img src="tunesendReactNative/src/image/TuneSend.png" align="right" width="200" height="170" overflow="hidden" />
 
 ## Running project locally
 install node.js (if you do not have it installed. http://expressjs.com/en/starter/installing.html)</br>
