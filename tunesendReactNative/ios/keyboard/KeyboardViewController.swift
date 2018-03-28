@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 //import AudioToolbox
 import QuartzCore
+import MobileCoreServices
 //DY add for playback
 var playBack = [Int]()
 ///test
@@ -32,7 +33,7 @@ class KeyboardViewController: UIInputViewController {
   var mp3Files : [String] = []
   
   // Assigns each media file to a character
-  var notes: [String: String] = [
+  var myNotes: [String: String] = [
                           // Lower Case
                                 "a" : "Piano G4",
                                 "b" : "Piano E4",
@@ -157,6 +158,51 @@ class KeyboardViewController: UIInputViewController {
       }
     }
   }
+  
+  func createSound(myNotes: [String], outputFile: String) {
+    // CMTime struct represents a length of time that is stored as rational number
+    var startTime: CMTime = kCMTimeZero
+    // AVMutableComposition creates new composition
+    let composition: AVMutableComposition = AVMutableComposition()
+    // AVMutableCompositionTrack - A mutable track in composition that you use to insert, remove, and scale track segments
+    if let compositionAudioTrack: AVMutableCompositionTrack = composition.addMutableTrack(withMediaType: AVMediaType.audio, preferredTrackID: kCMPersistentTrackID_Invalid) {
+      
+      for url in allFilesForCharacters() {
+        let avAsset: AVURLAsset = AVURLAsset(url: url)
+        let timeRange: CMTimeRange = CMTimeRangeMake(kCMTimeZero, avAsset.duration)
+        let audioTrack: AVAssetTrack = avAsset.tracks(withMediaType: AVMediaType.audio)[0]
+        try! compositionAudioTrack.insertTimeRange(timeRange, of: audioTrack, at: startTime)
+        startTime = CMTimeAdd(startTime, timeRange.duration)
+      }
+    }
+    //    for file in queuePlayer {
+    //      let sound: String = Bundle.main.path(forResource: fileName, ofType: "wav",  inDirectory: "recordings")!
+    //      let url: URL = URL(fileURLWithPath: sound)
+    //    }
+    
+    let exportPath: String = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].path+"/"+outputFile+".m4a"
+    
+    try? FileManager.default.removeItem(atPath: exportPath)
+    
+    if let export: AVAssetExportSession = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetAppleM4A) {
+      
+      export.outputURL = URL(fileURLWithPath: exportPath)
+      export.outputFileType = AVFileType.m4a
+      
+      export.exportAsynchronously {
+        if export.status == AVAssetExportSessionStatus.completed {
+          NSLog("All done");
+          if let data = try? Data(contentsOf: export.outputURL!) {
+            let board = UIPasteboard.general
+            board.setData(data, forPasteboardType: kUTTypeMPEG4Audio as String)
+          }
+        }
+        else {
+          print(export.error?.localizedDescription ?? "")
+        }
+      }
+    }
+  }
 
   override func updateViewConstraints() {
     super.updateViewConstraints()
@@ -174,6 +220,10 @@ class KeyboardViewController: UIInputViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     listFiles()
+    
+//    let session = AVAudioSession.sharedInstance()
+//    try? session.setCategory(AVAudioSessionCategoryPlayback)
+    
     loadKeyboard()
   }
 
@@ -218,19 +268,25 @@ class KeyboardViewController: UIInputViewController {
     sender.pulsate()
     
     // Audio Playback
-    guard  let fileName = notes[typedCharacter.lowercased()] else {
+    guard  let fileName = myNotes[typedCharacter.lowercased()] else {
       return
     }
     // Loads media file according to filename that corresponds from Notes Array
     guard let audioURL = Bundle.main.url(forResource: fileName, withExtension: "wav", subdirectory: "piano") else {
       return
     }
-    do {
-      player = try AVAudioPlayer(contentsOf:  audioURL)
-    } catch {
-      print(error.localizedDescription)
-    }
-    player.play()
+    var soundId: SystemSoundID = 0
+    AudioServicesCreateSystemSoundID(audioURL as CFURL, &soundId)
+    AudioServicesPlaySystemSound(soundId)
+//    SystemSoundID soundID;
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &soundID);
+//    AudioServicesPlaySystemSound (soundID);
+//    do {
+//      player = try AVAudioPlayer(contentsOf:  audioURL)
+//    } catch {
+//      print(error.localizedDescription)
+//    }
+//    player.play()
   }
 
   @IBAction func pulsatePlay(sender: UIButton!) {
@@ -283,28 +339,40 @@ class KeyboardViewController: UIInputViewController {
 
   // MARK: - Properties
   @IBOutlet weak var A: UIButton!
-
-  //DY playback logic IBAction
-  @IBAction func playBackNotes(sender: Any) {
-    //things()
+  
+  func allFilesForCharacters() -> [URL] {
+    var fileUrls = [URL]()
     let proxy = textDocumentProxy
     proxy.adjustTextPosition(byCharacterOffset: (proxy.documentContextAfterInput ?? "").count)
     // Sleep Interval so that change is rendered when someone deletes text from middle
     Thread.sleep(forTimeInterval: 0.01);
     // According to cursor position contain text that is before and after
     let chars =    (proxy.documentContextBeforeInput ?? "") +
-        (proxy.documentContextAfterInput ?? "")
+      (proxy.documentContextAfterInput ?? "")
     // Play notes according to what was pressed
     for char in chars {
-      if let fileName = notes[String(char)] {
+      if let fileName = myNotes[String(char)] {
         if  let fileURL = Bundle.main.url(forResource: fileName, withExtension: "wav", subdirectory: "piano") {
-          let playerItem = AVPlayerItem(url:fileURL)
-          queuePlayer.insert(playerItem, after:nil)
+          fileUrls.append(fileURL)
         }
+        
       }
-  
     }
-    queuePlayer.play()
+    return fileUrls
+  }
+  //DY playback logic IBAction
+  @IBAction func playBackNotes(sender: Any) {
+    things()
+    for url in allFilesForCharacters() {
+//      let playerItem = AVPlayerItem(url:url)
+//      queuePlayer.insert(playerItem, after:nil)
+      var soundId: SystemSoundID = 0
+      AudioServicesCreateSystemSoundID(url as CFURL, &soundId)
+      AudioServicesPlaySystemSound(soundId)
+      usleep(500000)
+    }
+//    queuePlayer.play()
+    createSound(myNotes: ["wav"], outputFile: "myoutput")
   }
 
   //DY keyboard toggle - symbol
