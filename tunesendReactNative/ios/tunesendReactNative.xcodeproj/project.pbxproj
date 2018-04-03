@@ -49,6 +49,8 @@
 		CC10F8B8200C5F3D004A50E8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */; };
 		CC10F8B9200C5F3D004A50E8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC10F8B1200C5F11004A50E8 /* CoreAudioKit.framework */; };
 		CC19E14B200B52EA001FC2C1 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = CC19E124200B52E9001FC2C1 /* assets */; };
+		CC200F41207401F000037EE9 /* UIButton+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F40207401F000037EE9 /* UIButton+Animate.swift */; };
+		CC200F69207405DA00037EE9 /* MusicFileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F68207405DA00037EE9 /* MusicFileUtility.swift */; };
 		CC52D9E4206AED8C00F1A479 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
@@ -409,6 +411,8 @@
 		CC10F8B2200C5F11004A50E8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		CC10F8B6200C5F2A004A50E8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		CC19E124200B52E9001FC2C1 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
+		CC200F40207401F000037EE9 /* UIButton+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animate.swift"; sourceTree = "<group>"; };
+		CC200F68207405DA00037EE9 /* MusicFileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFileUtility.swift; sourceTree = "<group>"; };
 		CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC67A4961FFC553A00530C11 /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; name = piano; path = ../../../music_samples/piano; sourceTree = "<group>"; };
@@ -742,6 +746,8 @@
 				CC67A4961FFC553A00530C11 /* piano */,
 				CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */,
 				CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */,
+				CC200F68207405DA00037EE9 /* MusicFileUtility.swift */,
+				CC200F40207401F000037EE9 /* UIButton+Animate.swift */,
 				CC7775F51FF2243C00BE3A48 /* Info.plist */,
 			);
 			path = keyboard;
@@ -1489,6 +1495,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */,
+				CC200F41207401F000037EE9 /* UIButton+Animate.swift in Sources */,
+				CC200F69207405DA00037EE9 /* MusicFileUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
