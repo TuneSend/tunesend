@@ -6,8 +6,11 @@ import {
       Text,
       View,
       Button
-    } from 'react-native';
+	} from 'react-native';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';	
+import Installation from './Installation';
 import Instructions from './Instructions';
+import KeyboardTest from './KeyboardTest';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -38,9 +41,21 @@ class Heading extends Component {
 		} = styles;
 
 		return (
-			<View style={TextContainer}>
-				<Instructions />
-			</View>
+			<KeyboardAwareScrollView
+				style={{ backgroundColor: '#ffffff' }}
+				// innerRef={ref => {this.scroll = ref}}
+				resetScrollToCoords={{ x: 0, y: 1050 }}
+				keyboardShouldPersistTaps='always' // make keyboard not disappear when tapping outside of input
+				enableAutoAutomaticScroll={false} // turn off auto scrolling to the field behaviour, which is unfortunately buggy when autocomplete suggestions disappear from the keyboard as displayed in the gif above
+			>
+				<View style={TextContainer}>
+					<Installation />
+					<Instructions />
+					<KeyboardTest 
+						// onFocus={this.scroll.props.scrollToPosition(0, 800)}
+					/>
+				</View>
+			</KeyboardAwareScrollView>
 			);
   }
 
@@ -73,32 +88,32 @@ class Heading extends Component {
 		} = styles;
 
     return (
-      <View>
-		<ScrollView
-            style={ScrollViewContent}
-            scrollEventThrottle={5}
-            onScroll={
-              Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
-        >
+      	<View>
+			<ScrollView
+				style={ScrollViewContent}
+				scrollEventThrottle={5}
+				onScroll={
+				Animated.event([{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }])}
+			>
 
-			{this.state.status ? this.renderScrollViewContent() : null}
+				{this.state.status ? this.renderScrollViewContent() : null}
 
-        </ScrollView>
+			</ScrollView>
 
-		<Animated.View style={[header, { height: headerHeight }]}>
-            <Image
-				style={headerIcon}
-				source={require('../image/TuneSendIcon2.png')}
-			/>
-          	<Animated.Image
-	            style={[
-	              backgroundImage,
-	              { opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
-	            ]}
-	            source={require('../image/TuneSend.png')}
-        	/>
-        </Animated.View>
-      </View>
+			<Animated.View style={[header, { height: headerHeight }]}>
+				<Image
+					style={headerIcon}
+					source={require('../image/TuneSendIcon2.png')}
+				/>
+				<Animated.Image
+					style={[
+					backgroundImage,
+					{ opacity: imageOpacity, transform: [{ translateY: imageTranslate }] }
+					]}
+					source={require('../image/TuneSend.png')}
+				/>
+			</Animated.View>
+      	</View>
     );
 	}
 }

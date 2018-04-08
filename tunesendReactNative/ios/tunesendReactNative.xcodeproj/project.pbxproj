@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -57,10 +56,6 @@
 		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
 		CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA31D802008350F0094FF3A /* Launch Screen.storyboard */; };
 		CC84D8FF20093240007996C4 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
-		CCA31DA8200929270094FF3A /* keyboards.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA4200929260094FF3A /* keyboards.mp4 */; };
-		CCA31DA9200929270094FF3A /* settings.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA5200929260094FF3A /* settings.mp4 */; };
-		CCA31DAA200929270094FF3A /* switchOn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA6200929260094FF3A /* switchOn.mp4 */; };
-		CCA31DAB200929270094FF3A /* TuneSend.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CCA31DA7200929270094FF3A /* TuneSend.mp4 */; };
 		CCA9AFEE2079AE2B00BB44CC /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CCA9AFED2079AE2B00BB44CC /* piano */; };
 /* End PBXBuildFile section */
 
@@ -417,10 +412,6 @@
 		CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
 		CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CCA31D802008350F0094FF3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		CCA31DA4200929260094FF3A /* keyboards.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = keyboards.mp4; path = ../src/gifs/keyboards.mp4; sourceTree = "<group>"; };
-		CCA31DA5200929260094FF3A /* settings.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = settings.mp4; path = ../src/gifs/settings.mp4; sourceTree = "<group>"; };
-		CCA31DA6200929260094FF3A /* switchOn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = switchOn.mp4; path = ../src/gifs/switchOn.mp4; sourceTree = "<group>"; };
-		CCA31DA7200929270094FF3A /* TuneSend.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = TuneSend.mp4; path = ../src/gifs/TuneSend.mp4; sourceTree = "<group>"; };
 		CCA9AFED2079AE2B00BB44CC /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; path = piano; sourceTree = "<group>"; };
 		D75737108043EB3751D79A7A /* Pods-tunesendReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tunesendReactNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative.release.xcconfig"; sourceTree = "<group>"; };
 		DC4FCFC978907BBA1F725E2D /* Pods-tunesendReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tunesendReactNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tunesendReactNative/Pods-tunesendReactNative.debug.xcconfig"; sourceTree = "<group>"; };
@@ -672,10 +663,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CCA31DA4200929260094FF3A /* keyboards.mp4 */,
-				CCA31DA5200929260094FF3A /* settings.mp4 */,
-				CCA31DA6200929260094FF3A /* switchOn.mp4 */,
-				CCA31DA7200929270094FF3A /* TuneSend.mp4 */,
 				CC67A4941FFBF3A600530C11 /* Settings.bundle */,
 				13B07FAE1A68108700A75B9A /* tunesendReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -1287,11 +1274,7 @@
 			files = (
 				CC84D8FF20093240007996C4 /* main.jsbundle in Resources */,
 				CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */,
-				CCA31DA8200929270094FF3A /* keyboards.mp4 in Resources */,
-				CCA31DA9200929270094FF3A /* settings.mp4 in Resources */,
-				CCA31DAA200929270094FF3A /* switchOn.mp4 in Resources */,
 				CC19E14B200B52EA001FC2C1 /* assets in Resources */,
-				CCA31DAB200929270094FF3A /* TuneSend.mp4 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
 				2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */,

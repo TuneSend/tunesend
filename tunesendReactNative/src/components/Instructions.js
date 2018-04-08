@@ -1,250 +1,309 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Switch, Font, TextInput } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-
-const VIDEO_HEIGHT = 320;
+import { View, Text, Image } from 'react-native';
 
 class Instructions extends Component {
-		constructor(props) {
-			super(props);
 
-		this.state = {
-			isToggled: false,
-			isReady: false
-		};
-	}
+    render() {
+        const {
+            TextContainer,
+            textStyle,
+            TextView,
+            TextFormat,
+            IconFormat,
+            FullAccessText
+        } = styles
 
-		componentWillMount() {
-			(async() => {
-				await Font.loadAsync({
-					Pacifico: { uri: 'https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet' }
-			});
-
-				this.setState({ isReady: true });
-			})();
-		}
-
-
-		render() {
-			console.log('Scroll:', this);
-			const {
-				TextContainer,
-				TextView,
-				TextFormat,
-				IconFormat,
-				gifFormat,
-				inputContainerStyle,
-				inputStyle
-			} = styles;
-
-			return (
-
-				<KeyboardAwareScrollView
-					style={{ backgroundColor: '#ffffff' }}
-					resetScrollToCoords={{ x: 0, y: 1050 }}
-					contentContainerStyle={TextContainer}
-					// scrollEnabled={false} // the view itself doesn't scroll up/down (only if all fields fit into the screen)
-					keyboardShouldPersistTaps='always' // make keyboard not disappear when tapping outside of input
-					enableAutoAutomaticScroll={false} // turn off auto scrolling to the field behaviour, which is unfortunately buggy when autocomplete suggestions disappear from the keyboard as displayed in the gif above
-				>
-						<View 
-							style={{
-								...TextView,
-								borderBottomColor: 'black',
-								borderBottomWidth: 2,
-								marginBottom: 5,
-								marginTop: 40
-							}}
-						>
-								<Text style={{ ...TextFormat, fontSize: 29 }}>
-								Get Started With
-								</Text>
-								<Text
-									style={{
-										...TextFormat,
-										color: '#55b2f9',
-										paddingLeft: 6,
-										fontSize: 29
-									}}
-								>
-									Tune
-								</Text>
-								<Text
-									style={{
-										...TextFormat,
-										color: '#f6be5f',
-										fontSize: 29,
-										paddingRight: 5
-									}}
-								>
-									Send
-								</Text>
-								<Text style={{ ...TextFormat, color: '#55b2f9', fontSize: 31 }}>
-									!
-								</Text>
-						</View>
-						<View style={TextView}>
-							<Text style={TextFormat}>
-							Open
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#55b2f9',
-									paddingLeft: 6
-								}}
-							>
-								Sett
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#f6be5f',
-								}}
-							>
-								ings
-							</Text>
-							<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
-						</View>
-					<View style={TextView}>
-						<Text style={TextFormat} behavior="padding">
-							Scroll down to
-						</Text>
-						<Text
-							style={{
-								...TextFormat,
-								color: '#55b2f9',
-								paddingLeft: 6
-							}}
-						>
-							Tune
-						</Text>
-						<Text
-							style={{
-								...TextFormat,
-								color: '#f6be5f',
-								paddingRight: 5
-							}}
-						>
-							Send
-						</Text>
-						<Image style={{ ...IconFormat, marginLeft: 8 }} source={require('../image/TuneSendIconBlack.png')} />
-					</View>
-					<View style={TextView}>
-						<Text style={TextFormat}>
-							Click on
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#55b2f9',
-									paddingLeft: 6
-								}}
-							>
-								key
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#f6be5f',
-								}}
-							>
-								boards
-							</Text>
-						<Image style={{ ...IconFormat, marginLeft: 5 }} source={require('../image/keyboardsIconIOS.png')} />
-					</View>
-					<View style={TextView}>
-							<Text style={TextFormat}>
-								Enable
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#55b2f9',
-									paddingLeft: 6
-								}}
-							>
-								Tune
-							</Text>
-							<Text
-								style={{
-									...TextFormat,
-									color: '#f6be5f',
-									paddingRight: 5
-								}}
-							>
-								Send
-							</Text>
-						<Switch
-							style={{ ...IconFormat, marginTop: 18, marginLeft: 3 }}
-							value={this.state.isToggled}
-							onValueChange={(newValue) => this.setState({ isToggled: newValue })}
-						/>
-					</View>
-					<View style={TextView}>
-						<Text style={TextFormat}>
-								Make Sure To Turn On Your Sound!!
-						</Text>
-					</View>
-					<View style={inputContainerStyle}>
-						<TextInput
-							// onFocus={this.scroll.props.scrollToPosition(0, 800)}
-							style={inputStyle}
-							placeholder={'Test TuneSend Keyboard Here!'}
-						/>
-					</View>
-			</KeyboardAwareScrollView>
-			);
-	}
+        return (
+            <View style={TextContainer}>
+                <View
+                    style={{
+                        ...TextView,
+                        borderBottomColor: 'rgba(0, 0, 0, 0.2)',
+                        borderBottomWidth: 2,
+                        marginBottom: 16,
+                        marginTop: 60
+                    }}
+                >
+                    <Text style={{
+                        ...TextFormat,
+                        fontSize: 28,
+                        marginTop: 0,
+                        marginBottom: 6
+                    }}>
+                    How To Use
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6,
+                            fontSize: 29,
+                            marginTop: 0,
+                            marginBottom: 6
+                        }}
+                    >
+                        Tune
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            fontSize: 29,
+                            paddingRight: 5,
+                            marginTop: 0,
+                            marginBottom: 6
+                        }}
+                    >
+                        Send
+                    </Text>
+                </View>
+                <View style={TextView}>
+                        <Text
+                            style={{
+                                ...TextFormat,
+                                // paddingRight: 3,
+                                paddingLeft: 12
+                            }}
+                    >
+                        Switch to
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6
+                        }}
+                    >
+                        Tune
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            paddingRight: 5
+                        }}
+                    >
+                        Send
+                    </Text>
+                    <Image
+                        style={{
+                            ...IconFormat,
+                            width: 25,
+                            height: 25,
+                            marginTop: 18,
+                            marginLeft: 5,
+                        }}
+                        source={require('../image/globeKey3.png')}
+                    />
+                </View>
+                <View style={TextView}>
+                        <Text style={{
+                            ...TextFormat,
+                            // paddingRight: 3,
+                            paddingLeft: 12
+                        }}
+                    >
+                        Type your
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6
+                        }}
+                    >
+                        Mes
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            paddingRight: 5
+                        }}
+                    >
+                        sage
+                    </Text>
+                    <Image
+                        style={{
+                            ...IconFormat,
+                            // flex: 1,
+                            resizeMode: 'contain',
+                            width: 70,
+                            marginTop: 16,
+                            marginBottom: 15,
+                            marginLeft: 5,
+                        }}
+                        source={require('../image/TuneSendKeyboard.png')}
+                    />
+                </View>
+                <View style={{ ...TextView, marginBottom: 0 }}>
+                        <Text
+                            style={{
+                                ...TextFormat,
+                                // paddingRight: 3,
+                                paddingLeft: 12
+                            }}
+                    >
+                        Press the
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6
+                        }}
+                    >
+                        Play
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            paddingLeft: 5
+                        }}
+                    >
+                        Button
+                    </Text>
+                    <Image
+                        style={{
+                            ...IconFormat,
+                            resizeMode: 'contain',
+                            width: 50,
+                            marginTop: 14,
+                            marginBottom: 15,
+                            marginLeft: 9,
+                        }}
+                        source={require('../image/playButtonDisplay.png')}
+                    />
+                </View>
+                <View style={TextView}>
+                    <Text style={FullAccessText}>
+                        When the Play Button is pressed, 
+                        TuneSend plays back your message
+                        and creates a musical recording of it.
+                    </Text>
+                </View>
+                <View style={TextView}>
+                        <Text style={{
+                            ...TextFormat,
+                            // paddingRight: 3,
+                            paddingLeft: 12
+                        }}
+                    >
+                        Paste the
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6
+                        }}
+                    >
+                        Recor
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            paddingRight: 5
+                        }}
+                    >
+                        ding
+                    </Text>
+                    <Image
+                        style={{
+                            ...IconFormat,
+                            // flex: 1,
+                            resizeMode: 'contain',
+                            width: 100,
+                            marginTop: 16,
+                            marginBottom: 15,
+                            marginLeft: 5,
+                        }}
+                        source={require('../image/pasteRecording.png')}
+                    />
+                </View>
+                <View style={TextView}>
+                        <Text style={{
+                            ...TextFormat,
+                            // paddingRight: 3,
+                            paddingLeft: 12
+                        }}
+                    >
+                        Press
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#55b2f9',
+                            paddingLeft: 6
+                        }}
+                    >
+                        Se
+                    </Text>
+                    <Text
+                        style={{
+                            ...TextFormat,
+                            color: '#f6be5f',
+                            paddingRight: 5
+                        }}
+                    >
+                        nd
+                    </Text>
+                    <Image
+                        style={{
+                            ...IconFormat,
+                            // flex: 1,
+                            resizeMode: 'contain',
+                            width: 86,
+                            marginTop: 16,
+                            marginBottom: 15,
+                            marginLeft: 0,
+                        }}
+                        source={require('../image/sendRecording.png')}
+                    />
+                </View>
+            </View>
+        );
+    }
 }
 
-
 const styles = {
-	TextContainer: {
-			backgroundColor: '#ffffff',
-			flex: 1,
-			alignItems: 'center',
-			marginTop: 0,
-			justifyContent: 'center',
+    TextContainer: {
+		backgroundColor: '#ffffff',
+		flex: 1,
+		alignItems: 'center',
+		marginTop: 0,
+		marginBottom: 0,
+		justifyContent: 'center',
 	},
-	TextView: {
-		flexDirection: 'row',
+    textStyle: {
+        marginBottom: 50,
+        fontFamily: 'Pacifico',
+        fontSize: 30
+    },
+    TextView: {
+        flexDirection: 'row',
+        marginBottom: 25
 	},
 	TextFormat: {
 		marginTop: 10,
 		fontSize: 24,
-		marginBottom: 25,
 		fontFamily: 'Pacifico',
-	},
-	IconFormat: {
+    },
+    IconFormat: {
 		marginTop: 12,
 		marginLeft: 10,
 		width: 40,
 		height: 40,
-	},
-	gifFormat: {
-		flexWrap: 'wrap',
-		flexDirection: 'column',
-		marginTop: 70,
-		marginBottom: 4,
-		borderWidth: 1,
-		width: 240,
-		height: VIDEO_HEIGHT,
-	},
-	inputContainerStyle: {
-		borderRadius: 20,
-		borderWidth: 1,
-		borderColor: 'grey',
-		width: 340,
-		height: 40,
-		marginBottom: 140
-	},
-	inputStyle: {
-		height: 40,
-		fontSize: 22,
-		// color: '#55b2f9',
-		paddingLeft: 10,
-		// fontFamily: 'Pacifico',
+    },
+    FullAccessText: {
+        // marginTop: 5,
+		fontSize: 15,
+		fontFamily: 'Helvetica',
+		paddingRight: 70,
+		paddingLeft: 70, 
+		textAlign: 'center'
 	}
 };
 
