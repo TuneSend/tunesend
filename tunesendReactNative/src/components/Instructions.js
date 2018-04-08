@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Switch, Font, TextInput } from 'react-native';
-import Video from 'react-native-video';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 const VIDEO_HEIGHT = 320;
@@ -84,22 +83,6 @@ class Instructions extends Component {
 									!
 								</Text>
 						</View>
-						<Video
-							style={{ ...gifFormat, marginTop: 70 }}
-							source={{ uri: './settings.mp4' }}
-							ref={(ref) => {
-								console.log('this', this.player);
-								this.player = ref;
-							}}                            // Store reference
-							rate={1.0}                    // 0 is paused, 1 is normal.
-							paused={false}                // Pauses playback entirely.
-							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							onLoadStart={this.loadStart}  // Callback when video starts to load
-							repeat={true}                           // Repeat forever. 
-							onLoad={this.setDuration}     // Callback when video loads
-							onEnd={this.onEnd}            // Callback when playback finishes
-							onError={this.videoError}     // Callback when video cannot be loaded
-						/>
 						<View style={TextView}>
 							<Text style={TextFormat}>
 							Open
@@ -123,23 +106,6 @@ class Instructions extends Component {
 							</Text>
 							<Image style={IconFormat} source={require('../image/settingsIconIOS.png')} />
 						</View>
-						<Video
-							style={gifFormat}
-							source={{ uri: './TuneSend.mp4' }}
-							ref={(ref) => {
-								console.log('this', this.player);
-								this.player = ref;
-							}}                            // Store reference
-							rate={1.0}                    // 0 is paused, 1 is normal.
-							paused={false}                // Pauses playback entirely.
-							resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-							playWhenInactive={false}    // [iOS] Video continues to play when control or notification center are shown.
-							onLoadStart={this.loadStart}  // Callback when video starts to load
-							repeat={true}                           // Repeat forever. 
-							onLoad={this.setDuration}     // Callback when video loads
-							onEnd={this.onEnd}            // Callback when playback finishes
-							onError={this.videoError}     // Callback when video cannot be loaded
-						/>
 					<View style={TextView}>
 						<Text style={TextFormat} behavior="padding">
 							Scroll down to
@@ -164,24 +130,6 @@ class Instructions extends Component {
 						</Text>
 						<Image style={{ ...IconFormat, marginLeft: 8 }} source={require('../image/TuneSendIconBlack.png')} />
 					</View>
-					<Video
-						style={gifFormat}
-						source={{ uri: './keyboards.mp4' }}
-						ref={(ref) => {
-							console.log('this', this.player);
-							this.player = ref;
-						}}                            // Store reference
-						rate={1.0}                    // 0 is paused, 1 is normal.
-						paused={false}                // Pauses playback entirely.
-						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						playWhenInactive={false}    // [iOS] Video continues to play when control or
-						//notification center are shown.
-						repeat={true}                           // Repeat forever. 
-						onLoadStart={this.loadStart}  // Callback when video starts to load
-						onLoad={this.setDuration}     // Callback when video loads
-						onEnd={this.onEnd}            // Callback when playback finishes
-						onError={this.videoError}     // Callback when video cannot be loaded
-					/>
 					<View style={TextView}>
 						<Text style={TextFormat}>
 							Click on
@@ -205,24 +153,6 @@ class Instructions extends Component {
 							</Text>
 						<Image style={{ ...IconFormat, marginLeft: 5 }} source={require('../image/keyboardsIconIOS.png')} />
 					</View>
-					<Video
-						style={gifFormat}
-						source={{ uri: './switchOn.mp4' }}
-						ref={(ref) => {
-							console.log('this', this.player);
-							this.player = ref;
-						}}                            // Store reference
-						rate={1.0}                    // 0 is paused, 1 is normal.
-						paused={false}                // Pauses playback entirely.
-						resizeMode="cover"            // Fill the whole screen at aspect ratio.*
-						playWhenInactive={false}    // [iOS] Video continues to play when control or
-						//notification center are shown.
-						repeat={true}                           // Repeat forever. 
-						onLoadStart={this.loadStart}  // Callback when video starts to load
-						onLoad={this.setDuration}     // Callback when video loads
-						onEnd={this.onEnd}            // Callback when playback finishes
-						onError={this.videoError}     // Callback when video cannot be loaded
-					/>
 					<View style={TextView}>
 							<Text style={TextFormat}>
 								Enable
