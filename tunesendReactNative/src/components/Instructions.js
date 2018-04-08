@@ -6,7 +6,6 @@ class Instructions extends Component {
     render() {
         const {
             TextContainer,
-            textStyle,
             TextView,
             TextFormat,
             IconFormat,
@@ -21,12 +20,12 @@ class Instructions extends Component {
                         borderBottomColor: 'rgba(0, 0, 0, 0.2)',
                         borderBottomWidth: 2,
                         marginBottom: 16,
-                        marginTop: 60
+                        marginTop: 30
                     }}
                 >
                     <Text style={{
                         ...TextFormat,
-                        fontSize: 28,
+                        fontSize: 24,
                         marginTop: 0,
                         marginBottom: 6
                     }}>
@@ -37,7 +36,7 @@ class Instructions extends Component {
                             ...TextFormat,
                             color: '#55b2f9',
                             paddingLeft: 6,
-                            fontSize: 29,
+                            fontSize: 24,
                             marginTop: 0,
                             marginBottom: 6
                         }}
@@ -48,7 +47,7 @@ class Instructions extends Component {
                         style={{
                             ...TextFormat,
                             color: '#f6be5f',
-                            fontSize: 29,
+                            fontSize: 24,
                             paddingRight: 5,
                             marginTop: 0,
                             marginBottom: 6
@@ -88,10 +87,10 @@ class Instructions extends Component {
                     <Image
                         style={{
                             ...IconFormat,
-                            width: 25,
-                            height: 25,
+                            width: 23,
+                            height: 23,
                             marginTop: 18,
-                            marginLeft: 5,
+                            marginLeft: 7,
                         }}
                         source={require('../image/globeKey3.png')}
                     />
@@ -128,10 +127,10 @@ class Instructions extends Component {
                             ...IconFormat,
                             // flex: 1,
                             resizeMode: 'contain',
-                            width: 70,
+                            width: 65,
                             marginTop: 16,
                             marginBottom: 15,
-                            marginLeft: 5,
+                            marginLeft: 7,
                         }}
                         source={require('../image/TuneSendKeyboard.png')}
                     />
@@ -168,8 +167,8 @@ class Instructions extends Component {
                         style={{
                             ...IconFormat,
                             resizeMode: 'contain',
-                            width: 50,
-                            marginTop: 14,
+                            width: 45,
+                            marginTop: 12,
                             marginBottom: 15,
                             marginLeft: 9,
                         }}
@@ -178,9 +177,9 @@ class Instructions extends Component {
                 </View>
                 <View style={TextView}>
                     <Text style={FullAccessText}>
-                        When the Play Button is pressed, 
+                        When the Play Button is pressed,
                         TuneSend plays back your message
-                        and creates a musical recording of it.
+                        and creates a musical recording of it.{"\n"}
                     </Text>
                 </View>
                 <View style={TextView}>
@@ -196,7 +195,7 @@ class Instructions extends Component {
                         style={{
                             ...TextFormat,
                             color: '#55b2f9',
-                            paddingLeft: 6
+                            paddingLeft: 2
                         }}
                     >
                         Recor
@@ -210,14 +209,16 @@ class Instructions extends Component {
                     >
                         ding
                     </Text>
+                </View>
+                <View>
                     <Image
                         style={{
                             ...IconFormat,
                             // flex: 1,
                             resizeMode: 'contain',
-                            width: 100,
-                            marginTop: 16,
-                            marginBottom: 15,
+                            width: 80,
+                            marginTop: 0,
+                            marginBottom: 40,
                             marginLeft: 5,
                         }}
                         source={require('../image/pasteRecording.png')}
@@ -277,29 +278,24 @@ const styles = {
 		marginBottom: 0,
 		justifyContent: 'center',
 	},
-    textStyle: {
-        marginBottom: 50,
-        fontFamily: 'Pacifico',
-        fontSize: 30
-    },
     TextView: {
         flexDirection: 'row',
         marginBottom: 25
 	},
 	TextFormat: {
 		marginTop: 10,
-		fontSize: 24,
+		fontSize: 20,
 		fontFamily: 'Pacifico',
     },
     IconFormat: {
 		marginTop: 12,
 		marginLeft: 10,
-		width: 40,
-		height: 40,
+		width: 35,
+		height: 35,
     },
     FullAccessText: {
         // marginTop: 5,
-		fontSize: 15,
+		fontSize: 13,
 		fontFamily: 'Helvetica',
 		paddingRight: 70,
 		paddingLeft: 70, 

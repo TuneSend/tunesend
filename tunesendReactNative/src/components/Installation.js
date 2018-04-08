@@ -11,7 +11,7 @@ class Installation extends Component {
 			isReady: false
 		};
 	}
-	
+
 		render() {
 			const {
 				TextContainer,
@@ -37,18 +37,18 @@ class Installation extends Component {
 						>
 								<Text style={{ 
 									...TextFormat, 
-									fontSize: 28, 
+									fontSize: 24, 
 									marginTop: 0, 
 									marginBottom: 6
 								}}>
-								Get Started With
+								Starting With
 								</Text>
 								<Text
 									style={{
 										...TextFormat,
 										color: '#55b2f9',
 										paddingLeft: 6,
-										fontSize: 29,
+										fontSize: 24,
 										marginTop: 0,
 										marginBottom: 6
 									}}
@@ -59,22 +59,13 @@ class Installation extends Component {
 									style={{
 										...TextFormat,
 										color: '#f6be5f',
-										fontSize: 29,
+										fontSize: 24,
 										paddingRight: 5,
 										marginTop: 0,
 										marginBottom: 6
 									}}
 								>
 									Send
-								</Text>
-								<Text style={{ 
-									...TextFormat, 
-									color: '#55b2f9', 
-									fontSize: 29, 
-									marginTop: 0,
-									marginBottom: 6 
-								}}>
-									!
 								</Text>
 						</View>
 						<View style={TextView}>
@@ -173,8 +164,9 @@ class Installation extends Component {
 								style={{ 
 									...IconFormat,
 									marginLeft: 5,
+									marginTop: 9,
 									resizeMode: 'contain',
-                            		width: 50
+                            		width: 45
 								}}
 								source={require('../image/toggleSwitch.png')} 
 							/>
@@ -188,6 +180,7 @@ class Installation extends Component {
 									...TextFormat,
 									color: '#55b2f9',
 									paddingLeft: 6,
+									paddingRight: 4,
 									marginBottom: 0
 								}}
 							>
@@ -197,7 +190,7 @@ class Installation extends Component {
 								style={{
 									...TextFormat,
 									color: '#f6be5f',
-									paddingLeft: 6,
+									paddingLeft: 2,
 									marginBottom: 0
 								}}
 							>
@@ -206,21 +199,27 @@ class Installation extends Component {
 							<Image 
 								style={{ 
 									...IconFormat,
-									marginLeft: 5,
+									marginLeft: 4,
+									marginTop: 9,
 									resizeMode: 'contain',
-                            		width: 50
+                            		width: 45
 								}}
-								source={require('../image/toggleSwitch.png')} 
+								source={require('../image/toggleSwitch.png')}
 							/>
 					</View>
-					<View style={{ ...TextView, marginBottom: 12 }}>
-						<Text style={TextFormat, FullAccessText}>
+					<View style={{ ...TextView, marginBottom: 12, marginTop: 5 }}>
+						<Text style={FullAccessText}>
 							The Allow Full Access switch will appear once the keyboard switch is enabled.{"\n"}{"\n"}
-							If the Allow Full Access switch isn't on, you will not be able to create or copy and paste your recording when texting
+							If the Allow Full Access switch isn't on, you will not be able to create or copy and paste your recording when texting {"\n"}
 						</Text>
 					</View>
 					<View style={TextView}>
-						<Text style={{ ...TextFormat, marginBottom: 3, fontSize: 20 }}>
+						<Text
+							style={{
+								...TextFormat,
+								fontSize: 20
+							}}
+						>
 								Make Sure To Turn On Your Sound!!
 						</Text>
 					</View>
@@ -244,13 +243,13 @@ const styles = {
 	},
 	TextFormat: {
 		marginTop: 10,
-		fontSize: 24,
+		fontSize: 20,
 		marginBottom: 25,
 		fontFamily: 'Pacifico',
 	},
 	FullAccessText: {
 		marginTop: 5,
-		fontSize: 15,
+		fontSize: 13,
 		fontFamily: 'Helvetica',
 		paddingRight: 70,
 		paddingLeft: 70, 
@@ -259,8 +258,8 @@ const styles = {
 	IconFormat: {
 		marginTop: 12,
 		marginLeft: 10,
-		width: 40,
-		height: 40,
+		width: 34,
+		height: 34,
 	}
 };
 
