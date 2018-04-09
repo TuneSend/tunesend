@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import {
-      Animated,
-      Image,
-      ScrollView,
-      Text,
-      View,
-      Button
+		Animated,
+		Image,
+		ScrollView,
+		Text,
+		View,
+		Button
 	} from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';	
 import Installation from './Installation';
 import Instructions from './Instructions';
 import KeyboardTest from './KeyboardTest';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import headerStyles from '../stylesheets/headerStyles';
 
 const HEADER_MAX_HEIGHT = 200;
 const HEADER_MIN_HEIGHT = 60;
@@ -38,7 +39,7 @@ class Heading extends Component {
 	renderScrollViewContent() {
 		const {
 			TextContainer,
-		} = styles;
+		} = headerStyles;
 
 		return (
 			<KeyboardAwareScrollView
@@ -51,9 +52,7 @@ class Heading extends Component {
 				<View style={TextContainer}>
 					<Installation />
 					<Instructions />
-					<KeyboardTest 
-						// onFocus={this.scroll.props.scrollToPosition(0, 800)}
-					/>
+					<KeyboardTest />
 				</View>
 			</KeyboardAwareScrollView>
 			);
@@ -85,7 +84,7 @@ class Heading extends Component {
 			ScrollViewContent,
 			backgroundImage,
 			headerIcon
-		} = styles;
+		} = headerStyles;
 
     return (
       	<View>
@@ -118,71 +117,5 @@ class Heading extends Component {
 	}
 }
 
-const styles = {
-	row: {
-		height: 40,
-		margin: 16,
-		backgroundColor: '#D3D3D3',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-	header: {
-		position: 'absolute',
-		top: 0,
-		left: 0,
-		right: 0,
-		backgroundColor: '#03A9F4',
-		overflow: 'hidden',
-	},
-	headerIcon: {
-		marginTop: 21,
-		marginLeft: 15,
-	},
-	bar: {
-		marginTop: 28,
-		height: 32,
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-	title: {
-		backgroundColor: 'transparent',
-		color: 'white',
-		fontSize: 18,
-	},
-	ScrollViewContent: {
-		// marginTop: HEADER_MAX_HEIGHT,
-	},
-	backgroundImage: {
-		position: 'absolute',
-		top: 0,
-		left: 0,
-		right: 0,
-		width: null,
-		height: HEADER_MAX_HEIGHT,
-		resizeMode: 'cover',
-	},
-	ImageSize: {
-		flex: 1,
-		width: 250,
-		height: 250,
-		resizeMode: 'cover',
-		alignItems: 'center',
-		marginLeft: 50,
-	},
-	TextContainer: {
-		flex: 1,
-		alignItems: 'center',
-		marginTop: HEADER_MAX_HEIGHT,
-	},
-	TextFormat: {
-		fontSize: 23,
-	},
-	IconFormat: {
-		marginTop: 3,
-		marginLeft: 2,
-		width: 20,
-		height: 20,
-	}
-};
 
 export default Heading;
