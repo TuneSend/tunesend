@@ -45,6 +45,7 @@
 		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
 		CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA31D802008350F0094FF3A /* Launch Screen.storyboard */; };
 		CC84D8FF20093240007996C4 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
+		CCA49EB9207C53F800F12ED3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */; };
 		CCA9AFEE2079AE2B00BB44CC /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CCA9AFED2079AE2B00BB44CC /* piano */; };
 /* End PBXBuildFile section */
 
@@ -372,6 +373,7 @@
 		CC7775FE1FF224F800BE3A48 /* keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = keyboard.entitlements; sourceTree = "<group>"; };
 		CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CCA31D802008350F0094FF3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CCA49EB8207C53F100F12ED3 /* TuneSend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuneSend.entitlements; sourceTree = "<group>"; };
 		CCA9AFED2079AE2B00BB44CC /* piano */ = {isa = PBXFileReference; lastKnownFileType = folder; path = piano; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -388,6 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA49EB9207C53F800F12ED3 /* AudioToolbox.framework in Frameworks */,
 				CC10F8B7200C5F2A004A50E8 /* AVKit.framework in Frameworks */,
 				CC10F8B5200C5F2A004A50E8 /* AVFoundation.framework in Frameworks */,
 				CC10F8B3200C5F12004A50E8 /* CoreAudioKit.framework in Frameworks */,
@@ -569,6 +572,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CCA49EB8207C53F100F12ED3 /* TuneSend.entitlements */,
 				CC67A4941FFBF3A600530C11 /* Settings.bundle */,
 				13B07FAE1A68108700A75B9A /* tunesendReactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -732,10 +736,22 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = XM288BRHM4;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = XM288BRHM4;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					CC7775F01FF2243B00BE3A48 = {
 						CreatedOnToolsVersion = 9.2;
@@ -746,6 +762,9 @@
 								enabled = 0;
 							};
 							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -1241,6 +1260,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TuneSend.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1251,7 +1271,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1259,7 +1279,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.MichaelHaviv.TuneSend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend;
 				PRODUCT_NAME = TuneSend;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1271,6 +1291,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TuneSend.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XM288BRHM4;
@@ -1280,7 +1301,7 @@
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 				);
 				INFOPLIST_FILE = tunesendReactNative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1288,7 +1309,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.MichaelHaviv.TuneSend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend;
 				PRODUCT_NAME = TuneSend;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1322,6 +1343,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = XM288BRHM4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1373,6 +1395,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = XM288BRHM4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1385,6 +1408,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -1406,7 +1430,7 @@
 				DEVELOPMENT_TEAM = XM288BRHM4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1414,7 +1438,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.MichaelHaviv.TuneSend.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1440,7 +1464,7 @@
 				DEVELOPMENT_TEAM = XM288BRHM4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1448,7 +1472,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.MichaelHaviv.TuneSend.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
