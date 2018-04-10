@@ -8,4 +8,4 @@ const App = () => (
 	</View>
 );
 
-AppRegistry.registerComponent('tunesendReactNative', () => App);
+AppRegistry.registerComponent('TuneSend', () => App);
