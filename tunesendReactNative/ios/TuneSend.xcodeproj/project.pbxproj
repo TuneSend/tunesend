@@ -38,13 +38,13 @@
 		CC200F41207401F000037EE9 /* UIButton+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F40207401F000037EE9 /* UIButton+Animate.swift */; };
 		CC200F69207405DA00037EE9 /* MusicFileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F68207405DA00037EE9 /* MusicFileUtility.swift */; };
 		CC52D9E4206AED8C00F1A479 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */; };
+		CC539142207C859A0007D002 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = CC539141207C859A0007D002 /* main.jsbundle */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */; };
 		CC7775F81FF2243C00BE3A48 /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC7775F11FF2243B00BE3A48 /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CC7776091FF22A3D00BE3A48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7776081FF22A3D00BE3A48 /* AVFoundation.framework */; };
 		CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA31D802008350F0094FF3A /* Launch Screen.storyboard */; };
-		CC84D8FF20093240007996C4 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		CCA49EB9207C53F800F12ED3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */; };
 		CCA9AFEE2079AE2B00BB44CC /* piano in Resources */ = {isa = PBXBuildFile; fileRef = CCA9AFED2079AE2B00BB44CC /* piano */; };
 /* End PBXBuildFile section */
@@ -333,7 +333,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
@@ -366,6 +365,7 @@
 		CC200F40207401F000037EE9 /* UIButton+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animate.swift"; sourceTree = "<group>"; };
 		CC200F68207405DA00037EE9 /* MusicFileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFileUtility.swift; sourceTree = "<group>"; };
 		CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CC539141207C859A0007D002 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../main.jsbundle; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC7775F11FF2243B00BE3A48 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -490,7 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				CC19E124200B52E9001FC2C1 /* assets */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				CC539141207C859A0007D002 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1112,10 +1112,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC84D8FF20093240007996C4 /* main.jsbundle in Resources */,
 				CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */,
 				CC19E14B200B52EA001FC2C1 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CC539142207C859A0007D002 /* main.jsbundle in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
 				2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */,
 			);
@@ -1361,7 +1361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1406,7 +1406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
