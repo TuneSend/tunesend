@@ -24,6 +24,7 @@
 		4DC6C79A1FF1DBD80079200D /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		CC00EE1E207DBA9A0061E31E /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = CC00EE1D207DBA9A0061E31E /* main.jsbundle */; };
 		CC083D9D2000006C00B1F218 /* View123.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D992000006C00B1F218 /* View123.xib */; };
 		CC083D9E2000006C00B1F218 /* ViewLowerCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */; };
 		CC083D9F2000006C00B1F218 /* ViewUpperCase.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */; };
@@ -38,7 +39,6 @@
 		CC200F41207401F000037EE9 /* UIButton+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F40207401F000037EE9 /* UIButton+Animate.swift */; };
 		CC200F69207405DA00037EE9 /* MusicFileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC200F68207405DA00037EE9 /* MusicFileUtility.swift */; };
 		CC52D9E4206AED8C00F1A479 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */; };
-		CC539142207C859A0007D002 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = CC539141207C859A0007D002 /* main.jsbundle */; };
 		CC67A4701FFBF15900530C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC67A4941FFBF3A600530C11 /* Settings.bundle */; };
 		CC7775F41FF2243C00BE3A48 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */; };
@@ -354,6 +354,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CA7DB827AB774CABB59777C5 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
+		CC00EE1D207DBA9A0061E31E /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../main.jsbundle; sourceTree = "<group>"; };
 		CC083D992000006C00B1F218 /* View123.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View123.xib; sourceTree = "<group>"; };
 		CC083D9A2000006C00B1F218 /* ViewLowerCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewLowerCase.xib; sourceTree = "<group>"; };
 		CC083D9B2000006C00B1F218 /* ViewUpperCase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUpperCase.xib; sourceTree = "<group>"; };
@@ -365,7 +366,6 @@
 		CC200F40207401F000037EE9 /* UIButton+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Animate.swift"; sourceTree = "<group>"; };
 		CC200F68207405DA00037EE9 /* MusicFileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFileUtility.swift; sourceTree = "<group>"; };
 		CC52D9E3206AED8C00F1A479 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		CC539141207C859A0007D002 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = ../main.jsbundle; sourceTree = "<group>"; };
 		CC67A4941FFBF3A600530C11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CC7775F11FF2243B00BE3A48 /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7775F31FF2243C00BE3A48 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -490,7 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				CC19E124200B52E9001FC2C1 /* assets */,
-				CC539141207C859A0007D002 /* main.jsbundle */,
+				CC00EE1D207DBA9A0061E31E /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1115,7 +1115,7 @@
 				CC84D8FE200929A5007996C4 /* Launch Screen.storyboard in Resources */,
 				CC19E14B200B52EA001FC2C1 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CC539142207C859A0007D002 /* main.jsbundle in Resources */,
+				CC00EE1E207DBA9A0061E31E /* main.jsbundle in Resources */,
 				CC67A4951FFBF3A600530C11 /* Settings.bundle in Resources */,
 				2F68C34FEB034580AF692A42 /* Pacifico-Regular.ttf in Resources */,
 			);
