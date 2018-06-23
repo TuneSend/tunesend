@@ -1282,6 +1282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend;
 				PRODUCT_NAME = TuneSend;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1312,6 +1313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelHaviv.TuneSend;
 				PRODUCT_NAME = TuneSend;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
