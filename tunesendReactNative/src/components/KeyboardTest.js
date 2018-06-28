@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TextInput } from 'react-native';
 import styles from '../stylesheets/styles';
 
+// React Component for input field to test TuneSend
 class KeyboardTest extends Component {
 
     constructor(props) {
