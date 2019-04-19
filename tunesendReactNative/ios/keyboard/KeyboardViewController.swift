@@ -18,7 +18,7 @@ class KeyboardViewController: UIInputViewController {
 
   func createSound(outputFile: String) {
     // CMTime struct represents a length of time that is stored as rational number
-    var startTime: CMTime = kCMTimeZero
+    var startTime: CMTime = CMTime.zero
     // AVMutableComposition creates new composition
     let composition: AVMutableComposition = AVMutableComposition()
     // AVMutableCompositionTrack - A mutable track in composition that you use to insert, remove, and scale track segments
@@ -26,7 +26,7 @@ class KeyboardViewController: UIInputViewController {
       
       for url in allFilesForCharacters() {
         let avAsset: AVURLAsset = AVURLAsset(url: url)
-        let timeRange: CMTimeRange = CMTimeRangeMake(kCMTimeZero, avAsset.duration)
+        let timeRange: CMTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: avAsset.duration)
         let audioTrack: AVAssetTrack = avAsset.tracks(withMediaType: AVMediaType.audio)[0]
         try? compositionAudioTrack.insertTimeRange(timeRange, of: audioTrack, at: startTime)
         startTime = CMTimeAdd(startTime, timeRange.duration)
@@ -43,7 +43,7 @@ class KeyboardViewController: UIInputViewController {
       export.outputFileType = AVFileType.m4a
       
       export.exportAsynchronously {
-        if export.status == AVAssetExportSessionStatus.completed {
+        if export.status == AVAssetExportSession.Status.completed {
           NSLog("All done");
           if let outputURL = export.outputURL {
             if let data = try? Data(contentsOf: outputURL) {
