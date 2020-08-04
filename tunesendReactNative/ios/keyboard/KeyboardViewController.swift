@@ -98,7 +98,7 @@ class KeyboardViewController: UIInputViewController {
     super.viewDidAppear(animated)
     returnKey.setTitle(getReturnKeyTitle(), for: .normal)
     let keyboardHeight: CGFloat = 218
-    let heightConstraint = NSLayoutConstraint(item: view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: keyboardHeight)
+    let heightConstraint = NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: keyboardHeight)
     view.addConstraint(heightConstraint)
     view.layoutIfNeeded()
   }
@@ -156,7 +156,7 @@ class KeyboardViewController: UIInputViewController {
   func loadKeyboard() {
     
     let keyboardNib = UINib(nibName: "ViewLowerCase", bundle: nil)
-    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
     
@@ -165,7 +165,7 @@ class KeyboardViewController: UIInputViewController {
   //symbol keyboard
   func loadSymbolKeyboard() {
     let keyboardNib = UINib(nibName: "ViewSymbols", bundle: nil)
-    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
   }
@@ -173,7 +173,7 @@ class KeyboardViewController: UIInputViewController {
   //lowerCase keyboard
   func loadLowerCaseKeyboard() {
     let keyboardNib = UINib(nibName: "ViewLowerCase", bundle: nil)
-    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
   }
@@ -181,7 +181,7 @@ class KeyboardViewController: UIInputViewController {
   //upperCase keyboard
   func loadUpperCaseKeyboard() {
     let keyboardNib = UINib(nibName: "ViewUpperCase", bundle: nil)
-    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
   }
@@ -189,7 +189,7 @@ class KeyboardViewController: UIInputViewController {
   //Number keyboard
   func loadNumberKeyboard() {
     let keyboardNib = UINib(nibName: "View123", bundle: nil)
-    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    keyboardView = keyboardNib.instantiate(withOwner: self, options: nil)[0] as? UIView
     view.backgroundColor = keyboardView.backgroundColor
     view.addSubview(keyboardView)
   }
